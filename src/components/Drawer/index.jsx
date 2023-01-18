@@ -89,7 +89,7 @@ const DrawerComp = () => {
         </List>
 
       </Drawer>
-      <IconButton sx={{ color: "black", marginLeft: "auto" }} onClick={() => setOpenDrawer(!openDrawer)}>
+      <IconButton sx={{ color: "black", marginLeft: "auto",mt:{xs:"12px"} }} onClick={() => setOpenDrawer(!openDrawer)}>
         <MenuIcon />
       </IconButton>
     </>
