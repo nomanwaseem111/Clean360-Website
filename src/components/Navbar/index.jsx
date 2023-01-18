@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { Tab, Tabs, useMediaQuery, useTheme } from "@mui/material";
 import Drawer from "../Drawer";
 import Logo from '../assets/logo2.png'
-
+import SearchIcon from '@mui/icons-material/Search';
 
 export default function ButtonAppBar() {
   const [value, setValue] = React.useState();
@@ -22,7 +22,7 @@ export default function ButtonAppBar() {
       <AppBar
         elevation={0}
         position="static"
-        sx={{ backgroundColor: { md: "#171c28", xs: "#171c28" },
+        sx={{ backgroundColor: { md: "#fff", xs: "#fff" },
                    display:{md:"flex"},
                    justifyContent:{md:"center"},
                    alignItems:{md:"center"},height:{md:"100px",xs:"70px"} }}
@@ -37,7 +37,7 @@ export default function ButtonAppBar() {
                    alignItems:{md:"center"}
                  }}>
          
-          <Box component="img" src={Logo} width={{md:"240px",xs:"150px"}} height={{md:"auto"}} mt={{xs:"10px",md:"0px"}} />
+          <Box component="img" src={Logo} width={{md:"240px",xs:"150px"}} height={{md:"60px"}} mt={{xs:"10px",md:"0px"}} />
           {isMatch ? (
             <>
               <Drawer />
@@ -64,7 +64,7 @@ export default function ButtonAppBar() {
                 <Tab
                   label="Pages"
                   sx={{
-                    color: "#fff",
+                    color: "#000",
                     fontSize:{md:"14px",xs:"14px"}
                   }}
                   to="/pages"
@@ -74,7 +74,7 @@ export default function ButtonAppBar() {
                 <Tab
                   label="Features "
                   sx={{
-                    color: "#fff",
+                    color: "#000",
                     fontSize:{md:"14px",xs:"14px"}
                   }}
                   to="/feautures"
@@ -85,7 +85,7 @@ export default function ButtonAppBar() {
                 <Tab
                   label="Shop"
                   sx={{
-                    color: "#fff",
+                    color: "#000",
                     fontSize:{md:"14px",xs:"14px"}
                   }}
                   to="/shop"
@@ -95,7 +95,7 @@ export default function ButtonAppBar() {
                 <Tab
                   label="Blog "
                   sx={{
-                    color: "#fff",
+                    color: "#000",
                     fontSize:{md:"14px",xs:"14px"}
                   }}
                   to="/blog"
@@ -105,13 +105,14 @@ export default function ButtonAppBar() {
                  <Tab
                   label="Elements "
                   sx={{
-                    color: "#fff",
+                    color: "#000",
                     fontSize:{md:"14px",xs:"14px"}
                   }}
                   to="/elements"
                   component={Link}
 
                 />
+                <SearchIcon   sx={{mt:{md:"3px"},width:{md:"60px"},height:{md:"40px"},background:{md:"#f7941d"},marginLeft:{md:"5px"}}}/>
                 {/* <Tab label="Product " sx={{color:"black",fontSize:"20px"}} component={Link} to="/product" /> */}
                 {/* <Tab label="Cart " sx={{color:"black",fontSize:"20px"}} component={Link} to="/cartsection" /> */}
               </Tabs>
@@ -119,7 +120,7 @@ export default function ButtonAppBar() {
               {/* <Button   sx={{marginLeft:"auto"}} component={Link} to="/login" variant="contained"><LoginIcon/></Button> */}
 
               {/* <Typography component={Link} to='/login' sx={{color:"black",ml:"auto" ,cursor:"pointer",display:"inline-block", width:"50px",height:"30px"}}><LoginIcon sx={{fontSize:"35px","&:hover":{color:"#6610f2"}}}/></Typography>
-                                <Typography component={Link} to='/signup'  sx={{color:"black",ml:"10px" ,cursor:"pointer",display:"inline-block", width:"50px",height:"30px"}}><VpnKeyIcon sx={{fontSize:"35px","&:hover":{color:"#6610f2"}}}/></Typography>
+                                <Typography component={Link} to='/signup'  sx={{color:"black",ml:"10px" ,cursor:"pointer"t,display:"inline-block", width:"50px",height:"30px"}}><VpnKeyIcon sx={{fontSize:"35px","&:hover":{color:"#6610f2"}}}/></Typography>
                                 <Typography  component={Link} to='/carts' marginRight={{md:"30px"}} sx={{color:"black",ml:"10px" ,cursor:"pointer",display:"inline-block", width:"50px",height:"30px"}}><ShoppingCartIcon sx={{fontSize:"35px","&:hover":{color:"#6610f2"}}}/></Typography> */}
             </>
           )}
