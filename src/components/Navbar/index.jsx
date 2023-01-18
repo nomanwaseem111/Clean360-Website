@@ -25,7 +25,7 @@ export default function ButtonAppBar() {
         sx={{ backgroundColor: { md: "#fff", xs: "#fff" },
                    display:{md:"flex"},
                    justifyContent:{md:"center"},
-                   alignItems:{md:"center"},height:{md:"100px",xs:"70px"} }}
+                   alignItems:{md:"center"},height:{md:"80px",xs:"65px"} }}
         // border={{md:"1px solid white"}}
       >
         <Toolbar className="nav"  sx={{
@@ -112,15 +112,15 @@ export default function ButtonAppBar() {
                   component={Link}
 
                 />
-                <SearchIcon   sx={{mt:{md:"3px"},width:{md:"60px"},height:{md:"40px"},background:{md:"#f7941d"},marginLeft:{md:"5px"}}}/>
-                {/* <Tab label="Product " sx={{color:"black",fontSize:"20px"}} component={Link} to="/product" /> */}
+              <SearchIcon   sx={{marginLeft:{md:"10px"},mt:{md:"3px"},fontSize:{md:"10px"},width:{md:"60px"},height:{md:"40px"},background:{md:"#f7941d"},color:{md:"#fff"}}}/>
+
+                {/*  */}
                 {/* <Tab label="Cart " sx={{color:"black",fontSize:"20px"}} component={Link} to="/cartsection" /> */}
               </Tabs>
 
               {/* <Button   sx={{marginLeft:"auto"}} component={Link} to="/login" variant="contained"><LoginIcon/></Button> */}
 
               {/* <Typography component={Link} to='/login' sx={{color:"black",ml:"auto" ,cursor:"pointer",display:"inline-block", width:"50px",height:"30px"}}><LoginIcon sx={{fontSize:"35px","&:hover":{color:"#6610f2"}}}/></Typography>
-                                <Typography component={Link} to='/signup'  sx={{color:"black",ml:"10px" ,cursor:"pointer"t,display:"inline-block", width:"50px",height:"30px"}}><VpnKeyIcon sx={{fontSize:"35px","&:hover":{color:"#6610f2"}}}/></Typography>
                                 <Typography  component={Link} to='/carts' marginRight={{md:"30px"}} sx={{color:"black",ml:"10px" ,cursor:"pointer",display:"inline-block", width:"50px",height:"30px"}}><ShoppingCartIcon sx={{fontSize:"35px","&:hover":{color:"#6610f2"}}}/></Typography> */}
             </>
           )}
