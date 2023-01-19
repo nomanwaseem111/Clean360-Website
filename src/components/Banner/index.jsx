@@ -90,7 +90,7 @@ const index = () => {
             </Button>
           </Stack>
         </Stack>
-        <Stack>
+        {/* <Stack>
           <Box
             component="img"
             alt=""
@@ -167,12 +167,12 @@ const index = () => {
               Read More
             </Button>
           </Stack>
-        </Stack>
+        </Stack> */}
         <Stack>
           <Box
             component="img"
             alt=""
-            src="https://clean360.dexignlab.com/xhtml/images/main-slider/slide4.jpg"
+            src="https://clean360.dexignlab.com/xhtml/images/main-slider/slide5.jpg"
             sx={{
               height: { xs: "350px", md: "899px" },
               width: { md: "100%", xs: "100%" },
