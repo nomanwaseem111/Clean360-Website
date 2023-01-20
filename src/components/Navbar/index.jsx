@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 import { Tab, Tabs, useMediaQuery, useTheme } from "@mui/material";
 import Drawer from "../Drawer";
 import Logo from '../assets/logo2.png'
-import SearchIcon from '@mui/icons-material/Search';
 
 export default function ButtonAppBar() {
   const [value, setValue] = React.useState();
@@ -62,47 +61,47 @@ export default function ButtonAppBar() {
                   to="/"
                 />
                 <Tab
-                  label="Pages"
+                  label="Why Us"
                   sx={{
                     color: "#000",
                     fontSize:{md:"14px",xs:"14px"}
                   }}
-                  to="/pages"
+                  to="/whyus"
                   component={Link}
 
                 />
                 <Tab
-                  label="Features "
+                  label="Services "
                   sx={{
                     color: "#000",
                     fontSize:{md:"14px",xs:"14px"}
                   }}
-                  to="/features"
+                  to="/services"
                   component={Link}
 
                 />
 
                 <Tab
-                  label="Shop"
+                  label="About Us"
                   sx={{
                     color: "#000",
                     fontSize:{md:"14px",xs:"14px"}
                   }}
-                  to="/shop"
+                  to="/about"
                   component={Link}
 
                 />
                 <Tab
-                  label="Blog "
+                  label="Contact Us "
                   sx={{
                     color: "#000",
                     fontSize:{md:"14px",xs:"14px"}
                   }}
-                  to="/blogs"
+                  to="/contact"
                   component={Link}
 
                 />
-                 <Tab
+                 {/* <Tab
                   label="Elements "
                   sx={{
                     color: "#000",
@@ -112,7 +111,7 @@ export default function ButtonAppBar() {
                   component={Link}
 
                 />
-              <SearchIcon   sx={{marginLeft:{md:"10px"},mt:{md:"3px"},fontSize:{md:"10px"},width:{md:"60px"},height:{md:"40px"},background:{md:"#f7941d"},color:{md:"#fff"}}}/>
+              <SearchIcon   sx={{marginLeft:{md:"10px"},mt:{md:"3px"},fontSize:{md:"10px"},width:{md:"60px"},height:{md:"40px"},background:{md:"#f7941d"},color:{md:"#fff"}}}/> */}
 
                 {/*  */}
                 {/* <Tab label="Cart " sx={{color:"black",fontSize:"20px"}} component={Link} to="/cartsection" /> */}
