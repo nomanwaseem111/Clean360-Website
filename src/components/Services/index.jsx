@@ -32,7 +32,7 @@ const index = () => {
         <Stack
           direction={{ md: "row", xs: "column" }}
           width={{ md: "1300px" }}
-          margin={{ md: "auto" }}
+          margin={{ md: "auto",xs:"auto" }}
           display={{ md: "flex", xs: "flex" }}
           flexWrap={{ md: "wrap", xs: "wrap" }}
           pt={{ md: "30px", xs: "30px" }}
@@ -42,7 +42,7 @@ const index = () => {
           <Stack
             mt={{ md: "30px", xs: "30px" }}
             sx={{
-              width: { md: "400px", xs: "110%" },
+              width: { md: "400px", xs: "100%" },
               height: "350px",
               xs: "300px",
               background: { md: "#fff", xs: "#fff" },
@@ -120,7 +120,7 @@ const index = () => {
           <Stack
             mt={{ md: "30px", xs: "30px" }}
             sx={{
-              width: { md: "400px", xs: "110%" },
+              width: { md: "400px", xs: "100%" },
               height: "350px",
               xs: "300px",
               background: { md: "#fff", xs: "#fff" },
@@ -198,7 +198,7 @@ const index = () => {
           <Stack
             mt={{ md: "30px", xs: "30px" }}
             sx={{
-              width: { md: "400px", xs: "110%" },
+              width: { md: "400px", xs: "100%" },
               height: "350px",
               xs: "300px",
               background: { md: "#fff", xs: "#fff" },
@@ -276,7 +276,7 @@ const index = () => {
           <Stack
             mt={{ md: "30px", xs: "30px" }}
             sx={{
-              width: { md: "400px", xs: "110%" },
+              width: { md: "400px", xs: "100%" },
               height: "350px",
               xs: "300px",
               background: { md: "#fff", xs: "#fff" },
@@ -354,7 +354,7 @@ const index = () => {
           <Stack
             mt={{ md: "30px", xs: "30px" }}
             sx={{
-              width: { md: "400px", xs: "110%" },
+              width: { md: "400px", xs: "100%" },
               height: "350px",
               xs: "300px",
               background: { md: "#fff", xs: "#fff" },
@@ -432,7 +432,7 @@ const index = () => {
           <Stack
             mt={{ md: "30px", xs: "30px" }}
             sx={{
-              width: { md: "400px", xs: "110%" },
+              width: { md: "400px", xs: "100%" },
               height: "350px",
               xs: "300px",
               background: { md: "#fff", xs: "#fff" },
