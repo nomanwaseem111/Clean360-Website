@@ -160,7 +160,7 @@ const index = () => {
                   paddingLeft: { xs: "100px", md: "0px" },
                 }}
               >
-              Cleaning
+               Home Cleaning
               </Typography>
               <Typography
                 variant="p"
