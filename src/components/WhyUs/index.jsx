@@ -1,12 +1,8 @@
 import React from "react";
-import { Stack, Grid, Container, Typography, Button } from "@mui/material";
+import { Stack, Grid, Container, Typography } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
-import CleaningServicesIcon from "@mui/icons-material/CleaningServices";
 
-import CheckroomIcon from "@mui/icons-material/Checkroom";
-import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
-import PersonPinCircleIcon from "@mui/icons-material/PersonPinCircle";
-import NearMeIcon from "@mui/icons-material/NearMe";
+
 
 const index = () => {
   return (
@@ -77,7 +73,7 @@ const index = () => {
                 sx={{
                   fontSize: { md: "52px", xs: "52px" },
                   margin: { md: "auto", xs: "auto" },
-                  marginBottom: { md: "10px", xs: "20px" },
+                  marginBottom: { md: "10px", xs: "10px" },
                 }}
               />
             </Stack>
@@ -85,7 +81,6 @@ const index = () => {
               <Typography
                 variant="h5"
                 sx={{
-                  width: { md: "100%", xs: "100%" },
                   height: { md: "40px", xs: "40px" },
                   textAlign: { md: "center", xs: "center" },
                   // border:{md:"1px solid red",xs:"1px solid red"},
@@ -147,7 +142,7 @@ const index = () => {
                 sx={{
                   fontSize: { md: "52px", xs: "52px" },
                   margin: { md: "auto", xs: "auto" },
-                  marginBottom: { md: "10px", xs: "20px" },
+                  marginBottom: { md: "10px", xs: "10px" },
                 }}
               />
             </Stack>
@@ -159,7 +154,6 @@ const index = () => {
                   height: { md: "40px", xs: "40px" },
                   textAlign: { md: "center", xs: "center" },
                   // border:{md:"1px solid red",xs:"1px solid red"},
-                  width: { md: "300px", xs: "300px" },
                   margin: { md: "auto", xs: "auto" },
                   display: { md: "flex", xs: "flex" },
                   justifyContent: { md: "center", xs: "center" },
@@ -219,7 +213,7 @@ const index = () => {
                 sx={{
                   fontSize: { md: "52px", xs: "52px" },
                   margin: { md: "auto", xs: "auto" },
-                  marginBottom: { md: "10px", xs: "20px" },
+                  marginBottom: { md: "10px", xs: "10px" },
                 }}
               />
             </Stack>
@@ -231,7 +225,6 @@ const index = () => {
                   height: { md: "40px", xs: "40px" },
                   textAlign: { md: "center", xs: "center" },
                   // border:{md:"1px solid red",xs:"1px solid red"},
-                  width: { md: "300px", xs: "300px" },
                   margin: { md: "auto", xs: "auto" },
                   display: { md: "flex", xs: "flex" },
                   justifyContent: { md: "center", xs: "center" },
