@@ -1,12 +1,22 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+#hrline{
+    height: 3px;
+    width: 80px;
+    margin: auto;
+}
 
-
+#hrline2{
+    height: 4px;
+    background-color: #fff;
+}
  
 
-
-
+.fa-brands{
+    color: #fff;
+}

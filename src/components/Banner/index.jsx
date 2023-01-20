@@ -12,7 +12,7 @@ const index = () => {
             alt=""
             src="https://clean360.dexignlab.com/xhtml/images/main-slider/slide4.jpg"
             sx={{
-              height: { xs: "350px", md: "899px" },
+              height: { xs: "380px", md: "899px" },
               width: { md: "100%", xs: "100%" },
               zIndex: { md: "1", xs: "1" },
             }}
@@ -174,7 +174,7 @@ const index = () => {
             alt=""
             src="https://clean360.dexignlab.com/xhtml/images/main-slider/slide5.jpg"
             sx={{
-              height: { xs: "350px", md: "899px" },
+              height: { xs: "380px", md: "899px" },
               width: { md: "100%", xs: "100%" },
               zIndex: { md: "1" },
             }}

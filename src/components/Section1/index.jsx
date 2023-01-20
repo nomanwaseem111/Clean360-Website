@@ -4,7 +4,7 @@ import { Stack, Grid, Container, Box, Typography, Button } from "@mui/material";
 const index = () => {
   return (
     <Grid
-      sx={{ height: { md: "850px",xs:"auto" } }}
+      sx={{ height: { md: "850px", xs: "auto" } }}
       id="banner"
       backgroundColor={{ md: "#e9ecef", xs: "#e9ecef" }}
     >
