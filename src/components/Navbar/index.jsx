@@ -67,7 +67,7 @@ export default function ButtonAppBar() {
                     fontSize:{md:"14px",xs:"14px"}
                   }}
                   to="/whyus"
-                  component={Link}
+                  // component={Link}
 
                 />
                 <Tab
@@ -77,7 +77,7 @@ export default function ButtonAppBar() {
                     fontSize:{md:"14px",xs:"14px"}
                   }}
                   to="/services"
-                  component={Link}
+                  // component={Link}
 
                 />
 
@@ -88,7 +88,7 @@ export default function ButtonAppBar() {
                     fontSize:{md:"14px",xs:"14px"}
                   }}
                   to="/about"
-                  component={Link}
+                  // component={Link}
 
                 />
                 <Tab
@@ -98,7 +98,7 @@ export default function ButtonAppBar() {
                     fontSize:{md:"14px",xs:"14px"}
                   }}
                   to="/contact"
-                  component={Link}
+                  // component={Link}
 
                 />
                  {/* <Tab
