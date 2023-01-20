@@ -102,7 +102,7 @@ const index = () => {
                 mb={{ md: "20px", xs: "20px" }}
                 lineHeight={{ md: "28px", xs: "25px" }}
                 sx={{
-                  fontSize: { md: "16px", xs: "17px" },
+                  fontSize: { md: "16px", xs: "14px" },
                   width: { md: "80%", xs: "80%" },
                   height: { md: "auto", xs: "auto" },
                   textAlign: { md: "center", xs: "center" },
@@ -171,7 +171,7 @@ const index = () => {
                 mb={{ md: "20px", xs: "20px" }}
                 lineHeight={{ md: "28px", xs: "25px" }}
                 sx={{
-                  fontSize: { md: "16px", xs: "17px" },
+                  fontSize: { md: "16px", xs: "14px" },
                   width: { md: "80%", xs: "80%" },
                   height: { md: "auto", xs: "auto" },
                   textAlign: { md: "center", xs: "center" },
@@ -242,7 +242,7 @@ const index = () => {
                 mb={{ md: "20px", xs: "20px" }}
                 lineHeight={{ md: "28px", xs: "25px" }}
                 sx={{
-                  fontSize: { md: "16px", xs: "17px" },
+                  fontSize: { md: "16px", xs: "14px" },
                   width: { md: "80%", xs: "80%" },
                   height: { md: "auto", xs: "auto" },
                   textAlign: { md: "center", xs: "center" },
