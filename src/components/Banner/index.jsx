@@ -27,6 +27,8 @@ const index = () => {
               display: { md: "flex", xs: "flex" },
               justifyContent: { md: "center", xs: "center" },
               alignItems: { md: "center", xs: "center" },
+              // background:{md:"black",xs:"black"},
+              marginLeft:{xs:'90px',md:"0px"}
             }}
           >
             <div className="banner-inner">
@@ -35,59 +37,41 @@ const index = () => {
                 sx={{
                   width: { md: "600px", xs: "200px" },
                   flexWrap: { md: "wrap", xs: "wrap" },
-                  fontSize: { md: "60px", xs: "16px" },
+                  fontSize: { md: "80px", xs: "16px" },
                   margin: { md: "auto", xs: "auto" },
                   display: { md: "flex", xs: "flex" },
                   justifyContent: { md: "center", xs: "center" },
                   mb: { xs: "20px", md: "0px" },
                   alignItems: { md: "center", xs: "center" },
                   letterSpacing: { md: "10px", xs: "1px" },
-                  lineHeight: { md: "70px", xs: "25px" },
+                  lineHeight: { md: "80px", xs: "25px" },
+                  // background:{md:"black",xs:"black"}
                 }}
               >
-                PEST CONTROL SERVICES
+                HUSSAIN ENTERPRISES
               </Typography>
               <Typography
                 variant="p"
                 sx={{
                   width: { md: "800px", xs: "150px" },
                   flexWrap: { md: "wrap", xs: "wrap" },
-                  fontSize: { md: "19px", xs: "8px" },
-                  margin: { md: "auto" },
-                  display: { md: "flex" },
-                  justifyContent: { md: "center" },
-                  alignItems: { md: "center" },
-                  mt: { md: "30px", xs: "0px" },
+                  fontSize: { md: "26px", xs: "8px" },
+                  margin: { md: "auto",xs:"auto" },
+                  display: { md: "flex",xs:"flex" },
+                  justifyContent: { md: "center",xs:"center" },
+                  alignItems: { md: "center" ,xs:"center"},
+                  mt: { md: "50px", xs: "0px" },
                   letterSpacing: { md: "1px", xs: "1px" },
                   lineHeight: { md: "40px", xs: "20px" },
                   fontFamily: { md: "sans-serif", xs: "sans-serif" },
+                  // background:{md:"black",xs:"black"}
+
                 }}
               >
-                Post-ironic authentic drinking vinegar chambray quinoa. VHS
-                letterpress sriracha, tacos skateboard migas farm-to-table
-                artisan kombucha.
+               Commerceial Cleaning Services Human Resource management
               </Typography>
             </div>
-            <Button
-              variant="outlined"
-              sx={{
-                width: { md: "120px", xs: "80px" },
-                fontSize: { md: "14px", xs: "7px" },
-                fontWeight: { md: "600", xs: "600" },
-                border: { md: "none", xs: "none" },
-                mt: { md: "30px", xs: "10px" },
-                background: { md: "#fff", xs: "#fff" },
-                color: { md: "#000", xs: "#000" },
-                "&:hover": {
-                  backgroundColor: "#fff",
-
-                  color: "#000",
-                  border: "none",
-                },
-              }}
-            >
-              Read More
-            </Button>
+            
           </Stack>
         </Stack>
         {/* <Stack>
@@ -168,7 +152,7 @@ const index = () => {
             </Button>
           </Stack>
         </Stack> */}
-        <Stack>
+        {/* <Stack>
           <Box
             component="img"
             alt=""
@@ -245,7 +229,7 @@ const index = () => {
               Read More
             </Button>
           </Stack>
-        </Stack>
+        </Stack> */}
       </Carousel>
     </>
   );
