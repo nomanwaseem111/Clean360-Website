@@ -73,7 +73,7 @@ const index = () => {
                 sx={{
                   fontSize: { md: "52px", xs: "52px" },
                   margin: { md: "auto", xs: "auto" },
-                  marginBottom: { md: "10px", xs: "5px" },
+                  marginBottom: { md: "10px", xs: "10px" },
                 }}
               />
             </Stack>
@@ -90,6 +90,7 @@ const index = () => {
                   justifyContent: { md: "center", xs: "center" },
                   alignItems: { md: "center", xs: "center" },
                   flexwrap: { md: "wrap", xs: "wrap" },
+                  fontSize:{md:"1.5rem",xs:"1.4rem"}
                 }}
               >
                 Eco-Friendly Oriented
@@ -142,7 +143,7 @@ const index = () => {
                 sx={{
                   fontSize: { md: "52px", xs: "52px" },
                   margin: { md: "auto", xs: "auto" },
-                  marginBottom: { md: "10px", xs: "5px" },
+                  marginBottom: { md: "10px", xs: "10px" },
                 }}
               />
             </Stack>
@@ -159,6 +160,8 @@ const index = () => {
                   justifyContent: { md: "center", xs: "center" },
                   alignItems: { md: "center", xs: "center" },
                   flexwrap: { md: "wrap", xs: "wrap" },
+                  fontSize:{md:"1.5rem",xs:"1.4rem"}
+
                 }}
               >
                 Excellence & Innovation
@@ -213,7 +216,7 @@ const index = () => {
                 sx={{
                   fontSize: { md: "52px", xs: "52px" },
                   margin: { md: "auto", xs: "auto" },
-                  marginBottom: { md: "10px", xs: "5px" },
+                  marginBottom: { md: "10px", xs: "10px" },
                 }}
               />
             </Stack>
@@ -230,6 +233,8 @@ const index = () => {
                   justifyContent: { md: "center", xs: "center" },
                   alignItems: { md: "center", xs: "center" },
                   flexwrap: { md: "wrap", xs: "wrap" },
+                  fontSize:{md:"1.5rem",xs:"1.4rem"}
+
                 }}
               >
                 Expansion / Growth

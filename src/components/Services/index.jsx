@@ -77,6 +77,8 @@ const index = () => {
                   width: { md: "100%", xs: "100%" },
                   height: { md: "40px", xs: "40px" },
                   textAlign: { md: "center", xs: "center" },
+                  fontSize:{md:"1.5rem",xs:"1.4rem"}
+
                 }}
               >
                 Home Cleaning
@@ -89,7 +91,7 @@ const index = () => {
                 mb={{ md: "20px", xs: "20px" }}
                 lineHeight={{ md: "28px", xs: "25px" }}
                 sx={{
-                  fontSize: { md: "16px", xs: "17px" },
+                  fontSize: { md: "16px", xs: "14px" },
                   width: { md: "80%", xs: "80%" },
                   height: { md: "auto", xs: "auto" },
                   textAlign: { md: "center", xs: "center" },
@@ -155,6 +157,8 @@ const index = () => {
                   width: { md: "100%", xs: "100%" },
                   height: { md: "40px", xs: "40px" },
                   textAlign: { md: "center", xs: "center" },
+                  fontSize:{md:"1.5rem",xs:"1.4rem"}
+
                 }}
               >
                 Home Cleaning
@@ -167,7 +171,7 @@ const index = () => {
                 mb={{ md: "20px", xs: "20px" }}
                 lineHeight={{ md: "28px", xs: "25px" }}
                 sx={{
-                  fontSize: { md: "16px", xs: "17px" },
+                  fontSize: { md: "16px", xs: "14px" },
                   width: { md: "80%", xs: "80%" },
                   height: { md: "auto", xs: "auto" },
                   textAlign: { md: "center", xs: "center" },
@@ -233,6 +237,8 @@ const index = () => {
                   width: { md: "100%", xs: "100%" },
                   height: { md: "40px", xs: "40px" },
                   textAlign: { md: "center", xs: "center" },
+                  fontSize:{md:"1.5rem",xs:"1.4rem"}
+
                 }}
               >
                 Clothes Cleaning
@@ -245,7 +251,7 @@ const index = () => {
                 mb={{ md: "20px", xs: "20px" }}
                 lineHeight={{ md: "28px", xs: "25px" }}
                 sx={{
-                  fontSize: { md: "16px", xs: "17px" },
+                  fontSize: { md: "16px", xs: "14px" },
                   width: { md: "80%", xs: "80%" },
                   height: { md: "auto", xs: "auto" },
                   textAlign: { md: "center", xs: "center" },
@@ -311,6 +317,8 @@ const index = () => {
                   width: { md: "100%", xs: "100%" },
                   height: { md: "40px", xs: "40px" },
                   textAlign: { md: "center", xs: "center" },
+                  fontSize:{md:"1.5rem",xs:"1.4rem"}
+
                 }}
               >
                 Home Cleaning
@@ -323,7 +331,7 @@ const index = () => {
                 mb={{ md: "20px", xs: "20px" }}
                 lineHeight={{ md: "28px", xs: "25px" }}
                 sx={{
-                  fontSize: { md: "16px", xs: "17px" },
+                  fontSize: { md: "16px", xs: "14px" },
                   width: { md: "80%", xs: "80%" },
                   height: { md: "auto", xs: "auto" },
                   textAlign: { md: "center", xs: "center" },
@@ -389,6 +397,8 @@ const index = () => {
                   width: { md: "100%", xs: "100%" },
                   height: { md: "40px", xs: "40px" },
                   textAlign: { md: "center", xs: "center" },
+                  fontSize:{md:"1.5rem",xs:"1.4rem"}
+
                 }}
               >
                 Home Cleaning
@@ -401,7 +411,7 @@ const index = () => {
                 mb={{ md: "20px", xs: "20px" }}
                 lineHeight={{ md: "28px", xs: "25px" }}
                 sx={{
-                  fontSize: { md: "16px", xs: "17px" },
+                  fontSize: { md: "16px", xs: "14px" },
                   width: { md: "80%", xs: "80%" },
                   height: { md: "auto", xs: "auto" },
                   textAlign: { md: "center", xs: "center" },
@@ -467,6 +477,8 @@ const index = () => {
                   width: { md: "100%", xs: "100%" },
                   height: { md: "40px", xs: "40px" },
                   textAlign: { md: "center", xs: "center" },
+                  fontSize:{md:"1.5rem",xs:"1.4rem"}
+
                 }}
               >
                 Home Cleaning
@@ -479,7 +491,7 @@ const index = () => {
                 mb={{ md: "20px", xs: "20px" }}
                 lineHeight={{ md: "28px", xs: "25px" }}
                 sx={{
-                  fontSize: { md: "16px", xs: "17px" },
+                  fontSize: { md: "16px", xs: "14px" },
                   width: { md: "80%", xs: "80%" },
                   height: { md: "auto", xs: "auto" },
                   textAlign: { md: "center", xs: "center" },
