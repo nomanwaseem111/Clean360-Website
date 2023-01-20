@@ -73,7 +73,7 @@ const index = () => {
                 sx={{
                   fontSize: { md: "52px", xs: "52px" },
                   margin: { md: "auto", xs: "auto" },
-                  marginBottom: { md: "10px", xs: "10px" },
+                  marginBottom: { md: "10px", xs: "5px" },
                 }}
               />
             </Stack>
@@ -97,7 +97,7 @@ const index = () => {
               <Typography
                 variant="p"
                 fontFamily={{ md: "sans-serif", xs: "sans-serif" }}
-                mt={{ md: "10px", xs: "15px" }}
+                mt={{ md: "10px", xs: "10px" }}
                 color={{ md: "#6c757d", xs: "#6c757d" }}
                 mb={{ md: "20px", xs: "20px" }}
                 lineHeight={{ md: "28px", xs: "25px" }}
@@ -142,7 +142,7 @@ const index = () => {
                 sx={{
                   fontSize: { md: "52px", xs: "52px" },
                   margin: { md: "auto", xs: "auto" },
-                  marginBottom: { md: "10px", xs: "10px" },
+                  marginBottom: { md: "10px", xs: "5px" },
                 }}
               />
             </Stack>
@@ -166,7 +166,7 @@ const index = () => {
               <Typography
                 variant="p"
                 fontFamily={{ md: "sans-serif", xs: "sans-serif" }}
-                mt={{ md: "10px", xs: "15px" }}
+                mt={{ md: "10px", xs: "10px" }}
                 color={{ md: "#6c757d", xs: "#6c757d" }}
                 mb={{ md: "20px", xs: "20px" }}
                 lineHeight={{ md: "28px", xs: "25px" }}
@@ -213,7 +213,7 @@ const index = () => {
                 sx={{
                   fontSize: { md: "52px", xs: "52px" },
                   margin: { md: "auto", xs: "auto" },
-                  marginBottom: { md: "10px", xs: "10px" },
+                  marginBottom: { md: "10px", xs: "5px" },
                 }}
               />
             </Stack>
@@ -237,7 +237,7 @@ const index = () => {
               <Typography
                 variant="p"
                 fontFamily={{ md: "sans-serif", xs: "sans-serif" }}
-                mt={{ md: "10px", xs: "15px" }}
+                mt={{ md: "10px", xs: "10px" }}
                 color={{ md: "#6c757d", xs: "#6c757d" }}
                 mb={{ md: "20px", xs: "20px" }}
                 lineHeight={{ md: "28px", xs: "25px" }}
