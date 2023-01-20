@@ -77,7 +77,7 @@ const index = () => {
                   width: { md: "100%", xs: "100%" },
                   height: { md: "40px", xs: "40px" },
                   textAlign: { md: "center" },
-                  paddingLeft: { xs: "120px", md: "0px" },
+                  paddingLeft: { xs: "100px", md: "0px" },
                 }}
               >
                 Home Cleaning
@@ -157,7 +157,7 @@ const index = () => {
                   width: { md: "100%", xs: "100%" },
                   height: { md: "40px", xs: "40px" },
                   textAlign: { md: "center" },
-                  paddingLeft: { xs: "145px", md: "0px" },
+                  paddingLeft: { xs: "100px", md: "0px" },
                 }}
               >
               Cleaning
@@ -238,7 +238,7 @@ const index = () => {
                   width: { md: "100%", xs: "100%" },
                   height: { md: "40px", xs: "40px" },
                   textAlign: { md: "center" },
-                  paddingLeft: { xs: "110px", md: "0px" },
+                  paddingLeft: { xs: "100px", md: "0px" },
                 }}
               >
                 Clothes Cleaning
@@ -318,7 +318,7 @@ const index = () => {
                   width: { md: "100%", xs: "100%" },
                   height: { md: "40px", xs: "40px" },
                   textAlign: { md: "center" },
-                  paddingLeft: { xs: "120px", md: "0px" },
+                  paddingLeft: { xs: "100px", md: "0px" },
                 }}
               >
                 Home Cleaning
@@ -398,7 +398,7 @@ const index = () => {
                   width: { md: "100%", xs: "100%" },
                   height: { md: "40px", xs: "40px" },
                   textAlign: { md: "center" },
-                  paddingLeft: { xs: "120px", md: "0px" },
+                  paddingLeft: { xs: "100px", md: "0px" },
                 }}
               >
                 Home Cleaning
@@ -478,7 +478,7 @@ const index = () => {
                   width: { md: "100%", xs: "100%" },
                   height: { md: "40px", xs: "40px" },
                   textAlign: { md: "center" },
-                  paddingLeft: { xs: "120px", md: "0px" },
+                  paddingLeft: { xs: "100px", md: "0px" },
                 }}
               >
                 Home Cleaning
