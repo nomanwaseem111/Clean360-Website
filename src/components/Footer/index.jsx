@@ -19,7 +19,6 @@ const index = () => {
       display={{ md: "flex", xs: "flex" }}
       justifyContent={{ md: "center", xs: "center" }}
       alignItems={{ md: "center", xs: "center" }}
-      mt={{ md: "40px", xs: "40px" }}
       backgroundColor={{ md: "#553216", xs: "#553216" }}
       height={{ md: "500px", xs: "auto" }}
       width={{ md: "100%", xs: "100%" }}

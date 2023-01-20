@@ -4,6 +4,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Services from "../Services";
 import WhyUs from "../WhyUs";
 import Section2 from "../Section2";
+import Slides from '../Slides'
+
 
 const index = () => {
   return (
@@ -12,6 +14,7 @@ const index = () => {
       <WhyUs />
       <Services />
       <Section2 />
+      <Slides/>
     </div>
   );
 };
