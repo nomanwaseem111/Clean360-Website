@@ -77,7 +77,7 @@ const index = () => {
         <Stack
           height={{ md: "400px", xs: "1100px" }}
           width={{ md: "25%", xs: "100%" }}
-          paddingLeft={{md:"10px",xs:'0px'}}
+          paddingLeft={{md:"20px",xs:'0px'}}
 
         >
           <Typography
