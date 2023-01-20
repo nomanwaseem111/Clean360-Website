@@ -1,14 +1,34 @@
-import React from "react";
-import { Stack, Grid, Container, Box, Typography, Button } from "@mui/material";
+import React from "react"
+import { Stack, Grid, Container,  Typography, Button } from "@mui/material"
+import HomeIcon from "@mui/icons-material/Home"
+import CleaningServicesIcon from '@mui/icons-material/CleaningServices';
+
+import CheckroomIcon from '@mui/icons-material/Checkroom';
+import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
+import PersonPinCircleIcon from '@mui/icons-material/PersonPinCircle';
+import NearMeIcon from '@mui/icons-material/NearMe';
+
+
 
 const index = () => {
   return (
     <Grid
-      sx={{ height: { md: "850px", xs: "auto" } }}
+      sx={{ height: { md: "950px", xs: "2440px" } }}
       id="banner"
       backgroundColor={{ md: "#e9ecef", xs: "#e9ecef" }}
     >
       <Container maxWidth="xl" width={{ xs: "100%" }}>
+        <Stack>
+          <Typography
+            variant="h3"
+            color={{ md: "#f7941d", xs: "#f7941d" }}
+            fontWeight={{ md: "800", xs: "800" }}
+            textAlign={{ md: "center", xs: "center" }}
+            mt={{ md: "30px", xs: "80px" }}
+          >
+            Our Services
+          </Typography>
+        </Stack>
         <Stack
           direction={{ md: "row", xs: "column" }}
           width={{ md: "1300px" }}
@@ -33,7 +53,7 @@ const index = () => {
               width={{ md: "100%", xs: "100%" }}
               mt={{ md: "30px", xs: "30px" }}
             >
-              <Box
+              {/* <Box
                 component="img"
                 src=""
                 sx={{
@@ -41,25 +61,31 @@ const index = () => {
                   height: { md: "60px", xs: "60px" },
                   marginLeft: { md: "40%", xs: "40%" },
                 }}
+              /> */}
+              <HomeIcon
+                sx={{
+                  fontSize: { md: "52px",xs:"52px" },
+                  margin: { md: "auto", xs: "auto" },
+                }}
               />
             </Stack>
             <Stack>
               <Typography
                 variant="h5"
-                mt={{ md: "20px", xs: "20px" }}
+                mt={{ md: "30px", xs: "30px" }}
                 sx={{
                   width: { md: "100%", xs: "100%" },
                   height: { md: "40px", xs: "40px" },
                   textAlign: { md: "center" },
-                  paddingLeft: { xs: "100px", md: "0px" },
+                  paddingLeft: { xs: "120px", md: "0px" },
                 }}
               >
-                cockroach control
+                Home Cleaning
               </Typography>
               <Typography
                 variant="p"
                 fontFamily={{ md: "sans-serif", xs: "sans-serif" }}
-                mt={{ md: "20px", xs: "20px" }}
+                mt={{ md: "10px", xs: "10px" }}
                 color={{ md: "#6c757d", xs: "#6c757d" }}
                 mb={{ md: "20px", xs: "20px" }}
                 lineHeight={{ md: "28px", xs: "25px" }}
@@ -81,12 +107,17 @@ const index = () => {
                   color: { md: "#fff", xs: "#fff" },
                   width: { md: "28%", xs: "30%" },
                   marginLeft: { md: "36%", xs: "35%" },
+                  "&:hover": {
+                    background: { md: "#f7941d", xs: "#f7941d" },
+                    color: { md: "#fff", xs: "#fff" },
+                  },
                 }}
               >
                 Read More
               </Button>
             </Stack>
           </Stack>
+
 
           <Stack
             mt={{ md: "30px", xs: "30px" }}
@@ -102,7 +133,7 @@ const index = () => {
               width={{ md: "100%", xs: "100%" }}
               mt={{ md: "30px", xs: "30px" }}
             >
-              <Box
+              {/* <Box
                 component="img"
                 src=""
                 sx={{
@@ -110,25 +141,31 @@ const index = () => {
                   height: { md: "60px", xs: "60px" },
                   marginLeft: { md: "40%", xs: "40%" },
                 }}
+              /> */}
+              <CleaningServicesIcon
+                sx={{
+                  fontSize: { md: "52px",xs:"52px" },
+                  margin: { md: "auto", xs: "auto" },
+                }}
               />
             </Stack>
             <Stack>
               <Typography
                 variant="h5"
-                mt={{ md: "20px", xs: "20px" }}
+                mt={{ md: "30px", xs: "30px" }}
                 sx={{
                   width: { md: "100%", xs: "100%" },
                   height: { md: "40px", xs: "40px" },
                   textAlign: { md: "center" },
-                  paddingLeft: { xs: "100px", md: "0px" },
+                  paddingLeft: { xs: "145px", md: "0px" },
                 }}
               >
-                cockroach control
+              Cleaning
               </Typography>
               <Typography
                 variant="p"
                 fontFamily={{ md: "sans-serif", xs: "sans-serif" }}
-                mt={{ md: "20px", xs: "20px" }}
+                mt={{ md: "10px", xs: "10px" }}
                 color={{ md: "#6c757d", xs: "#6c757d" }}
                 mb={{ md: "20px", xs: "20px" }}
                 lineHeight={{ md: "28px", xs: "25px" }}
@@ -150,12 +187,18 @@ const index = () => {
                   color: { md: "#fff", xs: "#fff" },
                   width: { md: "28%", xs: "30%" },
                   marginLeft: { md: "36%", xs: "35%" },
+                  "&:hover": {
+                    background: { md: "#f7941d", xs: "#f7941d" },
+                    color: { md: "#fff", xs: "#fff" },
+                  },
                 }}
               >
                 Read More
               </Button>
             </Stack>
           </Stack>
+
+
 
           <Stack
             mt={{ md: "30px", xs: "30px" }}
@@ -171,7 +214,7 @@ const index = () => {
               width={{ md: "100%", xs: "100%" }}
               mt={{ md: "30px", xs: "30px" }}
             >
-              <Box
+              {/* <Box
                 component="img"
                 src=""
                 sx={{
@@ -179,25 +222,31 @@ const index = () => {
                   height: { md: "60px", xs: "60px" },
                   marginLeft: { md: "40%", xs: "40%" },
                 }}
+              /> */}
+              <CheckroomIcon
+                sx={{
+                  fontSize: { md: "52px",xs:"52px" },
+                  margin: { md: "auto", xs: "auto" },
+                }}
               />
             </Stack>
             <Stack>
               <Typography
                 variant="h5"
-                mt={{ md: "20px", xs: "20px" }}
+                mt={{ md: "30px", xs: "30px" }}
                 sx={{
                   width: { md: "100%", xs: "100%" },
                   height: { md: "40px", xs: "40px" },
                   textAlign: { md: "center" },
-                  paddingLeft: { xs: "100px", md: "0px" },
+                  paddingLeft: { xs: "110px", md: "0px" },
                 }}
               >
-                cockroach control
+                Clothes Cleaning
               </Typography>
               <Typography
                 variant="p"
                 fontFamily={{ md: "sans-serif", xs: "sans-serif" }}
-                mt={{ md: "20px", xs: "20px" }}
+                mt={{ md: "10px", xs: "10px" }}
                 color={{ md: "#6c757d", xs: "#6c757d" }}
                 mb={{ md: "20px", xs: "20px" }}
                 lineHeight={{ md: "28px", xs: "25px" }}
@@ -219,12 +268,17 @@ const index = () => {
                   color: { md: "#fff", xs: "#fff" },
                   width: { md: "28%", xs: "30%" },
                   marginLeft: { md: "36%", xs: "35%" },
+                  "&:hover": {
+                    background: { md: "#f7941d", xs: "#f7941d" },
+                    color: { md: "#fff", xs: "#fff" },
+                  },
                 }}
               >
                 Read More
               </Button>
             </Stack>
           </Stack>
+
 
           <Stack
             mt={{ md: "30px", xs: "30px" }}
@@ -240,7 +294,7 @@ const index = () => {
               width={{ md: "100%", xs: "100%" }}
               mt={{ md: "30px", xs: "30px" }}
             >
-              <Box
+              {/* <Box
                 component="img"
                 src=""
                 sx={{
@@ -248,25 +302,31 @@ const index = () => {
                   height: { md: "60px", xs: "60px" },
                   marginLeft: { md: "40%", xs: "40%" },
                 }}
+              /> */}
+              <PersonPinCircleIcon
+                sx={{
+                  fontSize: { md: "52px",xs:"52px" },
+                  margin: { md: "auto", xs: "auto" },
+                }}
               />
             </Stack>
             <Stack>
               <Typography
                 variant="h5"
-                mt={{ md: "20px", xs: "20px" }}
+                mt={{ md: "30px", xs: "30px" }}
                 sx={{
                   width: { md: "100%", xs: "100%" },
                   height: { md: "40px", xs: "40px" },
                   textAlign: { md: "center" },
-                  paddingLeft: { xs: "100px", md: "0px" },
+                  paddingLeft: { xs: "120px", md: "0px" },
                 }}
               >
-                cockroach control
+                Home Cleaning
               </Typography>
               <Typography
                 variant="p"
                 fontFamily={{ md: "sans-serif", xs: "sans-serif" }}
-                mt={{ md: "20px", xs: "20px" }}
+                mt={{ md: "10px", xs: "10px" }}
                 color={{ md: "#6c757d", xs: "#6c757d" }}
                 mb={{ md: "20px", xs: "20px" }}
                 lineHeight={{ md: "28px", xs: "25px" }}
@@ -288,12 +348,17 @@ const index = () => {
                   color: { md: "#fff", xs: "#fff" },
                   width: { md: "28%", xs: "30%" },
                   marginLeft: { md: "36%", xs: "35%" },
+                  "&:hover": {
+                    background: { md: "#f7941d", xs: "#f7941d" },
+                    color: { md: "#fff", xs: "#fff" },
+                  },
                 }}
               >
                 Read More
               </Button>
             </Stack>
           </Stack>
+
 
           <Stack
             mt={{ md: "30px", xs: "30px" }}
@@ -309,7 +374,7 @@ const index = () => {
               width={{ md: "100%", xs: "100%" }}
               mt={{ md: "30px", xs: "30px" }}
             >
-              <Box
+              {/* <Box
                 component="img"
                 src=""
                 sx={{
@@ -317,25 +382,31 @@ const index = () => {
                   height: { md: "60px", xs: "60px" },
                   marginLeft: { md: "40%", xs: "40%" },
                 }}
+              /> */}
+              <AccountBalanceIcon
+                sx={{
+                  fontSize: { md: "52px",xs:"52px" },
+                  margin: { md: "auto", xs: "auto" },
+                }}
               />
             </Stack>
             <Stack>
               <Typography
                 variant="h5"
-                mt={{ md: "20px", xs: "20px" }}
+                mt={{ md: "30px", xs: "30px" }}
                 sx={{
                   width: { md: "100%", xs: "100%" },
                   height: { md: "40px", xs: "40px" },
                   textAlign: { md: "center" },
-                  paddingLeft: { xs: "100px", md: "0px" },
+                  paddingLeft: { xs: "120px", md: "0px" },
                 }}
               >
-                cockroach control
+                Home Cleaning
               </Typography>
               <Typography
                 variant="p"
                 fontFamily={{ md: "sans-serif", xs: "sans-serif" }}
-                mt={{ md: "20px", xs: "20px" }}
+                mt={{ md: "10px", xs: "10px" }}
                 color={{ md: "#6c757d", xs: "#6c757d" }}
                 mb={{ md: "20px", xs: "20px" }}
                 lineHeight={{ md: "28px", xs: "25px" }}
@@ -357,12 +428,17 @@ const index = () => {
                   color: { md: "#fff", xs: "#fff" },
                   width: { md: "28%", xs: "30%" },
                   marginLeft: { md: "36%", xs: "35%" },
+                  "&:hover": {
+                    background: { md: "#f7941d", xs: "#f7941d" },
+                    color: { md: "#fff", xs: "#fff" },
+                  },
                 }}
               >
                 Read More
               </Button>
             </Stack>
           </Stack>
+
 
           <Stack
             mt={{ md: "30px", xs: "30px" }}
@@ -378,7 +454,7 @@ const index = () => {
               width={{ md: "100%", xs: "100%" }}
               mt={{ md: "30px", xs: "30px" }}
             >
-              <Box
+              {/* <Box
                 component="img"
                 src=""
                 sx={{
@@ -386,25 +462,31 @@ const index = () => {
                   height: { md: "60px", xs: "60px" },
                   marginLeft: { md: "40%", xs: "40%" },
                 }}
+              /> */}
+              <NearMeIcon
+                sx={{
+                  fontSize: { md: "52px",xs:"52px" },
+                  margin: { md: "auto", xs: "auto" },
+                }}
               />
             </Stack>
             <Stack>
               <Typography
                 variant="h5"
-                mt={{ md: "20px", xs: "20px" }}
+                mt={{ md: "30px", xs: "30px" }}
                 sx={{
                   width: { md: "100%", xs: "100%" },
                   height: { md: "40px", xs: "40px" },
                   textAlign: { md: "center" },
-                  paddingLeft: { xs: "100px", md: "0px" },
+                  paddingLeft: { xs: "120px", md: "0px" },
                 }}
               >
-                cockroach control
+                Home Cleaning
               </Typography>
               <Typography
                 variant="p"
                 fontFamily={{ md: "sans-serif", xs: "sans-serif" }}
-                mt={{ md: "20px", xs: "20px" }}
+                mt={{ md: "10px", xs: "10px" }}
                 color={{ md: "#6c757d", xs: "#6c757d" }}
                 mb={{ md: "20px", xs: "20px" }}
                 lineHeight={{ md: "28px", xs: "25px" }}
@@ -426,6 +508,10 @@ const index = () => {
                   color: { md: "#fff", xs: "#fff" },
                   width: { md: "28%", xs: "30%" },
                   marginLeft: { md: "36%", xs: "35%" },
+                  "&:hover": {
+                    background: { md: "#f7941d", xs: "#f7941d" },
+                    color: { md: "#fff", xs: "#fff" },
+                  },
                 }}
               >
                 Read More
@@ -435,7 +521,7 @@ const index = () => {
         </Stack>
       </Container>
     </Grid>
-  );
-};
+  )
+}
 
-export default index;
+export default index

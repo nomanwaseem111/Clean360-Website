@@ -77,7 +77,7 @@ export default function ButtonAppBar() {
                     color: "#000",
                     fontSize:{md:"14px",xs:"14px"}
                   }}
-                  to="/feautures"
+                  to="/features"
                   component={Link}
 
                 />
@@ -98,7 +98,7 @@ export default function ButtonAppBar() {
                     color: "#000",
                     fontSize:{md:"14px",xs:"14px"}
                   }}
-                  to="/blog"
+                  to="/blogs"
                   component={Link}
 
                 />

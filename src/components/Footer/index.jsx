@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, Grid, Container, Box, Typography, Button } from "@mui/material";
+import { Stack,  Box, Typography } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import img1 from '../assets/img-1.jpg'
 import img2 from '../assets/img2.jpg'
@@ -26,13 +26,12 @@ const index = () => {
     >
       <Stack
         direction={{ md: "row", xs: "column" }}
-        // border={{ md: "1px solid white", xs: "1px solid white" }}
-        height={{ md: "400px", xs: "1420px" }}
+        height={{ md: "400px", xs: "1620px" }}
         width={{ md: "70%", xs: "90%" }}
- 
+        // border={{md:"1px solid #ffff",xs:'1px solid white'}}
+        marginBottom={{md:'50px'}}
       >
         <Stack
-          // border={{ md: "1px solid red", xs: "1px solid red" }}
           height={{ md: "400px", xs: "1250px" }}
           width={{ md: "25%", xs: "100%" }}
         >
@@ -78,8 +77,7 @@ const index = () => {
         <Stack
           height={{ md: "400px", xs: "1100px" }}
           width={{ md: "25%", xs: "100%" }}
-          // border={{ md: "1px solid red", xs: "1px solid red" }}
-          paddingLeft={{md:"30px",xs:'0px'}}
+          paddingLeft={{md:"10px",xs:'0px'}}
 
         >
           <Typography
@@ -198,9 +196,8 @@ const index = () => {
         </Stack>
 
         <Stack
-          height={{ md: "400px", xs: "400px" }}
+          height={{ md: "400px", xs: "1200px" }}
           width={{ md: "25%", xs: "100%" }}
-          // border={{ md: "1px solid red", xs: "1px solid red" }}
 
         >
           <Typography
@@ -227,9 +224,8 @@ const index = () => {
         </Stack>
 
         <Stack
-          height={{ md: "400px", xs: "800px" }}
+          height={{ md: "400px", xs: "1200px" }}
           width={{ md: "25%", xs: "100%" }}
-          // border={{ md: "1px solid red", xs: "1px solid red" }}
           paddingLeft={{md:"10px",xs:'0px'}}
 
         >

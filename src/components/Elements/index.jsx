@@ -1,10 +1,11 @@
 import React from 'react'
+import { Stack} from "@mui/material"
 
 const index = () => {
   return (
-    <div>
+    <Stack sx={{height:{md:"100vh"}}}>
       Elements
-    </div>
+    </Stack>
   )
 }
 
