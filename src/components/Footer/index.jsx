@@ -21,27 +21,26 @@ const index = () => {
       alignItems={{ md: "center", xs: "center" }}
       mt={{ md: "40px", xs: "40px" }}
       backgroundColor={{ md: "#553216", xs: "#553216" }}
-      height={{ md: "450px", xs: "auto" }}
+      height={{ md: "500px", xs: "auto" }}
       width={{ md: "100%", xs: "100%" }}
     >
       <Stack
         direction={{ md: "row", xs: "column" }}
         // border={{ md: "1px solid white", xs: "1px solid white" }}
         height={{ md: "400px", xs: "1420px" }}
-        width={{ md: "80%", xs: "90%" }}
+        width={{ md: "70%", xs: "90%" }}
  
       >
         <Stack
           // border={{ md: "1px solid red", xs: "1px solid red" }}
           height={{ md: "400px", xs: "1250px" }}
           width={{ md: "25%", xs: "100%" }}
-          marginRight={{md:"10px",xs:"0px"}}
         >
           <Typography
             variant="h6"
             color={{ md: "#fff", xs: "#fff" }}
             mb={{ md: "15px", xs: "15px" }}
-            mt={{ md: "20px", xs: "50px" }}
+            mt={{ md: "40px", xs: "50px" }}
           >
             ABOUT US
           </Typography>
@@ -79,13 +78,15 @@ const index = () => {
         <Stack
           height={{ md: "400px", xs: "1100px" }}
           width={{ md: "25%", xs: "100%" }}
+          // border={{ md: "1px solid red", xs: "1px solid red" }}
+          paddingLeft={{md:"30px",xs:'0px'}}
 
         >
           <Typography
             variant="h6"
             color={{ md: "#fff", xs: "#fff" }}
             mb={{ md: "15px", xs: "15px" }}
-            mt={{ md: "20px", xs: "30px" }}
+            mt={{ md: "40px", xs: "50px" }}
           >
             OUR SERVICES
           </Typography>
@@ -199,12 +200,14 @@ const index = () => {
         <Stack
           height={{ md: "400px", xs: "400px" }}
           width={{ md: "25%", xs: "100%" }}
+          // border={{ md: "1px solid red", xs: "1px solid red" }}
+
         >
           <Typography
             variant="h6"
             color={{ md: "#fff", xs: "#fff" }}
             mb={{ md: "15px", xs: "15px" }}
-            mt={{ md: "20px", xs: "20px" }}
+            mt={{ md: "40px", xs: "50px" }}
           >
             RECENT POST
           </Typography>
@@ -226,14 +229,15 @@ const index = () => {
         <Stack
           height={{ md: "400px", xs: "800px" }}
           width={{ md: "25%", xs: "100%" }}
-          marginLeft={{md:"10px",xs:"0px"}}
+          // border={{ md: "1px solid red", xs: "1px solid red" }}
+          paddingLeft={{md:"10px",xs:'0px'}}
 
         >
            <Typography
             variant="h6"
             color={{ md: "#fff", xs: "#fff" }}
             mb={{ md: "15px", xs: "15px" }}
-            mt={{ md: "20px", xs: "20px" }}
+            mt={{ md: "40px", xs: "50px" }}
           >
             CONTACT US
           </Typography>
@@ -262,11 +266,7 @@ const index = () => {
         </Stack>
       </Stack>
 
-      <Stack
-        backgroundColor={{ md: "green", xs: "green" }}
-        width={{ md: "100%", xs: "100%" }}
-        height={{ md: "70px", xs: "70px" }}
-      ></Stack>
+  
     </Stack>
   );
 };
