@@ -1,6 +1,7 @@
 import React from "react";
 import { Stack, Grid, Container, Typography } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
+import Fade from 'react-reveal/Fade';
 
 
 
@@ -13,6 +14,8 @@ const index = () => {
       // backgroundColor={{ md: "red", xs: "red" }}
     >
       <Container maxWidth="xl" width={{ xs: "100%" }}>
+        
+       <Fade right duration={1500}>        
         <Stack>
           <Typography
             variant="h3"
@@ -261,6 +264,7 @@ const index = () => {
             </Stack>
           </Stack>
         </Stack>
+        </Fade>
       </Container>
     </Grid>
   );

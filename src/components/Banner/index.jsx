@@ -1,6 +1,7 @@
 import { Typography, Button, Box, Stack } from "@mui/material";
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
+import Fade from 'react-reveal/Fade';
 
 const index = () => {
   return (
@@ -31,13 +32,14 @@ const index = () => {
               marginLeft:{xs:'90px',md:"0px"}
             }}
           >
+           <Fade top duration={1500}>
             <div className="banner-inner">
               <Typography
                 variant="h1"
                 sx={{
                   width: { md: "600px", xs: "200px" },
                   flexWrap: { md: "wrap", xs: "wrap" },
-                  fontSize: { md: "80px", xs: "16px" },
+                  fontSize: { md: "80px", xs: "30px" },
                   margin: { md: "auto", xs: "auto" },
                   display: { md: "flex", xs: "flex" },
                   justifyContent: { md: "center", xs: "center" },
@@ -71,7 +73,7 @@ const index = () => {
                Commerceial Cleaning Services Human Resource management
               </Typography>
             </div>
-            
+            </Fade>
           </Stack>
         </Stack>
         {/* <Stack>

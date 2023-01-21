@@ -7,6 +7,7 @@ import CheckroomIcon from "@mui/icons-material/Checkroom";
 import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 import PersonPinCircleIcon from "@mui/icons-material/PersonPinCircle";
 import NearMeIcon from "@mui/icons-material/NearMe";
+import Fade from 'react-reveal/Fade';
 
 const index = () => {
   return (
@@ -17,6 +18,9 @@ const index = () => {
       // backgroundColor={{ md: "red", xs: "red" }}
     >
       <Container maxWidth="xl" width={{ xs: "100%" }}>
+      
+      <Fade left duration={1500}>
+      
         <Stack>
           <Typography
             variant="h3"
@@ -519,6 +523,7 @@ const index = () => {
             </Stack>
           </Stack>
         </Stack>
+        </Fade>
       </Container>
     </Grid>
   );
