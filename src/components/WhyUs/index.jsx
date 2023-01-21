@@ -15,7 +15,7 @@ const index = () => {
     >
       <Container maxWidth="xl" width={{ xs: "100%" }}>
         
-       <Fade right duration={1500}>        
+       <Fade right duration={1400}>        
         <Stack>
           <Typography
             variant="h3"
