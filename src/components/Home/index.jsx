@@ -5,13 +5,16 @@ import WhyUs from "../WhyUs";
 import Section2 from "../Section2";
 import Slides from '../Slides'
 import Banner2 from '../Banner2'
+import Service from '../Service'
+
 const index = () => {
   return (
     <div>
      <Banner2/>
       {/* <Banner /> */}
       <WhyUs />
-      <Services />
+      <Service/>
+      {/* <Services /> */}
       <Section2 />
       <Slides/>
     </div>
