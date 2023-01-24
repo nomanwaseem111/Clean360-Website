@@ -35,7 +35,7 @@ const index = () => {
               fontSize: { md: "38px", xs: "28px" },
             }}
           >
-            HISTORY OF CLEAN360°
+            HISTORY OF HUSSAIN ENTERPRISES
           </Typography>
         </Stack>
         <hr
@@ -51,21 +51,7 @@ const index = () => {
           justifyContent={{ md: "center", xs: "center" }}
           alignItems={{ md: "center", xs: "center" }}
         >
-          <Typography
-            variant="p"
-            sx={{
-              color: { md: "#fff", xs: "#fff" },
-              textAlign: { md: "center", xs: "center" },
-              width: { md: "50%", xs: "90%" },
-              fontSize: { md: "16px", xs: "16px" },
-              fontFamily: { md: "sans-serif", xs: "sans-serif" },
-              lineHeight: { md: "24px", xs: "24px" },
-            }}
-          >
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry has been the industry's standard dummy text ever since the
-            been when an unknown printer.
-          </Typography>
+          
         </Stack>
         <Stack
           direction={{ md: "row", xs: "column" }}

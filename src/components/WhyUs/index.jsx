@@ -10,7 +10,7 @@ const index = () => {
     <Grid
       sx={{ height: { md: "700px", xs: "1400px",sm:"1400px",lg:"700px" } }}
       id="banner"
-      backgroundColor={{ md: "#000", xs: "#000" }}
+      backgroundColor={{ md: "#fff", xs: "#fff" }}
       // backgroundColor={{ md: "red", xs: "red" }}
     >
       <Container maxWidth="xl" width={{ xs: "100%" }}>
@@ -22,7 +22,7 @@ const index = () => {
             color={{ md: "#f7941d", xs: "#f7941d" }}
             fontWeight={{ md: "800", xs: "800" }}
             textAlign={{ md: "center", xs: "center" }}
-            mt={{ md: "80px", xs: "80px" }}
+            mt={{ md: "50px", xs: "50px" }}
             fontSize={{ md: "50px", xs: "30px" }}
           >
             Our Values
@@ -30,10 +30,10 @@ const index = () => {
 
           <Typography
             variant="p"
-            color={{ md: "#fff", xs: "#fff" }}
+            color={{ md: "#000", xs: "#000" }}
             textAlign={{ md: "center", xs: "center" }}
             mt={{ md: "40px", xs: "40px" }}
-            fontSize={{ md: "20px", xs: "13px" }}
+            fontSize={{ md: '26px', xs: "12px" }}
             fontFamily={{ md: "sans-serif", xs: "sans-serif" }}
           >
             Our Goal is your Satisfaction (of course after our Cleaning work)
@@ -45,7 +45,7 @@ const index = () => {
           margin={{ md: "auto",xs:"auto" }}
           display={{ md: "flex", xs: "flex" }}
           flexWrap={{ md: "wrap", xs: "wrap" }}
-          pt={{ md: "30px", xs: "30px" }}
+          pt={{ md: "30px", xs: "20px" }}
           justifyContent={{ md: "space-evenly", xs: "space-around" }}
           alignContent={{ md: "center", xs: "center" }}
         >
@@ -57,6 +57,8 @@ const index = () => {
               xs: "300px",
               background: { md: "#fff", xs: "#fff" },
               // background:{md:"green",xs:"green"}
+              boxShadow:{md:"1px 1px 10px 2px grey",xs:"1px 1px 10px 2px grey"}
+
             }}
           >
             <Stack
@@ -72,13 +74,13 @@ const index = () => {
                   marginLeft: { md: "40%", xs: "40%" },
                 }}
               /> */}
-              <HomeIcon
+              {/* <HomeIcon
                 sx={{
                   fontSize: { md: "52px", xs: "52px" },
                   margin: { md: "auto", xs: "auto" },
                   marginBottom: { md: "10px", xs: "10px" },
                 }}
-              />
+              /> */}
             </Stack>
             <Stack>
               <Typography
@@ -93,7 +95,9 @@ const index = () => {
                   justifyContent: { md: "center", xs: "center" },
                   alignItems: { md: "center", xs: "center" },
                   flexwrap: { md: "wrap", xs: "wrap" },
-                  fontSize:{md:"1.5rem",xs:"1.4rem"}
+                  fontSize:{md:"1.5rem",xs:"1.4rem"},
+                  mt:{md:"40px",xs:"40px",lg:"40px",sm:"40px"}
+
                 }}
               >
                 Eco-Friendly Oriented
@@ -126,7 +130,8 @@ const index = () => {
               height: "350px",
               xs: "300px",
               background: { md: "#fff", xs: "#fff" },
-              // background:{md:"green",xs:"green"}
+              // background:{md:"green",xs:"green"},
+              boxShadow:{md:"1px 1px 10px 2px grey",xs:"1px 1px 10px 2px grey"}
             }}
           >
             <Stack
@@ -142,15 +147,15 @@ const index = () => {
                   marginLeft: { md: "40%", xs: "40%" },
                 }}
               /> */}
-              <HomeIcon
+              {/* <HomeIcon
                 sx={{
                   fontSize: { md: "52px", xs: "52px" },
                   margin: { md: "auto", xs: "auto" },
                   marginBottom: { md: "10px", xs: "10px" },
                 }}
-              />
+              /> */}
             </Stack>
-            <Stack>
+            <Stack >
               <Typography
                 variant="h5"
                 sx={{
@@ -163,7 +168,8 @@ const index = () => {
                   justifyContent: { md: "center", xs: "center" },
                   alignItems: { md: "center", xs: "center" },
                   flexwrap: { md: "wrap", xs: "wrap" },
-                  fontSize:{md:"1.5rem",xs:"1.4rem"}
+                  fontSize:{md:"1.5rem",xs:"1.4rem"},
+                  mt:{md:"40px",xs:"40px",lg:"40px",sm:"40px"}
 
                 }}
               >
@@ -200,6 +206,8 @@ const index = () => {
               xs: "300px",
               background: { md: "#fff", xs: "#fff" },
               // background:{md:"green",xs:"green"}
+              boxShadow:{md:"1px 1px 10px 2px grey",xs:"1px 1px 10px 2px grey"}
+
             }}
           >
             <Stack
@@ -215,13 +223,13 @@ const index = () => {
                   marginLeft: { md: "40%", xs: "40%" },
                 }}
               /> */}
-              <HomeIcon
+              {/* <HomeIcon
                 sx={{
                   fontSize: { md: "52px", xs: "52px" },
                   margin: { md: "auto", xs: "auto" },
                   marginBottom: { md: "10px", xs: "10px" },
                 }}
-              />
+              /> */}
             </Stack>
             <Stack>
               <Typography
@@ -236,7 +244,8 @@ const index = () => {
                   justifyContent: { md: "center", xs: "center" },
                   alignItems: { md: "center", xs: "center" },
                   flexwrap: { md: "wrap", xs: "wrap" },
-                  fontSize:{md:"1.5rem",xs:"1.4rem"}
+                  fontSize:{md:"1.5rem",xs:"1.4rem"},
+                  mt:{md:"40px",xs:"40px",lg:"40px",sm:"40px"}
 
                 }}
               >
