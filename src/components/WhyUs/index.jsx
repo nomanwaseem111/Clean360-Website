@@ -1,6 +1,5 @@
 import React from "react";
 import { Stack, Grid, Container, Typography } from "@mui/material";
-import HomeIcon from "@mui/icons-material/Home";
 import Fade from 'react-reveal/Fade';
 
 
@@ -15,7 +14,7 @@ const index = () => {
     >
       <Container maxWidth="xl" width={{ xs: "100%" }}>
         
-       <Fade right duration={1400}>        
+       <Fade right duration={1500}>        
         <Stack>
           <Typography
             variant="h3"
@@ -24,6 +23,7 @@ const index = () => {
             textAlign={{ md: "center", xs: "center" }}
             mt={{ md: "50px", xs: "50px" }}
             fontSize={{ md: "50px", xs: "30px" }}
+            fontFamily={{md:"sans-serif",xs:"sans-serif"}}
           >
             Our Values
           </Typography>
@@ -34,7 +34,7 @@ const index = () => {
             textAlign={{ md: "center", xs: "center" }}
             mt={{ md: "40px", xs: "40px" }}
             fontSize={{ md: '26px', xs: "12px" }}
-            fontFamily={{ md: "sans-serif", xs: "sans-serif" }}
+            fontFamily={{md:"sans-serif",xs:"sans-serif"}}
           >
             Our Goal is your Satisfaction (of course after our Cleaning work)
           </Typography>
@@ -99,12 +99,13 @@ const index = () => {
                   mt:{md:"40px",xs:"40px",lg:"40px",sm:"40px"}
 
                 }}
+                fontFamily={{md:"sans-serif",xs:"sans-serif"}}
               >
                 Eco-Friendly Oriented
               </Typography>
               <Typography
                 variant="p"
-                fontFamily={{ md: "sans-serif", xs: "sans-serif" }}
+                fontFamily={{md:"sans-serif",xs:"sans-serif"}}
                 mt={{ md: "10px", xs: "10px" }}
                 color={{ md: "#6c757d", xs: "#6c757d" }}
                 mb={{ md: "20px", xs: "20px" }}
@@ -172,12 +173,13 @@ const index = () => {
                   mt:{md:"40px",xs:"40px",lg:"40px",sm:"40px"}
 
                 }}
+                fontFamily={{md:"sans-serif",xs:"sans-serif"}}
               >
                 Excellence & Innovation
               </Typography>
               <Typography
                 variant="p"
-                fontFamily={{ md: "sans-serif", xs: "sans-serif" }}
+                fontFamily={{md:"sans-serif",xs:"sans-serif"}}
                 mt={{ md: "10px", xs: "10px" }}
                 color={{ md: "#6c757d", xs: "#6c757d" }}
                 mb={{ md: "20px", xs: "20px" }}
@@ -248,12 +250,13 @@ const index = () => {
                   mt:{md:"40px",xs:"40px",lg:"40px",sm:"40px"}
 
                 }}
+                fontFamily={{md:"sans-serif",xs:"sans-serif"}}
               >
                 Expansion / Growth
               </Typography>
               <Typography
                 variant="p"
-                fontFamily={{ md: "sans-serif", xs: "sans-serif" }}
+                fontFamily={{md:"sans-serif",xs:"sans-serif"}}
                 mt={{ md: "10px", xs: "10px" }}
                 color={{ md: "#6c757d", xs: "#6c757d" }}
                 mb={{ md: "20px", xs: "20px" }}

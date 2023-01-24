@@ -1,12 +1,8 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import WhyUs from './components/WhyUs'
-import Services from './components/Services'
-import About from './components/About'
 import Home from "./components/Home";
 import Footer from "./components/Footer";
-import Contact from './components/Services'
 import './index.css'
 
 const App = () => {

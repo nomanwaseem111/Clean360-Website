@@ -1,117 +1,57 @@
-import React from 'react'
-import 'react-slideshow-image/dist/styles.css'
+import React from 'react';
 import { Slide } from 'react-slideshow-image';
-import { Typography, Button, Box, Stack } from "@mui/material";
-import HomeIcon from "@mui/icons-material/Home";
-import SERVICES from '../../json/service.json'
+import 'react-slideshow-image/dist/styles.css'
+import SERVICE from '../../json/service.json'
+import { Typography,  Stack } from "@mui/material";
 
-const index = () => {
-  
-   
+// const spanStyle = {
+//   padding: '20px',
+//   background: 'red',
+//   color: '#000000'
+// }
+
+
+// const slideImages = [
+//   {
+//     url: 'https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
+//     caption: 'Slide 1'
+//   },
+//   {
+//     url: 'https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80',
+//     caption: 'Slide 2'
+//   },
+//   {
+//     url: 'https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
+//     caption: 'Slide 3'
+//   },
+// ];
+
+const Slideshow = () => {
     return (
-      <>
-        <Stack display={{md:'flex',xs:"flex"}} height={{md:"650px",xs:"500px"}} backgroundColor={{ md: "#553216", xs: "#553216" }}
-        opacity={{ md: "0.9", xs: "0.9" }} justifyContent={{md:"center",xs:'center'}} alignItems={{md:"center",xs:"center"}}>
-        
-      <Stack>
-          <Typography
-            variant="h3"
-            color={{ md: "#f7941d", xs: "#f7941d" }}
+      <Stack width={{md:"100%",xs:"100%"}} display={{md:"flex",xs:"flex"}} justifyContent={{md:"center",xs:"center"}} alignItems={{md:"center",xs:"center"}} height={{md:"700px",xs:"500px"}} opacity={{md:"0.5"}} backgroundColor={{md:"#694324",xs:"#694324"}}>
+      <Stack >
+       <Typography variant='h3'   color={{ md: "#f7941d", xs: "#f7941d" }}
             fontWeight={{ md: "800", xs: "800" }}
             textAlign={{ md: "center", xs: "center" }}
+            mb={{md:'40px',xs:'40px'}}
             fontSize={{ md: "50px", xs: "30px" }}
-            mb={{md:"50px",xs:"40px"}}
-          >
-            Our Services
-          </Typography>
-        </Stack>
-
-        <Stack  sx={{width:{md:"80%",xs:"90%"},height:{md:"auto",xs:'auto'},background:{md:"#fff",xs:'#fff'}}} >
-
-        <Slide >
-          
-            <Stack display={{md:"flex",xs:"flex"}}   justifyContent={{md:"center",xs:"center"}} alignItems={{md:"center",xs:'center'}}  flexDirection={{md:"row",xs:"row"}} key={index} >
-             
-             {
-              SERVICES.map((item,index) => (
-              
-              
-                <Stack width={{md:"100%",xs:"100%"}} height={{md:"400px",xs:"300px"}} backgroundColor={{md:"#fff",xs:"#fff"}}>
-              <Stack
-              width={{ md: "100%", xs: "100%" }}
-              mt={{ md: "30px", xs: "30px" }}
-            >
-              {/* <Box
-                component="img"
-                src=""
-                sx={{
-                  width: { md: "60px", xs: "60px" },
-                  height: { md: "60px", xs: "60px" },
-                  marginLeft: { md: "40%", xs: "40%" },
-                }}
-              /> */}
-              {/* <HomeIcon
-                sx={{
-                  fontSize: { md: "52px", xs: "52px" },
-                  margin: { md: "auto", xs: "auto" },
-                }}
-              /> */}
-            </Stack>
-              <Typography
-                variant="h5"
-                mt={{ md: "30px", xs: "30px" }}
-                sx={{
-                  width: { md: "100%", xs: "100%" },
-                  height: { md: "40px", xs: "40px" },
-                  textAlign: { md: "center", xs: "center" },
-                  fontSize:{md:"40px",xs:'30px'}
-
-                }}
-              >
-                {item.title}
-              </Typography>
-              <Typography
-                variant="p"
-                fontFamily={{ md: "sans-serif", xs: "sans-serif" }}
-                mt={{ md: "80px", xs: '50px' }}
-                color={{ md: "#6c757d", xs: "#6c757d" }}
-                mb={{ md: "20px", xs: "20px" }}
-                lineHeight={{ md: "28px", xs: "25px" }}
-                sx={{
-                  fontSize: { md: "20px", xs: "20px" },
-                  width: { md: "80%", xs: "80%" },
-                  height: { md: "auto", xs: "auto" },
-                  textAlign: { md: "center", xs: "center" },
-                  marginLeft: { md: "10%", xs: "10%" },
-                }}
-              >
-                  {item.description}
-              </Typography>
+            fontFamily={{md:"sans-serif",xs:"sans-serif"}}
+            >Our Services</Typography>
+      </Stack>
+      <Stack width={{md:"80%",xs:"100%"}} className="slide-container">
+        <Slide>
+         {SERVICE.map((item, index)=> (
+            <Stack backgroundColor={{md:'#694324',xs:"#694324"}} height={{md:"500px",xs:"300px"}} key={index}>
+              <Stack margin={{md:"auto",xs:"auto"}}  display={{md:"flex",xs:"flex"}} width={{md:"80%",xs:"90%"}} justifyContent={{md:"center",xs:'center'}} alignItems={{md:"center",xs:"center"}} height={{md:"100%"}}>
+                <Typography variant='h5'  color={{md:"#fff",xs:'#fff'}} fontFamily={{md:"sans-serif",xs:"sans-serif"}} mb={{md:"30px",xs:"10px"}} fontWeight={{md:"800",xs:"800"}} fontSize={{md:"30px",xs:"16px"}} >{item.title}</Typography>
+                <Typography variant='p' color={{md:"#fff",xs:'#fff'}}  mb={{md:"50px",xs:"50px"}} textAlign={{xs:"justify"}}  padding={{xs:"20px",md:"0px"}}  width={{xs:"90%",md:"justify"}} lineHeight={{md:"50px",xs:"22px"}} fontSize={{md:"26px",xs:'12px'}} fontFamily={{md:"sans-serif",xs:"sans-serif"}} > {item.description}</Typography>
               </Stack>
-              ))
-             }
-             
-          
-            
-            
-
-             
-
-
-
-             
             </Stack>
-        
-          
-
-        
-
-
+          ))} 
         </Slide>
       </Stack>
       </Stack>
-      </>
-  )
+    )
 }
 
-export default index
+export default Slideshow

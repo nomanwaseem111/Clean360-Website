@@ -1,7 +1,7 @@
 import React from 'react'
 import 'react-slideshow-image/dist/styles.css'
 import { Slide } from 'react-slideshow-image';
-import { Typography, Button, Box, Stack } from "@mui/material";
+import {  Box, Stack } from "@mui/material";
 
 
 const index = () => {

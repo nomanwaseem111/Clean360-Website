@@ -32,7 +32,9 @@ const index = () => {
             sx={{
               color: { md: "#fff", xs: "#fff" },
               fontWeight: { md: "700", xs: "700" },
-              fontSize: { md: "38px", xs: "28px" },
+              fontSize: { md: "38px", xs: "26px" },
+            
+              textAlign:{xs:"center"}
             }}
           >
             HISTORY OF HUSSAIN ENTERPRISES

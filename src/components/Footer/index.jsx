@@ -39,6 +39,7 @@ const index = () => {
             color={{ md: "#fff", xs: "#fff" }}
             mb={{ md: "15px", xs: "15px" }}
             mt={{ md: "40px", xs: "50px" }}
+            fontFamily={{md:"sans-serif",xs:"sans-serif"}}
           >
             ABOUT US
           </Typography>
@@ -46,10 +47,11 @@ const index = () => {
           <Typography
             variant="p"
             mt={{ md: "18px", xs: "18px" }}
-            fontFamily={{ md: "sans-serif", xs: "sans-serif" }}
+            fontFamily={{md:"sans-serif",xs:"sans-serif"}}
             fontSize={{ md: "16px", xs: "16px" }}
             color={{ md: "#fff", xs: "#fff" }}
             lineHeight={{ md: "24px", xs: "24px" }}
+
           >
             HE Cleaning Company Service is a fully integrated janitorial
             cleaning services company that's Provide Comprehensive, high
@@ -84,6 +86,7 @@ const index = () => {
             color={{ md: "#fff", xs: "#fff" }}
             mb={{ md: "15px", xs: "15px" }}
             mt={{ md: "40px", xs: "50px" }}
+            fontFamily={{md:"sans-serif",xs:"sans-serif"}}
           >
             OUR SERVICES
           </Typography>
@@ -103,6 +106,7 @@ const index = () => {
                   fontSize: { md: "15px",xs:"12px" },
                   marginRight: { md: "8px",xs:"8px" },
                 }}
+
               />
               After Builders Cleaning
             </Box>
@@ -204,6 +208,7 @@ const index = () => {
             color={{ md: "#fff", xs: "#fff" }}
             mb={{ md: "15px", xs: "15px" }}
             mt={{ md: "40px", xs: "50px" }}
+            fontFamily={{md:"sans-serif",xs:"sans-serif"}}
           >
             RECENT POST
           </Typography>
@@ -233,6 +238,7 @@ const index = () => {
             color={{ md: "#fff", xs: "#fff" }}
             mb={{ md: "15px", xs: "15px" }}
             mt={{ md: "40px", xs: "50px" }}
+            fontFamily={{md:"sans-serif",xs:"sans-serif"}}
           >
             CONTACT US
           </Typography>
