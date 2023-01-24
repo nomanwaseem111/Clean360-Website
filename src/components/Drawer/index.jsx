@@ -30,7 +30,7 @@ const DrawerComp = () => {
           <ListItemButton >
             <ListItemIcon>
               <ListItemText >
-                <Button href="/pages" sx={{textTransform:{xs:"capitalize"},color:{xs:"black"},marginLeft:{xs:"50px"},fontSize:{xs:"20px"},mt:{xs:"20px"}}} >Pages</Button>
+                <Button href="/whyus" sx={{textTransform:{xs:"capitalize"},color:{xs:"black"},marginLeft:{xs:"50px"},fontSize:{xs:"20px"},mt:{xs:"20px"}}} >Why us</Button>
               </ListItemText>
 
             </ListItemIcon>
@@ -40,18 +40,7 @@ const DrawerComp = () => {
           <ListItemButton>
             <ListItemIcon>
               <ListItemText >
-              <Button href="/features" sx={{textTransform:{xs:"capitalize"},color:{xs:"black"},marginLeft:{xs:"50px"},fontSize:{xs:"20px"},mt:{xs:"10px"}}}> Features</Button>
-
-              </ListItemText>
-
-            </ListItemIcon>
-          
-          </ListItemButton> 
-
-          <ListItemButton>
-            <ListItemIcon>
-              <ListItemText >
-              <Button href="/shops" sx={{textTransform:{xs:"capitalize"},color:{xs:"black"},marginLeft:{xs:"50px"},fontSize:{xs:"20px"},mt:{xs:"10px"}}}> Shop</Button>
+              <Button href="/service" sx={{textTransform:{xs:"capitalize"},color:{xs:"black"},marginLeft:{xs:"50px"},fontSize:{xs:"20px"},mt:{xs:"10px"}}}> Services</Button>
 
               </ListItemText>
 
@@ -62,7 +51,18 @@ const DrawerComp = () => {
           <ListItemButton>
             <ListItemIcon>
               <ListItemText >
-              <Button href="/blogs" sx={{textTransform:{xs:"capitalize"},color:{xs:"black"},marginLeft:{xs:"50px"},fontSize:{xs:"20px"},mt:{xs:"10px"}}} >Blogs</Button>
+              <Button href="/shops" sx={{textTransform:{xs:"capitalize"},color:{xs:"black"},marginLeft:{xs:"50px"},fontSize:{xs:"20px"},mt:{xs:"10px"}}}> About  </Button>
+
+              </ListItemText>
+
+            </ListItemIcon>
+          
+          </ListItemButton> 
+
+          <ListItemButton>
+            <ListItemIcon>
+              <ListItemText >
+              <Button href="/blogs" sx={{textTransform:{xs:"capitalize"},color:{xs:"black"},marginLeft:{xs:"50px"},fontSize:{xs:"20px"},mt:{xs:"10px"}}} >Contact us</Button>
 
               </ListItemText>
 
@@ -73,16 +73,7 @@ const DrawerComp = () => {
          
 
 
-          <ListItemButton>
-            <ListItemIcon>
-              <ListItemText >
-              <Button href="/elements" sx={{textTransform:{xs:"capitalize"},color:{xs:"black"},marginLeft:{xs:"50px"},fontSize:{xs:"20px"},mt:{xs:"10px"}}} >Elements</Button>
-
-              </ListItemText>
-
-            </ListItemIcon>
-          
-          </ListItemButton> 
+       
 
          
 
