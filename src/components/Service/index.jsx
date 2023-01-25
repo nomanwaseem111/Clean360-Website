@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {forwardRef} from 'react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import SERVICE from '../../json/service.json'
@@ -26,9 +26,9 @@ import { Typography,  Stack } from "@mui/material";
 //   },
 // ];
 
-const Slideshow = () => {
+const Slideshow = (props,ref) => {
     return (
-      <Stack width={{md:"100%",xs:"100%"}} display={{md:"flex",xs:"flex"}} justifyContent={{md:"center",xs:"center"}} alignItems={{md:"center",xs:"center"}} height={{md:"700px",xs:"500px"}} opacity={{md:"0.5"}} backgroundColor={{md:"#694324",xs:"#694324"}}>
+      <Stack ref={ref} width={{md:"100%",xs:"100%"}} display={{md:"flex",xs:"flex"}} justifyContent={{md:"center",xs:"center"}} alignItems={{md:"center",xs:"center"}} height={{md:"700px",xs:"500px"}} opacity={{md:"0.5"}} backgroundColor={{md:"#694324",xs:"#694324"}}>
       <Stack >
        <Typography variant='h3'   color={{ md: "#f7941d", xs: "#f7941d" }}
             fontWeight={{ md: "800", xs: "800" }}
@@ -54,4 +54,4 @@ const Slideshow = () => {
     )
 }
 
-export default Slideshow
+export default forwardRef(Slideshow)

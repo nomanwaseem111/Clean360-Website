@@ -1,18 +1,19 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { Stack, Grid, Container, Typography } from "@mui/material";
 import Fade from 'react-reveal/Fade';
 
 
 
-const index = () => {
+const index = (props,ref) => {
   return (
+    
     <Grid
       sx={{ height: { md: "700px", xs: "1400px",sm:"1400px",lg:"700px" } }}
       id="banner"
       backgroundColor={{ md: "#fff", xs: "#fff" }}
       // backgroundColor={{ md: "red", xs: "red" }}
     >
-      <Container maxWidth="xl" width={{ xs: "100%" }}>
+      <Container ref={ref} maxWidth="xl" width={{ xs: "100%" }}>
         
        <Fade right duration={1500}>        
         <Stack>
@@ -282,4 +283,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default forwardRef(index) ;

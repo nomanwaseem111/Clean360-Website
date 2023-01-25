@@ -1,13 +1,13 @@
-import React from "react";
+import React,{forwardRef} from "react";
 import "react-slideshow-image/dist/styles.css";
 import { Typography,  Stack } from "@mui/material";
 import Fade from "react-reveal/Fade";
 
-const index = () => {
+const index = (props,ref) => {
   return (
     <>
       
-        <Stack
+        <Stack ref={ref}
           direction={{ md: "row", xs: "row" }}
           backgroundColor={{ md: "#fff", xs: "#fff" }}
           mb={{ md: "100px", xs: "200px" }}
@@ -136,4 +136,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default forwardRef(index);
