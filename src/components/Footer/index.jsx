@@ -15,7 +15,7 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 
 const index = () => {
   return (
-    <Stack
+    <Stack 
       display={{ md: "flex", xs: "flex" }}
       justifyContent={{ md: "center", xs: "center" }}
       alignItems={{ md: "center", xs: "center" }}

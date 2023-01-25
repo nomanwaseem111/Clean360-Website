@@ -1,11 +1,9 @@
-import React, { createContext, useContext } from "react"
+import React, { createContext } from "react"
 import Navbar from "./components/Navbar"
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { BrowserRouter as Router } from "react-router-dom"
 import Home from "./components/Home"
 import Footer from "./components/Footer"
 import "./index.css"
-import { AppContext } from "./Context"
-
 
 export const data = createContext()
 
@@ -14,7 +12,6 @@ const App = () => {
 //  const context = useContext(AppContext);
 
    
- const name = "Noman"
 
 
  const homeRef = React.useRef(null)
@@ -40,7 +37,7 @@ const App = () => {
         <div>
           <Navbar />
           <Home />
-
+          {/* <BottomBtn/> */}
           <Footer />
         </div>
       </Router>

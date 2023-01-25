@@ -10,7 +10,7 @@ import { data } from "../../App"
 
 const Home = () => {
  
-  const {homeRef, whyUsRef} = useContext(data)
+  const {homeRef, whyUsRef,servicesRef,aboutRef} = useContext(data)
   
   console.log(homeRef)
  
@@ -18,8 +18,8 @@ const Home = () => {
     <div>
       <Banner2 ref={homeRef} />
 
-      <About />
-      <Service />
+      <About ref={aboutRef} />
+      <Service ref={servicesRef}/>
       <WhyUs ref={whyUsRef}/>
 
       <Section2 />

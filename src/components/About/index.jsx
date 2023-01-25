@@ -1,7 +1,6 @@
 import React,{forwardRef} from "react";
 import "react-slideshow-image/dist/styles.css";
 import { Typography,  Stack } from "@mui/material";
-import Fade from "react-reveal/Fade";
 
 const index = (props,ref) => {
   return (

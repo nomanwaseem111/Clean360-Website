@@ -21,3 +21,16 @@
     color: #fff;
 }
 
+.topBtn{
+  
+    color: #fff;
+    background-color: black;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 5rem;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }

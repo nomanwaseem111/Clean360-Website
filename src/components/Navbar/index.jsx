@@ -4,7 +4,7 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Box from "@mui/material/Box";
 import {Link} from 'react-scroll'
-import { Tab, Tabs, useMediaQuery, useTheme,Stack } from "@mui/material";
+import { useMediaQuery, useTheme,Stack } from "@mui/material";
 import Drawer from "../Drawer";
 import Logo from '../assets/logo2.png'
 import { data } from "../../App";
@@ -12,8 +12,7 @@ import { data } from "../../App";
 
 
 export default function ButtonAppBar() {
-  const [value, setValue] = React.useState();
-   const  {scrollToSection, homeRef, whyUsRef} = React.useContext(data);
+   const  {scrollToSection, homeRef, whyUsRef,servicesRef,aboutRef} = React.useContext(data);
    const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
 
@@ -30,7 +29,6 @@ export default function ButtonAppBar() {
   //   })
   // }
 
-  const ref = React.useRef()
 
   return (
    
@@ -75,8 +73,8 @@ export default function ButtonAppBar() {
               >
                 <Box  component={Link} onClick={() => scrollToSection(homeRef)} fontFamily={{md:"sans-serif"}} cursor={{md:"pointer"}} color={{md:"#000"}}  fontSize={{md:"20px"}}  spy={true} smooth={true} offset={-100} duration={500}>Home </Box>
                 <Box  component={Link} onClick={() => scrollToSection(whyUsRef)}  fontFamily={{md:"sans-serif"}} color={{md:"#000"}}  fontSize={{md:"20px"}}  spy={true} smooth={true} offset={-100} duration={500}>Why Us </Box>
-                <Box  component={Link}  to="/services" fontFamily={{md:"sans-serif"}}  color={{md:"#000"}}  fontSize={{md:"20px"}} spy={true} smooth={true} offset={-100} duration={500}>Services </Box>
-                <Box  component={Link}  to="about"  fontFamily={{md:"sans-serif"}} color={{md:"#000"}}  fontSize={{md:"20px"}} spy={true} smooth={true} offset={-100} duration={500}>About </Box>
+                <Box  component={Link} onClick={() => scrollToSection(servicesRef)} to="/services" fontFamily={{md:"sans-serif"}}  color={{md:"#000"}}  fontSize={{md:"20px"}} spy={true} smooth={true} offset={-100} duration={500}>Services </Box>
+                <Box  component={Link} onClick={() => scrollToSection(aboutRef)} to="about"  fontFamily={{md:"sans-serif"}} color={{md:"#000"}}  fontSize={{md:"20px"}} spy={true} smooth={true} offset={-100} duration={500}>About </Box>
                 <Box component={Link}  to="contact"  fontFamily={{md:"sans-serif"}} color={{md:"#000"}}  fontSize={{md:"20px"}}  spy={true} smooth={true} offset={-100} duration={500}>Contact </Box>
 
                 {/* <
