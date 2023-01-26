@@ -1,57 +1,81 @@
 import React, { useState } from 'react'
-import { Drawer, List, ListItemIcon, ListItemText, ListItemButton } from '@mui/material';
+import { Drawer,Box,Link, List, ListItemIcon, ListItemText, ListItemButton } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import Button from '@mui/material/Button';
-
+import {data} from '../../App'
 
 
 const DrawerComp = () => {
 
   const [openDrawer, setOpenDrawer] = useState(false)
+  const  {scrollToSection, homeRef, whyUsRef,servicesRef,aboutRef,contactRef} = React.useContext(data);
 
   return (
     <>
       <Drawer open={openDrawer}
         onClose={() => setOpenDrawer(false)}
       >
-        <List id="drawer" style={{width:"280px"}} >
+        <List id="drawer" sx={{width:"280px",background:'#553216',height:"100%",paddingTop:"80px"}}  >
 
        
-        <ListItemButton >
+        <ListItemButton  sx={{display:"flex",justifyContent:"center",alignItems:"center"}} >
             <ListItemIcon>
               <ListItemText >
-                <Button href="/" sx={{textTransform:{xs:"capitalize"},color:{xs:"black"},marginLeft:{xs:"50px"},fontSize:{xs:"20px"},mt:{xs:"20px"}}} >Home</Button>
+              <Box
+                  component={Link}
+                  onClick={() => scrollToSection(homeRef)}
+                  
+                  
+                  
+               
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  sx={{textDecoration:"none",color:"#fff",fontSize:"26px",
+                  
+                
+                 
+              
+                   
+                   }}
+                >
+                  Home{" "}
+                </Box>          
+                    </ListItemText>
+
+            </ListItemIcon>
+          
+          </ListItemButton> 
+      
+      
+      
+      
+          <ListItemButton  sx={{mt:"40px",display:"flex",justifyContent:"center",alignItems:"center"}}>
+            <ListItemIcon>
+              <ListItemText >
+              <Box  component={Link} onClick={() => scrollToSection(whyUsRef)}   sx={{textDecoration:"none",color:"#fff",fontSize:"26px",
+               
+                
+                  
+                 
+                   
+                   }}  spy={true} smooth={true} offset={-100} duration={500}>Why Us </Box>
               </ListItemText>
 
             </ListItemIcon>
           
           </ListItemButton> 
-          <ListItemButton >
+
+          <ListItemButton sx={{mt:"40px",display:"flex",justifyContent:"center",alignItems:"center"}}>
             <ListItemIcon>
               <ListItemText >
-                <Button href="/whyus" sx={{textTransform:{xs:"capitalize"},color:{xs:"black"},marginLeft:{xs:"50px"},fontSize:{xs:"20px"},mt:{xs:"20px"}}} >Why us</Button>
-              </ListItemText>
-
-            </ListItemIcon>
-          
-          </ListItemButton> 
-
-          <ListItemButton>
-            <ListItemIcon>
-              <ListItemText >
-              <Button href="/service" sx={{textTransform:{xs:"capitalize"},color:{xs:"black"},marginLeft:{xs:"50px"},fontSize:{xs:"20px"},mt:{xs:"10px"}}}> Services</Button>
-
-              </ListItemText>
-
-            </ListItemIcon>
-          
-          </ListItemButton> 
-
-          <ListItemButton>
-            <ListItemIcon>
-              <ListItemText >
-              <Button href="/shops" sx={{textTransform:{xs:"capitalize"},color:{xs:"black"},marginLeft:{xs:"50px"},fontSize:{xs:"20px"},mt:{xs:"10px"}}}> About  </Button>
+              <Box  component={Link} onClick={() => scrollToSection(servicesRef)} to="/services"  sx={{textDecoration:"none",color:"#fff",fontSize:"26px",textAlign:"center",
+                  
+                  
+                
+                   
+                   }} spy={true} smooth={true} offset={-100} duration={500}>Services </Box>
 
               </ListItemText>
 
@@ -59,11 +83,40 @@ const DrawerComp = () => {
           
           </ListItemButton> 
 
-          <ListItemButton>
+          <ListItemButton sx={{mt:"40px",display:"flex",justifyContent:"center",alignItems:"center"}}>
             <ListItemIcon>
               <ListItemText >
-              <Button href="/blogs" sx={{textTransform:{xs:"capitalize"},color:{xs:"black"},marginLeft:{xs:"50px"},fontSize:{xs:"20px"},mt:{xs:"10px"}}} >Contact us</Button>
+              <Box  component={Link} onClick={() => scrollToSection(aboutRef)} to="about"   sx={{textDecoration:"none",color:"#fff",fontSize:"26px",textAlign:"center",
+                  
+               
+                  
+                   
+                   }} spy={true} smooth={true} offset={-100} duration={500}>About </Box>
 
+              </ListItemText>
+
+            </ListItemIcon>
+          
+          </ListItemButton> 
+
+          <ListItemButton sx={{mt:"40px",display:"flex",justifyContent:"center",alignItems:"center"}}>
+            <ListItemIcon>
+              <ListItemText >
+              <Box
+                  component={Link}
+                  onClick={() => scrollToSection(contactRef)}
+                  sx={{textDecoration:"none",color:"#fff",fontSize:"26px"
+             
+                  
+                   
+                   }}
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                >
+                  Contact{" "}
+                </Box>
               </ListItemText>
 
             </ListItemIcon>

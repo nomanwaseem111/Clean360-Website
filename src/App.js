@@ -28,7 +28,7 @@ const App = () => {
   } 
 
 
-  
+  console.log(contactRef, "Noman");
 
   return (
     <data.Provider value={{homeRef,whyUsRef,servicesRef,aboutRef,contactRef,scrollToSection}}>
@@ -36,9 +36,9 @@ const App = () => {
       <Router>
         <div>
           <Navbar />
-          <Home />
+          <Home ref={homeRef} />
           {/* <BottomBtn/> */}
-          <Footer />
+          <Footer ref={contactRef}/>
         </div>
       </Router>
     </data.Provider>

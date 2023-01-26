@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import { Typography, Box, Stack } from "@mui/material";
 
-const index = ({ref}) => {
+const index = (props,ref) => {
   return (
     
     <Stack ref={ref}  sx={{width:{md:"100%",xs:"100%",lg:"100%",sm:"100%"},height:{md:"100vh",xs:"50vh",sm:"50vh",lg:"100vh"},position:{md:"relative",xs:"relative",lg:"relative",sm:"relative"}}}>
@@ -17,4 +17,4 @@ const index = ({ref}) => {
   )
 }
 
-export default index
+export default forwardRef(index)

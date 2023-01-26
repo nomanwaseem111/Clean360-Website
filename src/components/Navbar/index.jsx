@@ -1,21 +1,27 @@
-import * as React from "react";
-import AppBar from "@mui/material/AppBar";
+import * as React from "react"
+import AppBar from "@mui/material/AppBar"
 
-import Toolbar from "@mui/material/Toolbar";
-import Box from "@mui/material/Box";
-import {Link} from 'react-scroll'
-import { useMediaQuery, useTheme,Stack } from "@mui/material";
-import Drawer from "../Drawer";
-import Logo from '../assets/logo2.png'
-import { data } from "../../App";
-
-
+import Toolbar from "@mui/material/Toolbar"
+import Box from "@mui/material/Box"
+import { Link } from "react-scroll"
+import { useMediaQuery, useTheme, Stack } from "@mui/material"
+import Drawer from "../Drawer"
+import Logo from "../assets/logo2.png"
+import { data } from "../../App"
 
 export default function ButtonAppBar() {
-   const  {scrollToSection, homeRef, whyUsRef,servicesRef,aboutRef} = React.useContext(data);
-   const theme = useTheme();
-  const isMatch = useMediaQuery(theme.breakpoints.down("md"));
+  const {
+    scrollToSection,
+    homeRef,
+    whyUsRef,
+    servicesRef,
+    aboutRef,
+    contactRef,
+  } = React.useContext(data)
+  const theme = useTheme()
+  const isMatch = useMediaQuery(theme.breakpoints.down("md"))
 
+  console.log(contactRef, "Hello")
   // const Home = React.useRef(null)
   // const whyUs = React.useRef(null)
   // const services = React.useRef(null)
@@ -29,33 +35,37 @@ export default function ButtonAppBar() {
   //   })
   // }
 
-
   return (
-   
-     
-   
-   <>
+    <>
       <AppBar
         elevation={0}
         position="static"
-        sx={{ backgroundColor: { md: "#fff", xs: "#fff" },
-                   display:{md:"flex"},
-                   justifyContent:{md:"center"},
-                   alignItems:{md:"center"},height:{md:"80px",xs:"65px"} }}
+        sx={{
+          backgroundColor: { md: "#fff", xs: "#fff" },
+          display: { md: "flex" },
+          justifyContent: { md: "center" },
+          alignItems: { md: "center" },
+          height: { md: "80px", xs: "65px" },
+        }}
         // border={{md:"1px solid white"}}
       >
-        <Toolbar className="nav"  sx={{
-                   
-                  //  border:{md:"1px solid black"},
-                   width:{md:"1400px"},
-                   display:{md:"flex"},
-                   justifyContent:{md:"space-between"},
-                   alignItems:{md:"center"}
-                 }}
-
-                 >
-         
-          <Box component="img" src={Logo} width={{md:"240px",xs:"150px"}} height={{md:"60px"}} mt={{xs:"10px",md:"0px"}} />
+        <Toolbar
+          className="nav"
+          sx={{
+            //  border:{md:"1px solid black"},
+            width: { md: "1400px" },
+            display: { md: "flex" },
+            justifyContent: { md: "space-between" },
+            alignItems: { md: "center" },
+          }}
+        >
+          <Box
+            component="img"
+            src={Logo}
+            width={{ md: "240px", xs: "150px" }}
+            height={{ md: "60px" }}
+            mt={{ xs: "10px", md: "0px" }}
+          />
           {isMatch ? (
             <>
               <Drawer />
@@ -63,19 +73,87 @@ export default function ButtonAppBar() {
           ) : (
             <>
               <Stack
-              //  border={{md:"1px solid black"}}
-               direction={{md:"row",xs:"column"}}
-               display={{md:"flex",xs:"flex"}}
-               justifyContent={{md:"space-around",xs:"space-around"}}
-               alignItems={{md:"center",xs:"center"}}
-               width={{md:"550px"}}
-               marginLeft={{md:"100px"}}
+                //  border={{md:"1px solid black"}}
+                direction={{ md: "row", xs: "column" }}
+                display={{ md: "flex", xs: "flex" }}
+                justifyContent={{ md: "space-around", xs: "space-around" }}
+                alignItems={{ md: "center", xs: "center" }}
+                width={{ md: "550px" }}
+                marginLeft={{ md: "100px" }}
               >
-                <Box  component={Link} onClick={() => scrollToSection(homeRef)} fontFamily={{md:"sans-serif"}} cursor={{md:"pointer"}} color={{md:"#000"}}  fontSize={{md:"20px"}}  spy={true} smooth={true} offset={-100} duration={500}>Home </Box>
-                <Box  component={Link} onClick={() => scrollToSection(whyUsRef)}  fontFamily={{md:"sans-serif"}} color={{md:"#000"}}  fontSize={{md:"20px"}}  spy={true} smooth={true} offset={-100} duration={500}>Why Us </Box>
-                <Box  component={Link} onClick={() => scrollToSection(servicesRef)} to="/services" fontFamily={{md:"sans-serif"}}  color={{md:"#000"}}  fontSize={{md:"20px"}} spy={true} smooth={true} offset={-100} duration={500}>Services </Box>
-                <Box  component={Link} onClick={() => scrollToSection(aboutRef)} to="about"  fontFamily={{md:"sans-serif"}} color={{md:"#000"}}  fontSize={{md:"20px"}} spy={true} smooth={true} offset={-100} duration={500}>About </Box>
-                <Box component={Link}  to="contact"  fontFamily={{md:"sans-serif"}} color={{md:"#000"}}  fontSize={{md:"20px"}}  spy={true} smooth={true} offset={-100} duration={500}>Contact </Box>
+                <Box
+                  component={Link}
+                  onClick={() => scrollToSection(homeRef)}
+                  fontFamily={{ md: "Roboto" }}
+                  color={{ md: "#000" }}
+                  fontSize={{ md: "20px" }}
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  sx={{cursor:"pointer"}}
+                >
+                  Home{" "}
+                </Box>
+                <Box
+                  component={Link}
+                  onClick={() => scrollToSection(whyUsRef)}
+                  fontFamily={{ md: "Roboto" }}
+                  color={{ md: "#000" }}
+                  fontSize={{ md: "20px" }}
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  sx={{cursor:"pointer"}}
+                  s
+                >
+                  Why Us{" "}
+                </Box>
+                <Box
+                  component={Link}
+                  onClick={() => scrollToSection(servicesRef)}
+                  to="/services"
+                  fontFamily={{ md: "Roboto" }}
+                  color={{ md: "#000" }}
+                  fontSize={{ md: "20px" }}
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  sx={{cursor:"pointer"}}
+                >
+                  Services{" "}
+                </Box>
+                <Box
+                  component={Link}
+                  onClick={() => scrollToSection(aboutRef)}
+                  to="about"
+                  fontFamily={{ md: "Roboto" }}
+                  color={{ md: "#000" }}
+                  fontSize={{ md: "20px" }}
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  sx={{cursor:"pointer"}}
+                >
+                  About{" "}
+                </Box>
+                <Box
+                  component={Link}
+                  onClick={() => scrollToSection(contactRef)}
+                  fontFamily={{ md: "Roboto" }}
+                  color={{ md: "#000" }}
+                  fontSize={{ md: "20px" }}
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  sx={{cursor:"pointer"}}
+                >
+                  Contact{" "}
+                </Box>
 
                 {/* <
                   label="Home "
@@ -128,7 +206,7 @@ export default function ButtonAppBar() {
                   
 
                 /> */}
-                 {/* <Tab
+                {/* <Tab
                   label="Elements "
                   sx={{
                     color: "#000",
@@ -153,5 +231,5 @@ export default function ButtonAppBar() {
       </AppBar>
       {/* {showCart && <Cart setShowCart={setShowCart}/>} */}
     </>
-  );
+  )
 }

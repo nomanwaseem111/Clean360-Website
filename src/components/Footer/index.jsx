@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { Stack,  Box, Typography } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import img1 from '../assets/img-1.jpg'
@@ -13,9 +13,9 @@ import img9 from '../assets/img9.jpg'
 import EditLocationIcon from '@mui/icons-material/EditLocation';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 
-const index = () => {
+const index = (props,ref) => {
   return (
-    <Stack 
+    <Stack  ref={ref}
       display={{ md: "flex", xs: "flex" }}
       justifyContent={{ md: "center", xs: "center" }}
       alignItems={{ md: "center", xs: "center" }}
@@ -23,7 +23,7 @@ const index = () => {
       height={{ md: "500px", xs: "auto" }}
       width={{ md: "100%", xs: "100%" }}
     >
-      <Stack
+      <Stack 
         direction={{ md: "row", xs: "column" }}
         height={{ md: "400px", xs: "1620px" }}
         width={{ md: "70%", xs: "90%" }}
@@ -272,4 +272,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default forwardRef(index);

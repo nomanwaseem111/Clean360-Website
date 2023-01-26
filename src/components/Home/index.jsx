@@ -6,13 +6,13 @@ import Slides from "../Slides"
 import Banner2 from "../Banner2"
 import Service from "../Service"
 import About from "../About"
+import Footer from '../Footer';
 import { data } from "../../App"
 
 const Home = () => {
  
-  const {homeRef, whyUsRef,servicesRef,aboutRef} = useContext(data)
+  const {homeRef, whyUsRef,servicesRef,aboutRef,contactRef} = useContext(data)
   
-  console.log(homeRef)
  
   return (
     <div>
