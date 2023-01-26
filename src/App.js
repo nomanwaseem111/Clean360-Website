@@ -1,4 +1,4 @@
-import React, { createContext } from "react"
+import React, { createContext,useState } from "react"
 import Navbar from "./components/Navbar"
 import { BrowserRouter as Router } from "react-router-dom"
 import Home from "./components/Home"
@@ -19,19 +19,22 @@ const App = () => {
   const servicesRef = React.useRef(null)
   const aboutRef = React.useRef(null)
   const contactRef = React.useRef(null)
+  const [openDrawer, setOpenDrawer] = useState(false)
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
       top: elementRef.current.offsetTop,
       behavior: "smooth",
+
     })
+    setOpenDrawer(false)
   } 
 
 
   console.log(contactRef, "Noman");
 
   return (
-    <data.Provider value={{homeRef,whyUsRef,servicesRef,aboutRef,contactRef,scrollToSection}}>
+    <data.Provider value={{homeRef,whyUsRef,servicesRef,aboutRef,contactRef,scrollToSection,openDrawer,setOpenDrawer}}>
     
       <Router>
         <div>

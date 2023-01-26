@@ -39,7 +39,7 @@ export default function ButtonAppBar() {
     <>
       <AppBar
         elevation={0}
-        position="static"
+        position="fixed"
         sx={{
           backgroundColor: { md: "#fff", xs: "#fff" },
           display: { md: "flex" },

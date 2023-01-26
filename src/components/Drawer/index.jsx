@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Drawer,Box,Link, List, ListItemIcon, ListItemText, ListItemButton } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -7,12 +7,11 @@ import {data} from '../../App'
 
 const DrawerComp = () => {
 
-  const [openDrawer, setOpenDrawer] = useState(false)
-  const  {scrollToSection, homeRef, whyUsRef,servicesRef,aboutRef,contactRef} = React.useContext(data);
+  const  {scrollToSection, homeRef, whyUsRef,servicesRef,aboutRef,contactRef,openDrawer,setOpenDrawer} = React.useContext(data);
 
   return (
     <>
-      <Drawer open={openDrawer}
+      <Drawer  open={openDrawer}
         onClose={() => setOpenDrawer(false)}
       >
         <List id="drawer" sx={{width:"280px",background:'#553216',height:"100%",paddingTop:"80px"}}  >

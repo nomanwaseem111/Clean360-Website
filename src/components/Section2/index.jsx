@@ -11,7 +11,7 @@ const index = () => {
         background: { md: "#553216", xs: "#553216" },
         opacity: { md: "0.9", xs: "0.9" },
         width: { md: "100%", xs: "100%" },
-        height: { md: "520px", xs: "980px" },
+        height: { md: "520px", xs: "800px" },
       }}
     >
       <Stack
@@ -90,7 +90,7 @@ const index = () => {
             </Typography>
           </Stack>
 
-          <Stack
+          {/* <Stack
             mb={{ md: "0px", xs: "20px" }}
             textAlign={{ md: "center", xs: "center" }}
             sx={{ width: { md: "280px", xs: "90%" } }}
@@ -116,7 +116,7 @@ const index = () => {
             >
               9105
             </Typography>
-          </Stack>
+          </Stack> */}
 
           <Stack
             mb={{ md: "0px", xs: "20px" }}
