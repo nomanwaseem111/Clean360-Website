@@ -31,7 +31,6 @@ const App = () => {
   } 
 
 
-  console.log(contactRef, "Noman");
 
   return (
     <data.Provider value={{homeRef,whyUsRef,servicesRef,aboutRef,contactRef,scrollToSection,openDrawer,setOpenDrawer}}>

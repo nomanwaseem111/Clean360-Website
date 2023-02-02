@@ -6,7 +6,7 @@ import Box from "@mui/material/Box"
 import { Link } from "react-scroll"
 import { useMediaQuery, useTheme, Stack } from "@mui/material"
 import Drawer from "../Drawer"
-import Logo from "../assets/logo2.png"
+import Logo from "../assets/logo.png"
 import { data } from "../../App"
 
 export default function ButtonAppBar() {
@@ -21,7 +21,6 @@ export default function ButtonAppBar() {
   const theme = useTheme()
   const isMatch = useMediaQuery(theme.breakpoints.down("md"))
 
-  console.log(contactRef, "Hello")
   // const Home = React.useRef(null)
   // const whyUs = React.useRef(null)
   // const services = React.useRef(null)

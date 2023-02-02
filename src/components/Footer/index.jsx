@@ -68,10 +68,10 @@ const index = (props,ref) => {
             justifyContent={{ md: "space-around", xs: "space-around" }}
             direction={{ md: "row", xs: "row" }}
           >
-            <i class="fa-brands fa-facebook-f"></i>
+            {/* <i class="fa-brands fa-facebook-f"></i>
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-linkedin-in"></i>
-            <i class="fa-brands fa-pinterest-p"></i>
+            <i class="fa-brands fa-pinterest-p"></i> */}
           </Stack>
         </Stack>
 
@@ -244,13 +244,13 @@ const index = (props,ref) => {
           </Typography>
           <hr width="25%" id="hrline2" />
           <Stack mt={{md:"23px",xs:"25px"}} height={{md:"100%",xs:"100%"}} width={{md:"100%",xs:"100%"}}>
-           <Stack direction={{md:"row",xs:'row'}}  height={{md:"30%",xs:"40%"}} width={{md:"100%",xs:"100%"}}>
-            <Stack  width={{md:"120px",xs:"120px"}}>
+           <Stack   direction={{md:"row",xs:'row'}}  height={{md:"30%",xs:"40%"}} width={{md:"100%",xs:"100%"}}>
+            <Stack   width={{md:"180px",xs:"180px",sm:"80px"}}>
             <EditLocationIcon sx={{color:{md:"#fff",xs:"#fff"},marginLeft:{md:"20px",xs:"20px"},fontSize:{md:"30px",xs:"30px"}}} />
             </Stack>
              <Stack>
              <Typography variant="h6" color={{md:"#fff",xs:'#fff'}} fontSize={{md:"18px",xs:'18px'}} fontFamily={{md:"sans-serif",xs:"sans-serif"}}>ADDRESS</Typography>
-              <Typography variant="p" color={{md:"#fff",xs:'#fff'}} fontSize={{md:"15px",xs:'15px'}} fontFamily={{md:"sans-serif",xs:"sans-serif"}}>demo address #8901 Marmora Road Chi Minh City, Vietnam</Typography>
+              <Typography variant="p" color={{md:"#fff",xs:'#fff'}} fontSize={{md:"15px",xs:'15px'}} fontFamily={{md:"sans-serif",xs:"sans-serif"}}>D.H.A Phase II Extension Phase 2 Commercial Area Defence Housing Authority,Karachi</Typography>
              </Stack>
            </Stack>   
            <Stack mt={{md:"23px",xs:"25px"}} direction={{md:"row",xs:'row'}}  height={{md:"30%",xs:"40%"}} width={{md:"100%",xs:"100%"}}>
@@ -259,7 +259,7 @@ const index = (props,ref) => {
             </Stack>
              <Stack>
              <Typography variant="h6" color={{md:"#fff",xs:'#fff'}} fontSize={{md:"18px",xs:'18px'}} fontFamily={{md:"sans-serif",xs:"sans-serif"}}>PHONE</Typography>
-              <Typography variant="p" color={{md:"#fff",xs:'#fff'}} fontSize={{md:"15px",xs:'15px'}} fontFamily={{md:"sans-serif",xs:"sans-serif"}}>1234-567890 (24/7 Support Line)</Typography>
+              <Typography variant="p" color={{md:"#fff",xs:'#fff'}} fontSize={{md:"15px",xs:'15px'}} fontFamily={{md:"sans-serif",xs:"sans-serif"}}>+923003306998 (24/7 Support Line)</Typography>
              </Stack>
            </Stack>   
 
