@@ -7,7 +7,7 @@ import Banner2 from "../Banner2"
 import Service from "../Service"
 import About from "../About"
 import { data } from "../../App"
-
+import Team from '../ourTeam'
 const Home = () => {
  
   const {homeRef, whyUsRef,servicesRef,aboutRef} = useContext(data)
@@ -22,7 +22,7 @@ const Home = () => {
       <WhyUs ref={whyUsRef}/>
 
       <Section2 />
-
+      <Team/>
       <Slides />
     </div>
   )

@@ -6,7 +6,7 @@ import Box from "@mui/material/Box"
 import { Link } from "react-scroll"
 import { useMediaQuery, useTheme, Stack } from "@mui/material"
 import Drawer from "../Drawer"
-import Logo from "../assets/logo.png"
+import Logo1 from "../assets/logo1.png"
 import { data } from "../../App"
 
 export default function ButtonAppBar() {
@@ -60,10 +60,10 @@ export default function ButtonAppBar() {
         >
           <Box
             component="img"
-            src={Logo}
-            width={{ md: "240px", xs: "150px" }}
-            height={{ md: "60px" }}
-            mt={{ xs: "10px", md: "0px" }}
+            src={Logo1}
+             width={{ md: "150px",xs:'100px',sm:"100px" }}
+            // height={{ md: "60px" }}
+            mt={{ xs: "5px", md: "0px" }}
           />
           {isMatch ? (
             <>
@@ -83,9 +83,9 @@ export default function ButtonAppBar() {
                 <Box
                   component={Link}
                   onClick={() => scrollToSection(homeRef)}
-                  fontFamily={{ md: "Roboto" }}
+                  fontFamily={{ md: "Eudoxus Sans" }}
                   color={{ md: "#000" }}
-                  fontSize={{ md: "20px" }}
+                  fontSize={{ md: "18px" }}
                   spy={true}
                   smooth={true}
                   offset={-100}
@@ -97,9 +97,11 @@ export default function ButtonAppBar() {
                 <Box
                   component={Link}
                   onClick={() => scrollToSection(whyUsRef)}
-                  fontFamily={{ md: "Roboto" }}
+                  fontFamily={{ md: "Eudoxus Sans" }}
                   color={{ md: "#000" }}
-                  fontSize={{ md: "20px" }}
+                  fontSize={{ md: "18px" }}
+                  
+
                   spy={true}
                   smooth={true}
                   offset={-100}
@@ -113,9 +115,9 @@ export default function ButtonAppBar() {
                   component={Link}
                   onClick={() => scrollToSection(servicesRef)}
                   to="/services"
-                  fontFamily={{ md: "Roboto" }}
+                  fontFamily={{ md: "Eudoxus Sans" }}
                   color={{ md: "#000" }}
-                  fontSize={{ md: "20px" }}
+                  fontSize={{ md: "18px" }}
                   spy={true}
                   smooth={true}
                   offset={-100}
@@ -128,9 +130,9 @@ export default function ButtonAppBar() {
                   component={Link}
                   onClick={() => scrollToSection(aboutRef)}
                   to="about"
-                  fontFamily={{ md: "Roboto" }}
+                  fontFamily={{ md: "Eudoxus Sans" }}
                   color={{ md: "#000" }}
-                  fontSize={{ md: "20px" }}
+                  fontSize={{ md: "18px" }}
                   spy={true}
                   smooth={true}
                   offset={-100}
@@ -142,9 +144,9 @@ export default function ButtonAppBar() {
                 <Box
                   component={Link}
                   onClick={() => scrollToSection(contactRef)}
-                  fontFamily={{ md: "Roboto" }}
+                  fontFamily={{ md: "Eudoxus Sans" }}
                   color={{ md: "#000" }}
-                  fontSize={{ md: "20px" }}
+                  fontSize={{ md: "18px" }}
                   spy={true}
                   smooth={true}
                   offset={-100}

@@ -24,7 +24,7 @@ const index = (props,ref) => {
             textAlign={{ md: "center", xs: "center" }}
             mt={{ md: "50px", xs: "50px" }}
             fontSize={{ md: "50px", xs: "30px" }}
-            fontFamily={{md:"sans-serif",xs:"sans-serif"}}
+            fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}
           >
             Our Values
           </Typography>
@@ -35,7 +35,7 @@ const index = (props,ref) => {
             textAlign={{ md: "center", xs: "center" }}
             mt={{ md: "40px", xs: "40px" }}
             fontSize={{ md: '26px', xs: "12px" }}
-            fontFamily={{md:"sans-serif",xs:"sans-serif"}}
+            fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}
           >
             Our Goal is your Satisfaction (of course after our Cleaning work)
           </Typography>
@@ -100,13 +100,13 @@ const index = (props,ref) => {
                   mt:{md:"40px",xs:"40px",lg:"40px",sm:"40px"}
 
                 }}
-                fontFamily={{md:"sans-serif",xs:"sans-serif"}}
+                fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}
               >
                 Eco-Friendly Oriented
               </Typography>
               <Typography
                 variant="p"
-                fontFamily={{md:"sans-serif",xs:"sans-serif"}}
+                fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}
                 mt={{ md: "10px", xs: "10px" }}
                 color={{ md: "#6c757d", xs: "#6c757d" }}
                 mb={{ md: "20px", xs: "20px" }}
@@ -174,13 +174,13 @@ const index = (props,ref) => {
                   mt:{md:"40px",xs:"40px",lg:"40px",sm:"40px"}
 
                 }}
-                fontFamily={{md:"sans-serif",xs:"sans-serif"}}
+                fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}
               >
                 Excellence & Innovation
               </Typography>
               <Typography
                 variant="p"
-                fontFamily={{md:"sans-serif",xs:"sans-serif"}}
+                fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}
                 mt={{ md: "10px", xs: "10px" }}
                 color={{ md: "#6c757d", xs: "#6c757d" }}
                 mb={{ md: "20px", xs: "20px" }}
@@ -251,13 +251,13 @@ const index = (props,ref) => {
                   mt:{md:"40px",xs:"40px",lg:"40px",sm:"40px"}
 
                 }}
-                fontFamily={{md:"sans-serif",xs:"sans-serif"}}
+                fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}
               >
                 Expansion / Growth
               </Typography>
               <Typography
                 variant="p"
-                fontFamily={{md:"sans-serif",xs:"sans-serif"}}
+                fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}
                 mt={{ md: "10px", xs: "10px" }}
                 color={{ md: "#6c757d", xs: "#6c757d" }}
                 mb={{ md: "20px", xs: "20px" }}

@@ -39,7 +39,7 @@ const index = (props,ref) => {
             color={{ md: "#fff", xs: "#fff" }}
             mb={{ md: "15px", xs: "15px" }}
             mt={{ md: "40px", xs: "50px" }}
-            fontFamily={{md:"sans-serif",xs:"sans-serif"}}
+            fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}
           >
             ABOUT US
           </Typography>
@@ -47,7 +47,7 @@ const index = (props,ref) => {
           <Typography
             variant="p"
             mt={{ md: "18px", xs: "18px" }}
-            fontFamily={{md:"sans-serif",xs:"sans-serif"}}
+            fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}
             fontSize={{ md: "16px", xs: "16px" }}
             color={{ md: "#fff", xs: "#fff" }}
             lineHeight={{ md: "24px", xs: "24px" }}
@@ -86,7 +86,7 @@ const index = (props,ref) => {
             color={{ md: "#fff", xs: "#fff" }}
             mb={{ md: "15px", xs: "15px" }}
             mt={{ md: "40px", xs: "50px" }}
-            fontFamily={{md:"sans-serif",xs:"sans-serif"}}
+            fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}
           >
             OUR SERVICES
           </Typography>
@@ -97,7 +97,7 @@ const index = (props,ref) => {
               sx={{
                 color: { md: "#fff", xs: "#fff" },
                 fontSize: { md: "16px", xs: "16px" },
-                fontFamily: { md: "sans-serif", xs: "sans-serif" },
+                fontFamily: { md: "Eudoxus Sans", xs: "Eudoxus Sans" },
               }}
             >
               <ArrowForwardIosIcon
@@ -115,7 +115,7 @@ const index = (props,ref) => {
               sx={{
                 color: { md: "#fff", xs: "#fff" },
                 fontSize: { md: "16px", xs: "16px" },
-                fontFamily: { md: "sans-serif", xs: "sans-serif" },
+                fontFamily: { md: "Eudoxus Sans", xs: "Eudoxus Sans" },
               }}
             >
               <ArrowForwardIosIcon
@@ -132,7 +132,7 @@ const index = (props,ref) => {
               sx={{
                 color: { md: "#fff", xs: "#fff" },
                 fontSize: { md: "16px", xs: "16px" },
-                fontFamily: { md: "sans-serif", xs: "sans-serif" },
+                fontFamily: { md: "Eudoxus Sans", xs: "Eudoxus Sans" },
               }}
             >
               <ArrowForwardIosIcon
@@ -149,7 +149,7 @@ const index = (props,ref) => {
               sx={{
                 color: { md: "#fff", xs: "#fff" },
                 fontSize: { md: "16px", xs: "16px" },
-                fontFamily: { md: "sans-serif", xs: "sans-serif" },
+                fontFamily: { md: "Eudoxus Sans", xs: "Eudoxus Sans" },
               }}
             >
               <ArrowForwardIosIcon
@@ -166,7 +166,7 @@ const index = (props,ref) => {
               sx={{
                 color: { md: "#fff", xs: "#fff" },
                 fontSize: { md: "16px", xs: "16px" },
-                fontFamily: { md: "sans-serif", xs: "sans-serif" },
+                fontFamily: { md: "Eudoxus Sans", xs: "Eudoxus Sans" },
               }}
             >
               <ArrowForwardIosIcon
@@ -183,7 +183,7 @@ const index = (props,ref) => {
               sx={{
                 color: { md: "#fff", xs: "#fff" },
                 fontSize: { md: "16px", xs: "16px" },
-                fontFamily: { md: "sans-serif", xs: "sans-serif" },
+                fontFamily: { md: "Eudoxus Sans", xs: "Eudoxus Sans" },
               }}
             >
               <ArrowForwardIosIcon
@@ -208,7 +208,7 @@ const index = (props,ref) => {
             color={{ md: "#fff", xs: "#fff" }}
             mb={{ md: "15px", xs: "15px" }}
             mt={{ md: "40px", xs: "50px" }}
-            fontFamily={{md:"sans-serif",xs:"sans-serif"}}
+            fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}
           >
             RECENT POST
           </Typography>
@@ -238,7 +238,7 @@ const index = (props,ref) => {
             color={{ md: "#fff", xs: "#fff" }}
             mb={{ md: "15px", xs: "15px" }}
             mt={{ md: "40px", xs: "50px" }}
-            fontFamily={{md:"sans-serif",xs:"sans-serif"}}
+            fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}
           >
             CONTACT US
           </Typography>
@@ -249,8 +249,8 @@ const index = (props,ref) => {
             <EditLocationIcon sx={{color:{md:"#fff",xs:"#fff"},marginLeft:{md:"20px",xs:"20px"},fontSize:{md:"30px",xs:"30px"}}} />
             </Stack>
              <Stack>
-             <Typography variant="h6" color={{md:"#fff",xs:'#fff'}} fontSize={{md:"18px",xs:'18px'}} fontFamily={{md:"sans-serif",xs:"sans-serif"}}>ADDRESS</Typography>
-              <Typography variant="p" color={{md:"#fff",xs:'#fff'}} fontSize={{md:"15px",xs:'15px'}} fontFamily={{md:"sans-serif",xs:"sans-serif"}}>D.H.A Phase II Extension Phase 2 Commercial Area Defence Housing Authority,Karachi</Typography>
+             <Typography variant="h6" color={{md:"#fff",xs:'#fff'}} fontSize={{md:"18px",xs:'18px'}} fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}>ADDRESS</Typography>
+              <Typography variant="p" color={{md:"#fff",xs:'#fff'}} fontSize={{md:"15px",xs:'15px'}} fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}>D.H.A Phase II Extension Phase 2 Commercial Area Defence Housing Authority,Karachi</Typography>
              </Stack>
            </Stack>   
            <Stack mt={{md:"23px",xs:"25px"}} direction={{md:"row",xs:'row'}}  height={{md:"30%",xs:"40%"}} width={{md:"100%",xs:"100%"}}>
@@ -258,8 +258,8 @@ const index = (props,ref) => {
             <LocalPhoneIcon sx={{color:{md:"#fff",xs:"#fff"},marginLeft:{md:"20px",xs:"20px"},fontSize:{md:"30px",xs:"30px"}}} />
             </Stack>
              <Stack>
-             <Typography variant="h6" color={{md:"#fff",xs:'#fff'}} fontSize={{md:"18px",xs:'18px'}} fontFamily={{md:"sans-serif",xs:"sans-serif"}}>PHONE</Typography>
-              <Typography variant="p" color={{md:"#fff",xs:'#fff'}} fontSize={{md:"15px",xs:'15px'}} fontFamily={{md:"sans-serif",xs:"sans-serif"}}>+923003306998 (24/7 Support Line)</Typography>
+             <Typography variant="h6" color={{md:"#fff",xs:'#fff'}} fontSize={{md:"18px",xs:'18px'}} fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}>PHONE</Typography>
+              <Typography variant="p" color={{md:"#fff",xs:'#fff'}} fontSize={{md:"15px",xs:'15px'}} fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}>+923003306998 (24/7 Support Line)</Typography>
              </Stack>
            </Stack>   
 
