@@ -8,9 +8,12 @@ import Service from "../Service"
 import About from "../About"
 import { data } from "../../App"
 import Team from '../ourTeam'
+import Reviews from '../Reviews'
+
+
 const Home = () => {
  
-  const {homeRef, whyUsRef,servicesRef,aboutRef} = useContext(data)
+  const {homeRef, whyUsRef,servicesRef,aboutRef,reviewsRef} = useContext(data)
   
  
   return (
@@ -20,7 +23,7 @@ const Home = () => {
       <About ref={aboutRef} />
       <Service ref={servicesRef}/>
       <WhyUs ref={whyUsRef}/>
-
+       <Reviews ref={reviewsRef}/>
       <Section2 />
       <Team/>
       <Slides />

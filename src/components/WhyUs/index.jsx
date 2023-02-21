@@ -12,6 +12,7 @@ const index = (props,ref) => {
       id="banner"
       backgroundColor={{ md: "#fff", xs: "#fff" }}
       // backgroundColor={{ md: "red", xs: "red" }}
+      
     >
       <Container ref={ref} maxWidth="xl" width={{ xs: "100%" }}>
         

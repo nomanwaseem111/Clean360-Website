@@ -259,7 +259,9 @@ const index = (props,ref) => {
             </Stack>
              <Stack>
              <Typography variant="h6" color={{md:"#fff",xs:'#fff'}} fontSize={{md:"18px",xs:'18px'}} fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}>PHONE</Typography>
-              <Typography variant="p" color={{md:"#fff",xs:'#fff'}} fontSize={{md:"15px",xs:'15px'}} fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}>+923003306998 (24/7 Support Line)</Typography>
+              <Typography variant="p" color={{md:"#fff",xs:'#fff'}} fontSize={{md:"15px",xs:'15px'}} mt={{md:'15px',xs:'15px'}} fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}>+922135311335 (24/7 Support Line)</Typography>
+              <Typography variant="p" color={{md:"#fff",xs:'#fff'}} fontSize={{md:"15px",xs:'15px'}} mt={{md:'15px',xs:'15px'}} fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}>+922135311334 (24/7 Support Line)</Typography>
+
              </Stack>
            </Stack>   
 
