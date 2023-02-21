@@ -26,7 +26,7 @@ const index = (props,ref) => {
       <Stack 
         direction={{ md: "row", xs: "column" }}
         height={{ md: "400px", xs: "1620px" }}
-        width={{ md: "70%", xs: "90%" }}
+        width={{ md: "85%", xs: "90%" }}
         // border={{md:"1px solid #ffff",xs:'1px solid white'}}
         marginBottom={{md:'50px'}}
       >
@@ -213,7 +213,7 @@ const index = (props,ref) => {
             RECENT POST
           </Typography>
           <hr width="25%" id="hrline2" />
-          <Stack mt={{md:"25px",xs:"25px"}} direction={{md:"row",xs:"row"}} display={{md:"flex",xs:"flex"}} justifyContent={{md:"space-around",xs:"space-around"}} alignItems={{md:'center',xs:'center'}} flexWrap={{md:"wrap",xs:"wrap"}} height={{md:"300px",xs:"300px"}} >
+          <Stack mt={{md:"25px",xs:"25px"}}  direction={{md:"row",xs:"row"}} display={{md:"flex",xs:"flex"}} justifyContent={{md:"space-around",xs:"space-around"}} alignItems={{md:'center',xs:'center'}} flexWrap={{md:"wrap",xs:"wrap"}} height={{md:"300px",xs:"300px"}} >
           <Box component="img" width={{md:"100px",xs:"100px"}} height={{md:"80px",xs:"100px"}} src={img1}/>
           <Box component="img" width={{md:"100px",xs:"100px"}} height={{md:"80px",xs:"100px"}} src={img2}/>
           <Box component="img" width={{md:"100px",xs:"100px"}} height={{md:"80px",xs:"100px"}} src={img3}/>

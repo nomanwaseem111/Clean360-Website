@@ -35,5 +35,9 @@
     cursor: pointer;
   }
 
-  
-  
+
+  #scroll{
+    overflow-x: scroll;
+    overflow: hidden; 
+    
+  }

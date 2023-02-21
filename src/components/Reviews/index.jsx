@@ -4,10 +4,10 @@ import ReactStars from 'react-stars'
 
 const index = () => {
     return (
-        <Stack width={{ md: "100%", xs: "100%" }} display={{ md: "flex", xs: 'flex' }} justifyContent={{ md: "space-around", xs: "center" }} flexDirection={{ md: 'row', xs: 'column', sm: "column" }} mb={{md:'50px'}} height={{ md: "630px", xs: "400px" }} >
-            <Stack width={{ md: "800px", xs: "100%" }} backgroundColor={{ md: "#fff" }} boxShadow={{md:'2px 2px 10px gray'}} borderRadius={{md:'10px',xs:"10px"}}>
-                <Stack marginLeft={{ md: "100px", xs: "50px" }} mt={{ md: "40px", xs: '40px' }}>
-                    <Typography variant='h6' border={{ md: "1px solid white", xs: "1px solid white" }} width={{ md: '600px', xs: '400px' }} textAlign={{ md: 'center', xs: "center" }} fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}>How Would you rate your experience with Hussain Enterprises</Typography>
+        <Stack width={{ md: "100%", xs: "100%" }} display={{ md: "flex", xs: 'flex' }} justifyContent={{ md: "space-around", xs: "center" }} flexDirection={{ md: 'row', xs: 'column', sm: "column" }} mb={{md:'50px'}} height={{ md: "630px", xs: "1400px" }} >
+            <Stack width={{ md: "45%", xs: "100%" }} backgroundColor={{ md: "#fff" }} boxShadow={{md:'2px 2px 10px gray'}} borderRadius={{md:'10px',xs:"10px"}}>
+                <Stack paddingLeft={{md:"47px",xs:"0px",sm:"200px"}} mt={{ md: "40px", xs: '40px' }} border={{md:"1px solid green",xs:"1px solid red",sm:"1px solid purple"}}>
+                    <Typography variant='h6' fontSize={{md:"20px",xs:"14px"}}  border={{ md: "1px solid white", xs: "1px solid white" }} width={{ md: '600px', xs: '400px' }} textAlign={{ md: 'center', xs: "center",sm:"center" }} fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}>How Would you rate your experience with Hussain Enterprises</Typography>
                 </Stack>
                 <Stack  width={{ md: '90%' }} height={{ md: "500px" }} marginLeft={{ md: '40px' }} mt={{ md: '20px' }}>
                     <Stack>
@@ -47,17 +47,117 @@ const index = () => {
 
 
             </Stack>
-            <Stack width={{ md: "800px", xs: "100%" }} border={{ md: "1px solid black", xs: '1px solid black' }} >
+
+
+            
+            <Stack  width={{ md: "45%", xs: "100%" }}  height={{md:'620px'}} >
                 <Typography variant='h6' fontFamily={{md:'Eudoxus Sans'}} textAlign={{md:"center",xs:'center'}}>Read what our Customers are saying about our Service!</Typography>
                  <Stack mt={{md:"10px",xs:"10px"}} direction={{md:'row'}} display={{md:"flex"}} justifyContent={{md:"flex-end"}} alignItems={{md:'center'}}>
                  <Typography variant='span' mr={{md:'8px'}}>4.8</Typography>
-                 <ReactStars/>
+                 <ReactStars value={3.5}/>
                  <Typography variant='span' fontWeight={{md:"bold",xs:"bold"}} ml={{md:"5px"}}>/</Typography>
                  <Typography variant='span' ml={{md:'4px'}}>2,206</Typography>
 
                  </Stack>
-                 <Stack width={{md:'100%',xs:"100%"}} mt={{md:'10px',xs:"10px"}} border={{md:"1px solid orange"}} height={{md:"250px"}}>
+
+
+
+                 <Stack  width={{md:'100%',xs:"100%"}} padding={{md:"20px"}} mt={{md:'10px',xs:"10px"}} backgroundColor={{md:"#3498db"}} borderRadius={{md:"10px"}} height={{md:"180px"}}>
+                 <Stack direction={{md:"row",xs:"row"}} display={{md:'flex',xs:'flex'}} justifyContent={{md:"space-between",xs:"space-between"}}>
+                 <Box>
+                   <Typography variant='h6'  color={{md:'#fff'}}>Alan Walker</Typography>
+                 </Box>
+                 <Box>
+                   <ReactStars value={4.5}/>
+                 </Box>
+                 
                  </Stack>
+                 <Stack>
+                    <Typography variant='p' mt={{md:"15px",xs:"10px"}} color={{md:'#fff'}} fontFamily={{md:'Eudoxus Sans'}} lineHeight={{md:'25px'}}>
+                    If you want to take Tiny Comments for a test drive in your own environment, Tiny Comments is one of the premium plugins you can try for free for 30 days by signing up for a Tiny account. Make sure to check out our documentation as well.
+                    </Typography>
+                 </Stack>
+                 </Stack>
+                 <Stack  width={{md:'100%',xs:"100%"}} padding={{md:"20px"}} mt={{md:'10px',xs:"10px"}} backgroundColor={{md:"#3498db"}} borderRadius={{md:"10px"}} height={{md:"180px"}}>
+                 <Stack direction={{md:"row",xs:"row"}} display={{md:'flex',xs:'flex'}} justifyContent={{md:"space-between",xs:"space-between"}}>
+                 <Box>
+                   <Typography variant='h6'  color={{md:'#fff'}}>Alan Walker</Typography>
+                 </Box>
+                 <Box>
+                 <ReactStars value={4.5}/>
+                 </Box>
+                 
+                 </Stack>
+                 <Stack>
+                    <Typography variant='p' mt={{md:"15px",xs:"10px"}} color={{md:'#fff'}} fontFamily={{md:'Eudoxus Sans'}} lineHeight={{md:'25px'}}>
+                    If you want to take Tiny Comments for a test drive in your own environment, Tiny Comments is one of the premium plugins you can try for free for 30 days by signing up for a Tiny account. Make sure to check out our documentation as well.
+                    </Typography>
+                 </Stack>
+                 </Stack>
+
+
+                 <Stack  width={{md:'100%',xs:"100%"}} padding={{md:"20px"}} mt={{md:'10px',xs:"10px"}} backgroundColor={{md:"#3498db"}} borderRadius={{md:"10px"}} height={{md:"180px"}}>
+                 <Stack direction={{md:"row",xs:"row"}} display={{md:'flex',xs:'flex'}} justifyContent={{md:"space-between",xs:"space-between"}}>
+                 <Box>
+                   <Typography variant='h6'  color={{md:'#fff'}}>Alan Walker</Typography>
+                 </Box>
+                 <Box>
+                 <ReactStars value={4.5}/>
+                 </Box>
+                 
+                 </Stack>
+                 <Stack>
+                    <Typography variant='p' mt={{md:"15px",xs:"10px"}} color={{md:'#fff'}} fontFamily={{md:'Eudoxus Sans'}} lineHeight={{md:'25px'}}>
+                    If you want to take Tiny Comments for a test drive in your own environment, Tiny Comments is one of the premium plugins you can try for free for 30 days by signing up for a Tiny account. Make sure to check out our documentation as well.
+                    </Typography>
+                 </Stack>
+                 </Stack>
+
+
+
+
+
+
+
+
+
+
+           
+
+
+                
+
+
+
+                 
+
+
+
+
+
+          
+          
+
+
+               
+               
+
+
+
+
+
+
+                 
+
+
+             
+
+
+
+
+
+
+                
             </Stack>
 
         </Stack>
