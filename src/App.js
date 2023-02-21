@@ -19,7 +19,7 @@ const App = () => {
   const servicesRef = React.useRef(null)
   const aboutRef = React.useRef(null)
   const contactRef = React.useRef(null)
-  const reviewRef = React.useRef(null)
+  const reviewsRef = React.useRef(null)
 
   const [openDrawer, setOpenDrawer] = useState(false)
 
