@@ -17,7 +17,7 @@ export default function ButtonAppBar() {
     servicesRef,
     aboutRef,
     contactRef,
-    reviewsRef
+    reviewRef
   } = React.useContext(data)
   const theme = useTheme()
   const isMatch = useMediaQuery(theme.breakpoints.down("md"))
@@ -129,7 +129,7 @@ export default function ButtonAppBar() {
                 </Box>
                 <Box
                   component={Link}
-                  onClick={() => scrollToSection(reviewsRef)}
+                  onClick={() => scrollToSection(reviewRef)}
                   fontFamily={{ md: "Eudoxus Sans" }}
                   color={{ md: "#000" }}
                   fontSize={{ md: "18px" }}

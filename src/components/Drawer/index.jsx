@@ -7,7 +7,7 @@ import {data} from '../../App'
 
 const DrawerComp = () => {
 
-  const  {scrollToSection, homeRef, whyUsRef,servicesRef,aboutRef,contactRef,openDrawer,setOpenDrawer} = React.useContext(data);
+  const  {scrollToSection, homeRef, whyUsRef,servicesRef,reviewRef,aboutRef,contactRef,openDrawer,setOpenDrawer} = React.useContext(data);
 
   return (
     <>
@@ -81,6 +81,23 @@ const DrawerComp = () => {
             </ListItemIcon>
           
           </ListItemButton> 
+
+          <ListItemButton sx={{mt:"40px",display:"flex",justifyContent:"center",alignItems:"center"}}>
+            <ListItemIcon>
+              <ListItemText >
+              <Box  component={Link} onClick={() => scrollToSection(reviewRef)} to="about"   sx={{textDecoration:"none",color:"#fff",fontSize:"26px",textAlign:"center",
+                  
+               
+                  
+                   
+                   }} spy={true} smooth={true} offset={-100} duration={500}>Reviews </Box>
+
+              </ListItemText>
+
+            </ListItemIcon>
+          
+          </ListItemButton> 
+
 
           <ListItemButton sx={{mt:"40px",display:"flex",justifyContent:"center",alignItems:"center"}}>
             <ListItemIcon>

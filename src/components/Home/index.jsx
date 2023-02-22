@@ -14,7 +14,7 @@ import Review from '../Review'
 
 const Home = () => {
  
-  const {homeRef, whyUsRef,servicesRef,aboutRef,reviewsRef,reviewRef} = useContext(data)
+  const {homeRef, whyUsRef,servicesRef,aboutRef,reviewRef} = useContext(data)
   
  
   return (
@@ -24,9 +24,9 @@ const Home = () => {
       <About ref={aboutRef} />
       <Service ref={servicesRef}/>
       <WhyUs ref={whyUsRef}/>
-       <Reviews ref={reviewsRef}/>
+      <Reviews/>
        <Review ref={reviewRef}/>
-
+       
       <Section2 />
       <Team/>
       <Slides />

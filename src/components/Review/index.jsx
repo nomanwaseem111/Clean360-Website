@@ -1,7 +1,7 @@
 import React, {forwardRef} from 'react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
-import { Typography,  Stack,Box } from "@mui/material";
+import { Typography,  Stack } from "@mui/material";
 import ReactStars from 'react-stars'
 
 

@@ -19,7 +19,7 @@ const App = () => {
   const servicesRef = React.useRef(null)
   const aboutRef = React.useRef(null)
   const contactRef = React.useRef(null)
-  const reviewsRef = React.useRef(null)
+  const reviewRef = React.useRef(null)
 
   const [openDrawer, setOpenDrawer] = useState(false)
 
@@ -35,7 +35,7 @@ const App = () => {
 
 
   return (
-    <data.Provider value={{homeRef,whyUsRef,servicesRef,aboutRef,contactRef,reviewsRef,scrollToSection,openDrawer,setOpenDrawer}}>
+    <data.Provider value={{homeRef,whyUsRef,servicesRef,aboutRef,contactRef,reviewRef,scrollToSection,openDrawer,setOpenDrawer}}>
     
       <Router>
         <div>
