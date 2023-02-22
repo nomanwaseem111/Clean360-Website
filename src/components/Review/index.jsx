@@ -46,7 +46,8 @@ const Review = (props,ref) => {
         
             <Stack backgroundColor={{md:'#694324',xs:"#694324"}} height={{md:"500px",xs:"300px"}}>
               <Stack margin={{md:"auto",xs:"auto"}}  display={{md:"flex",xs:"flex"}} width={{md:"80%",xs:"90%"}} justifyContent={{md:"center",xs:'center'}} alignItems={{md:"center",xs:"center"}} height={{md:"100%"}}>
-                <Box component="img" sx={{filter:"brightness(150%)"}} src="https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_0.jpg" alt=""  width={{md:"80px",xs:"40px",sm:"60px"}} borderRadius={{md:"360px",xs:"360px",sm:"360px"}} />
+                 <Typography variant='h3' color={{md:"#fff",sm:"#fff",xs:"#fff"}}    mb={{lg:"20px",md:"20px",}}         fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}
+ textAlign={{md:'center',xs:"center",sm:"center"}} fontSize={{lg:"36px",md:"26px",xs:"18px",sm:"16px"}} >Alan Border</Typography>
                 <Typography variant='p'  mt={{md:"10px"}} textAlign={{md:'center',xs:"center",sm:"center"}} color={{md:"#fff",xs:'#fff'}}     padding={{xs:"20px",md:"0px"}}  width={{xs:"90%",md:"justify"}} lineHeight={{md:"50px",xs:"22px"}} fontSize={{md:"26px",xs:'12px'}} fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}} >We have called Butler many times to our house for various tasks, be it small or large we have always found them precise, particular and punctual – I think my family is in love with them thanks a lot guys you all are great!!</Typography>
                 <Stack  mt={{md:"20px",xs:"0px"}}>
                 <ReactStars   size={24} edit={true} half={true} value={5}/>

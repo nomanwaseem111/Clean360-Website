@@ -4,22 +4,22 @@ import ReactStars from 'react-stars'
 
 const index = () => {
     return (
-        <Stack width={{ md: "100%", xs: "100%" }} display={{ md: "flex", xs: 'flex' }} justifyContent={{ md: "space-around", xs: "center" }} flexDirection={{ md: 'row', xs: 'column', sm: "column" }} mb={{md:'50px'}} height={{ md: "630px", xs: "1400px" }} >
-            <Stack width={{ md: "45%", xs: "100%" }} backgroundColor={{ md: "#fff" }} boxShadow={{md:'2px 2px 10px gray'}} borderRadius={{md:'10px',xs:"10px"}}>
-                <Stack paddingLeft={{md:"47px",xs:"0px",sm:"200px"}} mt={{ md: "40px", xs: '40px' }} border={{md:"1px solid green",xs:"1px solid red",sm:"1px solid purple"}}>
-                    <Typography variant='h6' fontSize={{md:"20px",xs:"14px"}}  border={{ md: "1px solid white", xs: "1px solid white" }} width={{ md: '600px', xs: '400px' }} textAlign={{ md: 'center', xs: "center",sm:"center" }} fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}>How Would you rate your experience with Hussain Enterprises</Typography>
+        <Stack  width={{ md: "100%", xs: "100%" }} display={{ md: "flex", xs: 'flex' }} justifyContent={{ md: "center", xs: "center" }} flexDirection={{ md: 'row', xs: 'column', sm: "column" }} mb={{md:'50px'}} height={{ md: "430px", xs: "700px",lg:"660px",sm:"720px" }} >
+            <Stack width={{ md: "45%", xs: "100%" }}  backgroundColor={{ md: "#fff" }} boxShadow={{md:'2px 2px 10px gray'}} borderRadius={{md:'10px',xs:"10px"}}>
+                <Stack paddingLeft={{md:"47px",xs:"0px",sm:"200px",lg:"120px"}}   mt={{ md: "40px", xs: '40px' }} >
+                    <Typography variant='h6' fontSize={{md:"20px",xs:"14px",sm:"18px"}} paddingRight={{xs:"28px",md:"0px",lg:'0px',sm:"0px"}} border={{ md: "1px solid white", xs: "1px solid white" }} width={{ md: '600px', xs: '400px' }} textAlign={{ md: 'center', xs: "center",sm:"center" }} fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}>How Would you rate your experience with Hussain Enterprises</Typography>
                 </Stack>
                 <Stack  width={{ md: '90%' }} height={{ md: "500px" }} marginLeft={{ md: '40px' }} mt={{ md: '20px' }}>
-                    <Stack>
-                        <Typography variant='h6' fontSize={{ md: "14px" }} fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}>*Your Rating</Typography>
-                        <Stack margin={{ md: "auto" }}>
+                    <Stack mt={{md:"15px",xs:"40px",lg:"15px",sm:"40px"}}>
+                        <Typography variant='h6' fontSize={{ md: "14px",xs:"14px",lg:"16px",sm:"16px" }} fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}>*Your Rating</Typography>
+                        <Stack margin={{ md: "auto",xs:"auto",lg:"auto",sm:"auto" }}>
                             <ReactStars size={50} edit={true} half={true} value={5} />
                         </Stack>
                     </Stack>
 
 
-                    <Stack>
-                        <Typography variant='h6' fontSize={{ md: "14px" }} fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}  mb={{md:'5px',xs:"5px"}}> *Your Review</Typography>
+                    <Stack mt={{md:"15px",xs:"40px",lg:"5px",sm:"40px"}}>
+                        <Typography variant='h6' fontSize={{ md: "14px",xs:"14px",lg:"16px",sm:"16px" }} fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}  mb={{md:'5px',xs:"5px"}}> *Your Review</Typography>
                         <TextareaAutosize
                             maxRows={4}
                             aria-label="maximum height"
@@ -30,17 +30,17 @@ const index = () => {
                     </Stack>
 
                     <Stack mt={{md:"30px",xs:'30px'}}>
-                        <Typography variant='h6' fontSize={{md:"14px"}} fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}  mb={{md:'5px',xs:"5px"}}>*Your Name</Typography>
+                        <Typography variant='h6' fontSize={{ md: "14px",xs:"14px",lg:"16px",sm:"16px" }} fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}  mb={{md:'5px',xs:"5px"}}>*Your Name</Typography>
                         <TextField id="outlined-basic"  variant="outlined" />
                     </Stack>
 
                     <Stack mt={{md:"30px",xs:'30px'}}>
-                        <Typography variant='h6' fontSize={{md:"14px"}} fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}} mb={{md:'5px',xs:"5px"}}>*Your Email</Typography>
+                        <Typography variant='h6' fontSize={{ md: "14px",xs:"14px",lg:"16px",sm:"16px" }} fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}} mb={{md:'5px',xs:"5px"}}>*Your Email</Typography>
                         <TextField id="outlined-basic"  variant="outlined" />
                     </Stack>
 
-                    <Stack width={{md:'80px',xs:"80px"}} marginLeft={{md:"45%",xs:"45%"}} mt={{md:"30px",xs:'30px'}}>
-                       <button type='submit' style={{padding:"5px",border:"none",background:"green",color:"#fff",height:"40px",fontFamily:"Eudoxus Sans",textTransform:"uppercase",cursor:"pointer"}} >Submit</button>
+                    <Stack width={{md:'80px',xs:"80px"}} marginLeft={{md:"42%",xs:"33%",sm:"42%"}} mt={{md:"30px",xs:'30px'}}>
+                       <button type='submit' style={{padding:"5px",border:"none",background:"green",color:"#fff",height:"40px",width:"150px",fontFamily:"Eudoxus Sans",textTransform:"uppercase",cursor:"pointer"}} >Submit</button>
                     </Stack>
 
                 </Stack>
@@ -49,116 +49,6 @@ const index = () => {
             </Stack>
 
 
-            
-            <Stack  width={{ md: "45%", xs: "100%" }}  height={{md:'620px'}} >
-                <Typography variant='h6' fontFamily={{md:'Eudoxus Sans'}} textAlign={{md:"center",xs:'center'}}>Read what our Customers are saying about our Service!</Typography>
-                 <Stack mt={{md:"10px",xs:"10px"}} direction={{md:'row'}} display={{md:"flex"}} justifyContent={{md:"flex-end"}} alignItems={{md:'center'}}>
-                 <Typography variant='span' mr={{md:'8px'}}>4.8</Typography>
-                 <ReactStars value={3.5}/>
-                 <Typography variant='span' fontWeight={{md:"bold",xs:"bold"}} ml={{md:"5px"}}>/</Typography>
-                 <Typography variant='span' ml={{md:'4px'}}>2,206</Typography>
-
-                 </Stack>
-
-
-
-                 <Stack  width={{md:'100%',xs:"100%"}} padding={{md:"20px"}} mt={{md:'10px',xs:"10px"}} backgroundColor={{md:"#3498db"}} borderRadius={{md:"10px"}} height={{md:"180px"}}>
-                 <Stack direction={{md:"row",xs:"row"}} display={{md:'flex',xs:'flex'}} justifyContent={{md:"space-between",xs:"space-between"}}>
-                 <Box>
-                   <Typography variant='h6'  color={{md:'#fff'}}>Alan Walker</Typography>
-                 </Box>
-                 <Box>
-                   <ReactStars value={4.5}/>
-                 </Box>
-                 
-                 </Stack>
-                 <Stack>
-                    <Typography variant='p' mt={{md:"15px",xs:"10px"}} color={{md:'#fff'}} fontFamily={{md:'Eudoxus Sans'}} lineHeight={{md:'25px'}}>
-                    If you want to take Tiny Comments for a test drive in your own environment, Tiny Comments is one of the premium plugins you can try for free for 30 days by signing up for a Tiny account. Make sure to check out our documentation as well.
-                    </Typography>
-                 </Stack>
-                 </Stack>
-                 <Stack  width={{md:'100%',xs:"100%"}} padding={{md:"20px"}} mt={{md:'10px',xs:"10px"}} backgroundColor={{md:"#3498db"}} borderRadius={{md:"10px"}} height={{md:"180px"}}>
-                 <Stack direction={{md:"row",xs:"row"}} display={{md:'flex',xs:'flex'}} justifyContent={{md:"space-between",xs:"space-between"}}>
-                 <Box>
-                   <Typography variant='h6'  color={{md:'#fff'}}>Alan Walker</Typography>
-                 </Box>
-                 <Box>
-                 <ReactStars value={4.5}/>
-                 </Box>
-                 
-                 </Stack>
-                 <Stack>
-                    <Typography variant='p' mt={{md:"15px",xs:"10px"}} color={{md:'#fff'}} fontFamily={{md:'Eudoxus Sans'}} lineHeight={{md:'25px'}}>
-                    If you want to take Tiny Comments for a test drive in your own environment, Tiny Comments is one of the premium plugins you can try for free for 30 days by signing up for a Tiny account. Make sure to check out our documentation as well.
-                    </Typography>
-                 </Stack>
-                 </Stack>
-
-
-                 <Stack  width={{md:'100%',xs:"100%"}} padding={{md:"20px"}} mt={{md:'10px',xs:"10px"}} backgroundColor={{md:"#3498db"}} borderRadius={{md:"10px"}} height={{md:"180px"}}>
-                 <Stack direction={{md:"row",xs:"row"}} display={{md:'flex',xs:'flex'}} justifyContent={{md:"space-between",xs:"space-between"}}>
-                 <Box>
-                   <Typography variant='h6'  color={{md:'#fff'}}>Alan Walker</Typography>
-                 </Box>
-                 <Box>
-                 <ReactStars value={4.5}/>
-                 </Box>
-                 
-                 </Stack>
-                 <Stack>
-                    <Typography variant='p' mt={{md:"15px",xs:"10px"}} color={{md:'#fff'}} fontFamily={{md:'Eudoxus Sans'}} lineHeight={{md:'25px'}}>
-                    If you want to take Tiny Comments for a test drive in your own environment, Tiny Comments is one of the premium plugins you can try for free for 30 days by signing up for a Tiny account. Make sure to check out our documentation as well.
-                    </Typography>
-                 </Stack>
-                 </Stack>
-
-
-
-
-
-
-
-
-
-
-           
-
-
-                
-
-
-
-                 
-
-
-
-
-
-          
-          
-
-
-               
-               
-
-
-
-
-
-
-                 
-
-
-             
-
-
-
-
-
-
-                
-            </Stack>
 
         </Stack>
     )
