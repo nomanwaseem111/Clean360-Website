@@ -6,8 +6,8 @@ const index = () => {
     return (
         <Stack  width={{ md: "100%", xs: "100%" }} display={{ md: "flex", xs: 'flex' }} justifyContent={{ md: "center", xs: "center" }} flexDirection={{ md: 'row', xs: 'column', sm: "column" }} mb={{md:'50px'}} height={{ md: "430px", xs: "700px",lg:"660px",sm:"720px" }} >
             <Stack width={{ md: "45%", xs: "100%" }}  backgroundColor={{ md: "#fff" }} boxShadow={{md:'2px 2px 10px gray'}} borderRadius={{md:'10px',xs:"10px"}}>
-                <Stack paddingLeft={{md:"47px",xs:"0px",sm:"200px",lg:"120px"}}   mt={{ md: "40px", xs: '40px' }} >
-                    <Typography variant='h6' fontSize={{md:"20px",xs:"14px",sm:"18px"}} paddingRight={{xs:"28px",md:"0px",lg:'0px',sm:"0px"}} border={{ md: "1px solid white", xs: "1px solid white" }} width={{ md: '600px', xs: '400px' }} textAlign={{ md: 'center', xs: "center",sm:"center" }} fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}>How Would you rate your experience with Hussain Enterprises</Typography>
+                <Stack display={{md:'flex',xs:"flex",sm:"flex"}} justifyContent={{md:"center",xs:"center",sm:"center",}} alignItems={{md:"center",xs:"center",sm:"center"}} mt={{ md: "40px", xs: '40px' }} >
+                    <Typography variant='h6' fontSize={{md:"20px",xs:"14px",sm:"20px"}}  border={{ md: "1px solid white", xs: "1px solid white" }} width={{ md: '600px', xs: '250px',sm:"400px" }} textAlign={{xs:"center",sm:"center"}} fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}>How Would you rate your experience with Hussain Enterprises</Typography>
                 </Stack>
                 <Stack  width={{ md: '90%' }} height={{ md: "500px" }} marginLeft={{ md: '40px' }} mt={{ md: '20px' }}>
                     <Stack mt={{md:"15px",xs:"40px",lg:"15px",sm:"40px"}}>
