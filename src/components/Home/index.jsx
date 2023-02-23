@@ -8,7 +8,7 @@ import Service from "../Service"
 import About from "../About"
 import { data } from "../../App"
 import Team from '../ourTeam'
-import Reviews from '../Reviews'
+import ReviewForm from '../ReviewForm'
 import Review from '../Review'
 
 
@@ -24,7 +24,7 @@ const Home = () => {
       <About ref={aboutRef} />
       <Service ref={servicesRef}/>
       <WhyUs ref={whyUsRef}/>
-      <Reviews/>
+      <ReviewForm/>
        <Review ref={reviewRef}/>
        
       <Section2 />

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import 'react-slideshow-image/dist/styles.css'
 import { Slide } from 'react-slideshow-image';
 import {  Box, Stack,Typography } from "@mui/material";
@@ -17,6 +17,8 @@ import worker12 from '../assets/worker-12.jpg'
 
 const index = () => {
   
+  
+
     const fadeImages = [
         {
           link1: worker1,

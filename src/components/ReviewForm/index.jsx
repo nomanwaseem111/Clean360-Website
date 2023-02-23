@@ -1,10 +1,59 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Stack, Typography, TextField } from "@mui/material";
 import ReactStars from 'react-stars'
+import { TailSpin } from "react-loader-spinner";
+import {addDoc} from 'firebase/firestore'
+import {reviewRef} from '../../network/firebase'
+import swal from 'sweetalert';
+import { data } from '../../App';
 
-const index = () => {
+function ReviewFrom(){
+   
+
+        const [form,setForm] = useState({
+            name:"",
+            comment:"",
+            email:"",
+            rating:0
+        })
+       const [loading,setLoading] = useState(false)
+
+       const addReview = async (e) => {
+           e.preventDefault()
+        try {
+            setLoading(true)
+            await addDoc(reviewRef,form);
+            swal({
+             title: "Review Sent",
+             icon: "success",
+             buttons: false,
+             timer: 3000
+           })
+           setForm({
+            rating: form.rating,
+            name: "",
+            comment: "",
+            email:""
+
+            
+          })
+           setLoading(false)
+ 
+        } catch (error) {
+            swal({
+                title: error.message,
+                icon: "error",
+                buttons: false,
+                timer: 3000
+              })
+        }
+       }
+   
     return (
+        <form  onSubmit={(e) => addReview(e)}>
         <Stack width={{ md: "100%", xs: "100%" }} display={{ md: "flex", xs: 'flex' }} justifyContent={{ md: "center", xs: "center" }} flexDirection={{ md: 'row', xs: 'column', sm: "column" }} mb={{ md: '50px' }} height={{ md: "430px", xs: "700px", lg: "660px", sm: "720px" }} >
+            
+           
             <Stack width={{ md: "45%", xs: "100%" }} backgroundColor={{ md: "#fff" }} boxShadow={{ md: '2px 2px 10px gray' }} borderRadius={{ md: '10px', xs: "10px" }}>
                 <Stack display={{ md: 'flex', xs: "flex", sm: "flex" }} justifyContent={{ md: "center", xs: "center", sm: "center", }} alignItems={{ md: "center", xs: "center", sm: "center" }} mt={{ md: "40px", xs: '40px' }} >
                     <Typography variant='h6' fontSize={{ md: "20px", xs: "14px", sm: "20px" }} border={{ md: "1px solid white", xs: "1px solid white" }} width={{ md: '600px', xs: '250px', sm: "400px" }} textAlign={{ xs: "center", sm: "center" }} fontFamily={{ md: "Eudoxus Sans", xs: "Eudoxus Sans" }}>How Would you rate your experience with Hussain Enterprises</Typography>
@@ -12,8 +61,11 @@ const index = () => {
                 <Stack width={{ md: '90%' }} height={{ md: "500px" }} marginLeft={{ md: '40px' }} mt={{ md: '20px' }}>
                     <Stack width={{md:"100%",xs:"95%",lg:"100%",sm:"95%"}}   margin={{xs:"auto"}} mt={{ md: "15px", xs: "40px", lg: "15px", sm: "40px" }}>
                         <Typography variant='h6' fontSize={{ md: "14px", xs: "14px", lg: "16px", sm: "16px" }} fontFamily={{ md: "Eudoxus Sans", xs: "Eudoxus Sans" }}>*Your Rating</Typography>
-                        <Stack margin={{ md: "auto", xs: "auto", lg: "auto", sm: "auto" }}>
-                            <ReactStars size={50} edit={true} half={true} value={5} />
+                        <Stack  margin={{ md: "auto", xs: "auto", lg: "auto", sm: "auto" }}>
+                            <ReactStars required size={50} edit={true} half={true} value={form.rating} 
+                        onChange={(rate) => setForm({...form , rating:rate})}
+
+                            />
                         </Stack>
                     </Stack>
 
@@ -27,22 +79,35 @@ const index = () => {
                             rows={2}
                             maxRows={4}
                             sx={{width:{md:"100%",xs:"100%",lg:"100%",sm:'100%'} ,margin:{xs:"auto"}}}
+                            value={form.comment}
+                            onChange={(e) => setForm({...form , comment:e.target.value})}
+                            required
                         />
                     </Stack>
 
                     <Stack width={{md:"100%",xs:"95%",lg:"100%",sm:"95%"}}   margin={{xs:"auto"}} mt={{ md: "30px", xs: '30px' }}>
                         <Typography variant='h6' fontSize={{ md: "14px", xs: "14px", lg: "16px", sm: "16px" }} fontFamily={{ md: "Eudoxus Sans", xs: "Eudoxus Sans" }} mb={{ md: '5px', xs: "5px" }}>*Your Name</Typography>
                         <TextField id="outlined-basic" variant="outlined" 
+                        required
+                        value={form.name}
+                        onChange={(e) => setForm({...form , name:e.target.value})}
                         />
                     </Stack>
 
                     <Stack width={{md:"100%",xs:"95%",lg:"100%",sm:"95%"}}   margin={{xs:"auto"}} mt={{ md: "30px", xs: '30px' }}>
                         <Typography variant='h6' fontSize={{ md: "14px", xs: "14px", lg: "16px", sm: "16px" }} fontFamily={{ md: "Eudoxus Sans", xs: "Eudoxus Sans" }} mb={{ md: '5px', xs: "5px" }}>*Your Email</Typography>
-                        <TextField id="outlined-basic" variant="outlined" />
+                        <TextField id="outlined-basic" variant="outlined"
+                          type="email" required
+                        value={form.email}
+                        onChange={(e) => setForm({...form , email:e.target.value})}
+                        />
                     </Stack>
 
-                    <Stack width={{ md: '80px', xs: "80px" }} marginLeft={{ md: "42%", xs: "33%", sm: "42%" }} mt={{ md: "30px", xs: '30px' }}>
-                        <button type='submit' style={{ padding: "5px", border: "none", background: "green", color: "#fff", height: "40px", width: "150px", fontFamily: "Eudoxus Sans", textTransform: "uppercase", cursor: "pointer" }} >Submit</button>
+                    <Stack width={{ md: '100%', xs: "100%" }} display={{md:"flex",xs:"flex",lg:"flex",sm:"flex"}} justifyContent={{md:"center",lg:"center",xs:"center",sm:"center"}} alignItems={{md:"center",lg:"center",sm:"center",xs:"center"}}   mt={{ md: "30px", xs: '30px' }}>
+                        <button    style={{ padding: "5px", border: "none", background: "#694324", color: "#fff", height: "40px", width: "130px", fontFamily: "Eudoxus Sans", textTransform: "uppercase", cursor: "pointer" }} >
+                            { loading ? <Stack display={{lg:"flex",md:"flex",sm:"flex",xs:"flex"}} justifyContent={{lg:"center",md:"center",sm:"center",xs:"center"}} alignItems={{lg:"center",md:"center",sm:"center",xs:"center"}}><TailSpin width={30} height={30} color="#fff"/></Stack> : "Submit"}
+                            
+                            </button>
                     </Stack>
 
                 </Stack>
@@ -51,9 +116,11 @@ const index = () => {
             </Stack>
 
 
-
+           
         </Stack>
+        </form>
+       
     )
 }
 
-export default index
+export default ReviewFrom

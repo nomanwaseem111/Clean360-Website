@@ -40,7 +40,7 @@ const Slideshow = (props,ref) => {
       
       
       </Stack>
-      <Stack width={{md:"80%",xs:"100%"}} className="slide-container">
+      <Stack border={{md:'1px solid red'}} width={{md:"80%",xs:"100%"}} className="slide-container">
         <Slide>
          {SERVICE.map((item, index)=> (
             <Stack backgroundColor={{md:'#694324',xs:"#694324"}} height={{md:"500px",xs:"300px"}} key={index}>
