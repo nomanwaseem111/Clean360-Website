@@ -1,8 +1,8 @@
 import React, { forwardRef, useEffect, useState } from "react";
 import "react-slideshow-image/dist/styles.css";
 import { Typography, Stack } from "@mui/material";
-import { reviewRef } from "../../firebase/firebase";
-import { getDocs } from "firebase/firestore";
+import {  dbRef } from "../../firebase/firebase";
+import {  child, get } from "firebase/database";
 import { ReviewContext } from "../../hook/reviewContext";
 import { useContext } from "react";
 import { ReviewCarousel } from "../Carousel";
@@ -17,12 +17,22 @@ const Review = (props, ref) => {
   useEffect(() => {
     setLoading(true)
     async function getData() {
-      let arr = [];
-      const _data = await getDocs(reviewRef);
-      _data.forEach((doc) => {
-        arr.push(doc.data());
-      });
-      setData(arr);
+      get(child(dbRef,`reviews`)).then((snapshot) => {
+        if(snapshot.exists()){
+          console.log("data available ------ ",snapshot.val())
+        }else{
+          console.log("no data available")
+        }
+      }).catch((err) => {
+        console.error(err)
+      })
+     
+
+      // const _data = await getDocs(reviewRef);
+      // _data.forEach((doc) => {
+      //   arr.push(doc.data());
+      // });
+      // setData(arr);
       setLoading(false)
 
     }
@@ -31,15 +41,15 @@ const Review = (props, ref) => {
 
 
   
-  useEffect(() => {
-    setLoading(true)
-    let arr = data;
-    arr.push(review)
-    setData(arr)
-    setLoading(false)
+  // useEffect(() => {
+  //   setLoading(true)
+  //   let arr = data;
+  //   arr.push(review)
+  //   setData(arr)
+  //   setLoading(false)
 
-    console.log("data ----------- ",data)
-  },[review])
+  //   console.log("data ----------- ",data)
+  // },[review])
 
   return (
     <>

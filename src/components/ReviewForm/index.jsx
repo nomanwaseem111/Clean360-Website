@@ -4,7 +4,7 @@ import ReactStars from "react-stars";
 import { TailSpin } from "react-loader-spinner";
 import swal from "sweetalert";
 import {reviewRef} from '../../firebase/firebase'
-import { addDoc } from "firebase/firestore";
+import { set } from "firebase/database";
 import { useContext } from "react";
 import { ReviewContext } from "../../hook/reviewContext";
 
@@ -29,7 +29,7 @@ function ReviewFrom() {
               rating:rating,
               email:email
           }
-            await addDoc(reviewRef,args)
+            await set(reviewRef,args)
             setRating("")
             setComment("")
             setEmail("")
