@@ -5,9 +5,11 @@ import { TailSpin } from "react-loader-spinner";
 import swal from "sweetalert";
 import {reviewRef} from '../../firebase/firebase'
 import { addDoc } from "firebase/firestore";
+import { useContext } from "react";
+import { ReviewContext } from "../../hook/reviewContext";
 
 function ReviewFrom() {
-  
+     const {setReview} = useContext(ReviewContext)
      const [rating,setRating] = useState(0)
      const [loading,setLoading] = useState(false)
      const [comment,setComment] = useState("")
@@ -21,17 +23,18 @@ function ReviewFrom() {
         setLoading(true)
 
         try {
-
-            await addDoc(reviewRef, {
-                comment:comment,
-                name:name,
-                rating:rating,
-                email:email
-            })
+            let args =  {
+              comment:comment,
+              name:name,
+              rating:rating,
+              email:email
+          }
+            await addDoc(reviewRef,args)
             setRating("")
             setComment("")
             setEmail("")
             setName("")
+            setReview(args)
             swal({
                 title: "Review Sent",
                 icon: "success",

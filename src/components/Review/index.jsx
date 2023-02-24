@@ -3,13 +3,15 @@ import "react-slideshow-image/dist/styles.css";
 import { Typography, Stack } from "@mui/material";
 import { reviewRef } from "../../firebase/firebase";
 import { getDocs } from "firebase/firestore";
-import Carousel from 'react-bootstrap/Carousel';
-import ReactStars from "react-stars";
-
+import { ReviewContext } from "../../hook/reviewContext";
+import { useContext } from "react";
+import { ReviewCarousel } from "../Carousel";
 
 const Review = (props, ref) => {
+  const {review} = useContext(ReviewContext)
+
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   console.log("data:", data);
   useEffect(() => {
@@ -27,9 +29,21 @@ const Review = (props, ref) => {
     getData();
   }, []);
 
+
+  
+  useEffect(() => {
+    setLoading(true)
+    let arr = data;
+    arr.push(review)
+    setData(arr)
+    setLoading(false)
+
+    console.log("data ----------- ",data)
+  },[review])
+
   return (
     <>
-     <Stack >
+     <Stack  >
        <Typography variant='h3'   color={{ md: "#f7941d", xs: "#f7941d" }}
             fontWeight={{ md: "800", xs: "800" }}
             textAlign={{ md: "center", xs: "center" }}
@@ -40,43 +54,15 @@ const Review = (props, ref) => {
       
       
       </Stack>   
-       <Stack  mb={{md:'100px'}}>
+       <Stack  mb={{md:'100px',xs:"50px"}}>
    <Stack width={{md:"50%"}} display={{md:"flex"}} justifyContent={{md:"center"}} alignItems={{md:"center"}} margin={{md:'auto'}}> 
-    <Carousel>
-  
-  {
-
-      data.map((e,i) => {
-        return(
-     
-          <Carousel.Item>
-      <img
-        className="d-block w-100"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsKPGLF5mjjN-9pH1dezxnhwZ_6GKpPwRHcw&usqp=CAU"
-        alt="First slide"
-        style={{background:"red"}}
-     
-      />
-      <Carousel.Caption>
-      <Stack mb={{md:"100px",sm:"50px"}}>
-        <Typography mb={{md:"10px",sm:"30px",xs:"5px"}} fontSize={{md:'50px',sm:"26px",xs:"10px"}}>{e.name}</Typography>
-        <Typography mb={{md:"10px",sm:"20px",xs:"0px"}} fontSize={{md:'20px',sm:"18px",xs:'8px'}}>{e.comment}</Typography>
-         <Stack mt={{md:"20px",xs:"0px",sm:"0px"}} display={{md:"flex",lg:"flex",sm:"flex",xs:'flex'}} justifyContent={{md:"center",lg:"center",sm:"center",xs:'center'}} alignItems={{md:"center",lg:"center",sm:"center",xs:'center'}}>
-         <ReactStars size={24} edit={false} value={e.rating}/>
-         </Stack>
+     {
+        data.length ? <ReviewCarousel data={data} /> : 
+        <Stack border={{md:"1px solid red",xs:"1px solid red",sm:"1px solid red"}} height={{md:"400px",xs:"200px",sm:"300px"}} textAlign={{md:'center',sm:"center",xs:"center"}} fontSize={{md:"30px"}}>
+        No Review
         </Stack>
-      </Carousel.Caption>
-    </Carousel.Item>
+     }
 
-        )
-      })
-
-  }
-
-
-
-   
-  </Carousel>
 </Stack>
 </Stack>
 </>

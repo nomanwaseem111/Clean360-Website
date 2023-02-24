@@ -10,12 +10,14 @@ import { data } from "../../App"
 import Team from '../ourTeam'
 import ReviewForm from '../ReviewForm'
 import Review from '../Review'
+import { ReviewContext } from "../../hook/reviewContext"
+import { useState } from "react"
 
 
 const Home = () => {
  
   const {homeRef, whyUsRef,servicesRef,aboutRef,reviewRef} = useContext(data)
-  
+  const [review,setReview] = useState({})
  
   return (
     <div>
@@ -24,8 +26,10 @@ const Home = () => {
       <About ref={aboutRef} />
       <Service ref={servicesRef}/>
       <WhyUs ref={whyUsRef}/>
-      <ReviewForm/>
-       <Review ref={reviewRef}/>
+      <ReviewContext.Provider value={{setReview,review}} >
+          <ReviewForm/>
+           <Review ref={reviewRef}/>
+      </ReviewContext.Provider>
        
       <Section2 />
       <Team/>
