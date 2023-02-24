@@ -246,7 +246,9 @@ const index = (props,ref) => {
           <Stack mt={{md:"23px",xs:"25px"}} height={{md:"100%",xs:"100%"}} width={{md:"100%",xs:"100%"}}>
            <Stack   direction={{md:"row",xs:'row'}}  height={{md:"30%",xs:"40%"}} width={{md:"100%",xs:"100%"}}>
             <Stack   width={{md:"180px",xs:"180px",sm:"80px"}}>
-            <EditLocationIcon sx={{color:{md:"#fff",xs:"#fff"},marginLeft:{md:"20px",xs:"20px"},fontSize:{md:"30px",xs:"30px"}}} />
+            <a href="https://www.google.com/maps?q=24.8322781,67.0682456&z=17&hl=en" rel="noreferrer" target="_blank">
+            <EditLocationIcon   sx={{color:{md:"#fff",xs:"#fff"},marginLeft:{md:"20px",xs:"20px"},fontSize:{md:"30px",xs:"30px"}}} />
+            </a>
             </Stack>
              <Stack>
              <Typography variant="h6" color={{md:"#fff",xs:'#fff'}} fontSize={{md:"18px",xs:'18px'}} fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}>ADDRESS</Typography>

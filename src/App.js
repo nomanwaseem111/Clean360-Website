@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom"
 import Home from "./components/Home"
 import Footer from "./components/Footer"
 import "./index.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const data = createContext()
 
