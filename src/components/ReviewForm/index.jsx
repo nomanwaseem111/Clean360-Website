@@ -74,7 +74,7 @@ function ReviewFrom() {
   return (
     <form onSubmit={(e) => sendReview(e)}>
       <Stack
-        width={{ md: "100vw", xs: "100vw" }}
+        width={{ md: "100%", xs: "100%" }}
         display={{ md: "flex", xs: "flex" }}
         justifyContent={{ md: "center", xs: "center" }}
         flexDirection={{ md: "row", xs: "column", sm: "column" }}

@@ -14,7 +14,7 @@ const index = (props,ref) => {
           mt={{ md: "80px", xs: "80px" }}
           justifyContent={{ md: "space-around", xs: "center" }}
           flexWrap={{ md: "wrap", xs: "wrap" }}
-          width={{ md: "100vw", xs: "100vw",sm:"100vw",lg:"100vw" }}
+          width={{ md: "100%", xs: "100%",sm:"100%",lg:"100%" }}
           height={{ md: "650px", xs: "800px",sm:"600px" }}
           // border={{md:"1px solid red",sm:"1px solid black",xs:"1px solid blue"}}
         >

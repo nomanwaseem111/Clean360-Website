@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade';
 const index = (props,ref) => {
   return (
     <Grid
-      sx={{ height: { md: "700px", xs: "1400px",sm:"1400px",lg:"700px" },width:{md:"100vw"} }}
+      sx={{ height: { md: "700px", xs: "1400px",sm:"1400px",lg:"700px" },width:{md:"100%"} }}
       id="banner"
       // backgroundColor={{ md: "red", xs: "red",sm:"red" }}
       mt={{md:"0px",xs:"65px",sm:"65px"}}

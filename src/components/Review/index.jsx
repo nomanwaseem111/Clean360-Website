@@ -13,7 +13,7 @@ import Carousel from 'react-bootstrap/Carousel';
 const Review = (props, ref) => {
   const [data, setData] = useState([]);
 
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState("No Review");
 
   useEffect(() => {
     // const getData = async () => {
@@ -41,7 +41,6 @@ const Review = (props, ref) => {
         });
         setData(Review)
         console.log("Review: ", Review);
-        
       });
     };
     getRealTimeData();
@@ -64,6 +63,8 @@ const Review = (props, ref) => {
     <Stack width={{md:"60%",xs:"100%",sm:"100%"}}  >
     <Carousel>
     {
+       loading ? <Stack  textAlign={{md:"center",sm:"center",xs:"center"}} fontSize={{md:"20px",xs:"20px",sm:"20px"}} >No Review</Stack> :
+
       data.map((e,i) => {
         return(
           <Carousel.Item>
