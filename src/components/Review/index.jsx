@@ -53,7 +53,7 @@ const Review = (props, ref) => {
 
   return (
     <>
-     <Stack  >
+     <Stack mt={{md:"100px",xs:"60px",sm:"60px"}}  >
        <Typography variant='h3'   color={{ md: "#f7941d", xs: "#f7941d" }}
             fontWeight={{ md: "800", xs: "800" }}
             textAlign={{ md: "center", xs: "center" }}
@@ -64,11 +64,11 @@ const Review = (props, ref) => {
       
       
       </Stack>   
-       <Stack  mb={{md:'100px',xs:"50px"}}>
+       <Stack   mb={{md:'100px',xs:"50px"}}>
    <Stack width={{md:"50%"}} display={{md:"flex"}} justifyContent={{md:"center"}} alignItems={{md:"center"}} margin={{md:'auto'}}> 
      {
         data.length ? <ReviewCarousel data={data} /> : 
-        <Stack border={{md:"1px solid red",xs:"1px solid red",sm:"1px solid red"}} height={{md:"400px",xs:"200px",sm:"300px"}} textAlign={{md:'center',sm:"center",xs:"center"}} fontSize={{md:"30px"}}>
+        <Stack  height={{md:"400px",xs:"200px",sm:"300px"}} width={{md:"1200px"}}  textAlign={{md:'center',sm:"center",xs:"center"}} fontSize={{md:"30px"}}>
         No Review
         </Stack>
      }

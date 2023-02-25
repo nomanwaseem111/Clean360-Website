@@ -1,13 +1,13 @@
-import * as React from "react"
-import AppBar from "@mui/material/AppBar"
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
 
-import Toolbar from "@mui/material/Toolbar"
-import Box from "@mui/material/Box"
-import { Link } from "react-scroll"
-import { useMediaQuery, useTheme, Stack } from "@mui/material"
-import Drawer from "../Drawer"
-import Logo1 from "../assets/logo1.png"
-import { data } from "../../App"
+import Toolbar from "@mui/material/Toolbar";
+import Box from "@mui/material/Box";
+import { Link } from "react-scroll";
+import { useMediaQuery, useTheme, Stack } from "@mui/material";
+import Drawer from "../Drawer";
+import Logo1 from "../assets/logo1.png";
+import { data } from "../../App";
 
 export default function ButtonAppBar() {
   const {
@@ -17,10 +17,10 @@ export default function ButtonAppBar() {
     servicesRef,
     aboutRef,
     contactRef,
-    reviewRef
-  } = React.useContext(data)
-  const theme = useTheme()
-  const isMatch = useMediaQuery(theme.breakpoints.down("md"))
+    reviewRef,
+  } = React.useContext(data);
+  const theme = useTheme();
+  const isMatch = useMediaQuery(theme.breakpoints.down("md"));
 
   // const Home = React.useRef(null)
   // const whyUs = React.useRef(null)
@@ -41,7 +41,7 @@ export default function ButtonAppBar() {
         elevation={0}
         position="fixed"
         sx={{
-          backgroundColor: { md: "#fff", xs: "#fff" },
+          backgroundColor: { md: "#fff", xs: "#fff", sm: "#fff" },
           display: { md: "flex" },
           justifyContent: { md: "center" },
           alignItems: { md: "center" },
@@ -62,7 +62,7 @@ export default function ButtonAppBar() {
           <Box
             component="img"
             src={Logo1}
-             width={{ md: "150px",xs:'100px',sm:"100px" }}
+            width={{ md: "150px", xs: "100px", sm: "100px" }}
             // height={{ md: "60px" }}
             mt={{ xs: "5px", md: "0px" }}
           />
@@ -85,13 +85,21 @@ export default function ButtonAppBar() {
                   component={Link}
                   onClick={() => scrollToSection(homeRef)}
                   fontFamily={{ md: "Eudoxus Sans" }}
-                  color={{ md: "#000" }}
-                  fontSize={{ md: "18px" }}
+                  color={{ md: "#694324" }}
+                  fontSize={{ md: "17px" }}
                   spy={true}
                   smooth={true}
                   offset={-100}
                   duration={500}
-                  sx={{cursor:"pointer"}}
+                  sx={{
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    textTransform: "uppercase",
+                    "&:hover": {
+                      color: "#694324",
+                     
+                    },
+                  }}
                 >
                   Home{" "}
                 </Box>
@@ -99,15 +107,21 @@ export default function ButtonAppBar() {
                   component={Link}
                   onClick={() => scrollToSection(whyUsRef)}
                   fontFamily={{ md: "Eudoxus Sans" }}
-                  color={{ md: "#000" }}
-                  fontSize={{ md: "18px" }}
-                  
-
+                  color={{ md: "#694324" }}
+                  fontSize={{ md: "17px" }}
                   spy={true}
                   smooth={true}
                   offset={-100}
                   duration={500}
-                  sx={{cursor:"pointer"}}
+                  sx={{
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    textTransform: "uppercase",
+                    "&:hover": {
+                      color: "#694324",
+                     
+                    },
+                  }}
                   s
                 >
                   Why Us{" "}
@@ -117,13 +131,21 @@ export default function ButtonAppBar() {
                   onClick={() => scrollToSection(servicesRef)}
                   to="/services"
                   fontFamily={{ md: "Eudoxus Sans" }}
-                  color={{ md: "#000" }}
-                  fontSize={{ md: "18px" }}
+                  color={{ md: "#694324" }}
+                  fontSize={{ md: "17px" }}
                   spy={true}
                   smooth={true}
                   offset={-100}
                   duration={500}
-                  sx={{cursor:"pointer"}}
+                  sx={{
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    textTransform: "uppercase",
+                    "&:hover": {
+                      color: "#694324",
+                     
+                    },
+                  }}
                 >
                   Services{" "}
                 </Box>
@@ -131,13 +153,21 @@ export default function ButtonAppBar() {
                   component={Link}
                   onClick={() => scrollToSection(reviewRef)}
                   fontFamily={{ md: "Eudoxus Sans" }}
-                  color={{ md: "#000" }}
-                  fontSize={{ md: "18px" }}
+                  color={{ md: "#694324" }}
+                  fontSize={{ md: "17px" }}
                   spy={true}
                   smooth={true}
                   offset={-100}
                   duration={500}
-                  sx={{cursor:"pointer"}}
+                  sx={{
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    textTransform: "uppercase",
+                    "&:hover": {
+                      color: "#694324",
+                     
+                    },
+                  }}
                 >
                   Reviews{" "}
                 </Box>
@@ -146,13 +176,21 @@ export default function ButtonAppBar() {
                   onClick={() => scrollToSection(aboutRef)}
                   to="about"
                   fontFamily={{ md: "Eudoxus Sans" }}
-                  color={{ md: "#000" }}
-                  fontSize={{ md: "18px" }}
+                  color={{ md: "#694324" }}
+                  fontSize={{ md: "17px" }}
                   spy={true}
                   smooth={true}
                   offset={-100}
                   duration={500}
-                  sx={{cursor:"pointer"}}
+                  sx={{
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    textTransform: "uppercase",
+                    "&:hover": {
+                      color: "#694324",
+                     
+                    },
+                  }}
                 >
                   About{" "}
                 </Box>
@@ -160,17 +198,24 @@ export default function ButtonAppBar() {
                   component={Link}
                   onClick={() => scrollToSection(contactRef)}
                   fontFamily={{ md: "Eudoxus Sans" }}
-                  color={{ md: "#000" }}
-                  fontSize={{ md: "18px" }}
+                  color={{ md: "#694324" }}
+                  fontSize={{ md: "17px" }}
                   spy={true}
                   smooth={true}
                   offset={-100}
                   duration={500}
-                  sx={{cursor:"pointer"}}
+                  sx={{
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    textTransform: "uppercase",
+                    "&:hover": {
+                      color: "#694324",
+                     
+                    },
+                  }}
                 >
                   Contact{" "}
                 </Box>
-             
 
                 {/* <
                   label="Home "
@@ -248,5 +293,5 @@ export default function ButtonAppBar() {
       </AppBar>
       {/* {showCart && <Cart setShowCart={setShowCart}/>} */}
     </>
-  )
+  );
 }

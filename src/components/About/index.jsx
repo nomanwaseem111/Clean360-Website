@@ -9,20 +9,22 @@ const index = (props,ref) => {
         <Stack ref={ref}
           direction={{ md: "row", xs: "row" }}
           backgroundColor={{ md: "#fff", xs: "#fff" }}
-          mb={{ md: "100px", xs: "200px" }}
+          mb={{ md: "0px", xs: "200px" }}
           display={{ md: "flex", xs: "flex" }}
           mt={{ md: "80px", xs: "80px" }}
           justifyContent={{ md: "space-around", xs: "center" }}
           flexWrap={{ md: "wrap", xs: "wrap" }}
-          width={{ md: "100%", xs: "100%" }}
-          height={{ md: "500px", xs: "800px",sm:"600px" }}
-
+          width={{ md: "100vw", xs: "100vw",sm:"100vw",lg:"100vw" }}
+          height={{ md: "650px", xs: "800px",sm:"600px" }}
+          // border={{md:"1px solid red",sm:"1px solid black",xs:"1px solid blue"}}
         >
           <Stack
             backgroundColor={{ md: "#fff", xs: "#fff" }}
             padding={{ md: "20px", xs: "20px" }}
             width={{ md: "40%", xs: "95%" }}
-            height={{ md: "400px", xs: "400px",sm:"300px" }}
+            height={{ md: "auto", xs: "auto",sm:"auto" }}
+            // border={{md:"1px solid red",sm:"1px solid black",xs:"1px solid blue"}}
+
           >
             <Typography
               variant="h3"
@@ -71,8 +73,9 @@ const index = (props,ref) => {
               margin={{ xs: "auto", md: "justify" }}
               padding={{ md: "20px", xs: "20px" }}
               width={{ md: "100%", xs: "95%" }}
-              height={{ md: "200px", xs: "240px" }}
-              
+              height={{ md: "auto", xs: "auto" }}
+              // border={{md:"1px solid red",sm:"1px solid black",xs:"1px solid blue"}}
+
             >
               <Typography
                 variant="h4"
@@ -101,7 +104,9 @@ const index = (props,ref) => {
               padding={{ md: "20px", xs: "20px" }}
               margin={{ xs: "auto", md: "justify" }}
               width={{ md: "100%", xs: "95%" }}
-              height={{ md: "200px", xs: "240px" }}
+              height={{ md: "auto", xs: "auto" }}
+              // border={{md:"1px solid red",sm:"1px solid black",xs:"1px solid blue"}}
+
             >
               <Typography
                 variant="h4"

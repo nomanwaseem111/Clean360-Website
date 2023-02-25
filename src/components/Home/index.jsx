@@ -21,19 +21,19 @@ const Home = () => {
  
   return (
     <div>
-      <Banner2 ref={homeRef} />
+      <Banner2 ref={homeRef} /> 
 
-      <About ref={aboutRef} />
-      <Service ref={servicesRef}/>
-      <WhyUs ref={whyUsRef}/>
-      <ReviewContext.Provider value={{setReview,review}} >
+    <About ref={aboutRef} />  
+       <Service ref={servicesRef}/> 
+       <WhyUs ref={whyUsRef}/>
+     <ReviewContext.Provider value={{setReview,review}} >
           <ReviewForm/>
            <Review ref={reviewRef}/>
       </ReviewContext.Provider>
        
-      <Section2 />
+   <Section2 />
       <Team/>
-      <Slides />
+      <Slides />  
     </div>
   )
 }
