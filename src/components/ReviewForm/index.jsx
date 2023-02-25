@@ -3,79 +3,92 @@ import { Stack, Typography, TextField } from "@mui/material";
 import ReactStars from "react-stars";
 import { TailSpin } from "react-loader-spinner";
 import swal from "sweetalert";
-import {reviewRef} from '../../firebase/firebase'
+import { reviewRef } from "../../firebase/firebase";
 import { set } from "firebase/database";
 import { useContext } from "react";
 import { ReviewContext } from "../../hook/reviewContext";
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+import { collection, addDoc } from "firebase/firestore";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBlL2IQ2vdGCuJiZTh3OrcNwTi6ntdUVVg",
+  authDomain: "hussain-enterprises-46d49.firebaseapp.com",
+  databaseURL:
+    "https://hussain-enterprises-46d49-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "hussain-enterprises-46d49",
+  storageBucket: "hussain-enterprises-46d49.appspot.com",
+  messagingSenderId: "190779005012",
+  appId: "1:190779005012:web:60bdeb87e07389c1b235c1",
+};
+
+const app = initializeApp(firebaseConfig);
+
+export const db = getFirestore(app);
 
 function ReviewFrom() {
-     const {setReview} = useContext(ReviewContext)
-     const [rating,setRating] = useState(0)
-     const [loading,setLoading] = useState(false)
-     const [comment,setComment] = useState("")
-     const [email,setEmail] = useState("")
-     const [name,setName] = useState("")
+  const { setReview } = useContext(ReviewContext);
+  const [rating, setRating] = useState(0);
+  const [loading, setLoading] = useState(false);
+  const [comment, setComment] = useState("");
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
 
-     const sendReview = async (e)  => {
-       
-        e.preventDefault()
-     
-        setLoading(true)
+  const sendReview = async (e) => {
+    e.preventDefault();
 
-        try {
-            let args =  {
-              comment:comment,
-              name:name,
-              rating:rating,
-              email:email
-          }
-            await set(reviewRef,args)
-            setRating("")
-            setComment("")
-            setEmail("")
-            setName("")
-            setReview(args)
-            swal({
-                title: "Review Sent",
-                icon: "success",
-                button:false,
-                timer:3000
-              })
-            
-        } catch (error) {
-            swal({
-                title: error.message,
-                icon: "error",
-                button:false,
-                timer:3000
-              })
-            
-        }
-        setLoading(false)
+    setLoading(true);
 
-     }
+    try {
+      const docRef = await addDoc(collection(db, "Review"), {
+        rating: rating,
+        name: name,
+        comment: comment,
+        email: email,
+      });
+      setRating("");
+      setComment("");
+      setEmail("");
+      setName("");
 
+      swal({
+        title: "Review Sent",
+        icon: "success",
+        button: false,
+        timer: 3000,
+      });
+      console.log("Document written with ID: ", docRef.id);
+    } catch (e) {
+      console.error("Error adding document: ", e);
+      swal({
+        title: e.message,
+        icon: "error",
+        button: false,
+        timer: 3000,
+      });
+    }
 
-    return (
-        <form onSubmit={(e) => sendReview(e)}>    
-        
-           
-          <Stack
+    setLoading(false);
+  };
+
+  return (
+    <form onSubmit={(e) => sendReview(e)}>
+      <Stack
         width={{ md: "100vw", xs: "100vw" }}
         display={{ md: "flex", xs: "flex" }}
         justifyContent={{ md: "center", xs: "center" }}
         flexDirection={{ md: "row", xs: "column", sm: "column" }}
-        mb={{ md: "50px" }}
+        mb={{ md: "50px",sm:"50px",xs:"0px" }}
         height={{ md: "430px", xs: "700px", lg: "660px", sm: "720px" }}
         // backgroundColor={{md:"red",xs:"yellow",sm:"blue"}}
-        mt={{md:"80px",xs:"60px",sm:"60px"}}
+        mt={{ md: "80px", xs: "60px", sm: "60px" }}
       >
         <Stack
           width={{ md: "800px", xs: "100%" }}
           backgroundColor={{ md: "#fff" }}
           boxShadow={{ md: "2px 2px 10px gray" }}
           borderRadius={{ md: "10px", xs: "10px" }}
-          height={{md:"auto",xs:"auto",sm:"auto",lg:"auto"}}
+          height={{ md: "auto", xs: "auto", sm: "auto", lg: "auto" }}
         >
           <Stack
             display={{ md: "flex", xs: "flex", sm: "flex" }}
@@ -118,7 +131,6 @@ function ReviewFrom() {
                 <ReactStars
                   required
                   size={50}
-              
                   half={true}
                   value={rating}
                   onChange={(rate) => setRating(rate)}
