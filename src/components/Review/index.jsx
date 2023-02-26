@@ -1,14 +1,13 @@
 import React, { forwardRef } from "react";
-import { Slide } from "react-slideshow-image";
-import "react-slideshow-image/dist/styles.css";
 import { Typography, Stack } from "@mui/material";
 import ReactStars from "react-stars";
-import { collection, getDocs } from "firebase/firestore";
+import { collection } from "firebase/firestore";
 import { useEffect } from "react";
 import { useState } from "react";
 import { db } from "../ReviewForm";
 import { onSnapshot,query } from "firebase/firestore";
 import Carousel from 'react-bootstrap/Carousel';
+import "react-slideshow-image/dist/styles.css";
 
 const Review = (props, ref) => {
   const [data, setData] = useState([]);
@@ -16,22 +15,7 @@ const Review = (props, ref) => {
   const [loading, setLoading] = useState("No Review");
 
   useEffect(() => {
-    // const getData = async () => {
-    //   const querySnapshot = await getDocs(collection(db, "Review"));
-    //   querySnapshot.forEach((doc) => {
-    //     console.log(`${doc.id} =>`, doc.data());
-
-    //     setData((prev) => {
-    //       let newArr = [...prev, doc.data()];
-
-    //       return newArr;
-    //     });
-    //   });
-    // };
-    // getData()
-
- 
-
+  
     const getRealTimeData = async () => {
       const q = query(collection(db, "Review"));
       const unsubscribe = onSnapshot(q, (querySnapshot) => {
@@ -67,7 +51,7 @@ const Review = (props, ref) => {
 
       data.map((e,i) => {
         return(
-          <Carousel.Item>
+          <Carousel.Item key={i}>
         <img
           className="d-block w-100"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5plKRlrCipFcm4Aq0sZYe7q4z-tjuANTBxw&usqp=CAU"

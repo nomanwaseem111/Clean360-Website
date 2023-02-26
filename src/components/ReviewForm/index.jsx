@@ -3,23 +3,18 @@ import { Stack, Typography, TextField } from "@mui/material";
 import ReactStars from "react-stars";
 import { TailSpin } from "react-loader-spinner";
 import swal from "sweetalert";
-import { reviewRef } from "../../firebase/firebase";
-import { set } from "firebase/database";
-import { useContext } from "react";
-import { ReviewContext } from "../../hook/reviewContext";
+
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { collection, addDoc } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBlL2IQ2vdGCuJiZTh3OrcNwTi6ntdUVVg",
-  authDomain: "hussain-enterprises-46d49.firebaseapp.com",
-  databaseURL:
-    "https://hussain-enterprises-46d49-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "hussain-enterprises-46d49",
-  storageBucket: "hussain-enterprises-46d49.appspot.com",
-  messagingSenderId: "190779005012",
-  appId: "1:190779005012:web:60bdeb87e07389c1b235c1",
+  apiKey: "AIzaSyBjDDXFXl9kks9uO3XiZ__fHX2RKsOwOk8",
+  authDomain: "hussain-enterprises-74bf0.firebaseapp.com",
+  projectId: "hussain-enterprises-74bf0",
+  storageBucket: "hussain-enterprises-74bf0.appspot.com",
+  messagingSenderId: "442508623160",
+  appId: "1:442508623160:web:9609113f315ac90311d5cd"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -27,7 +22,6 @@ const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 
 function ReviewFrom() {
-  const { setReview } = useContext(ReviewContext);
   const [rating, setRating] = useState(0);
   const [loading, setLoading] = useState(false);
   const [comment, setComment] = useState("");
