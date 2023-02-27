@@ -96,7 +96,7 @@ function ReviewFrom() {
               border={{ md: "1px solid white", xs: "1px solid white" }}
               width={{ md: "600px", xs: "250px", sm: "400px" }}
               textAlign={{ xs: "center", sm: "center" }}
-              fontFamily={{ md: "Eudoxus Sans", xs: "Eudoxus Sans" }}
+              fontFamily={{ md: "Raleway", xs: "Raleway" }}
             >
               How Would you rate your experience with Hussain Enterprises
             </Typography>
@@ -115,7 +115,7 @@ function ReviewFrom() {
               <Typography
                 variant="h6"
                 fontSize={{ md: "14px", xs: "14px", lg: "16px", sm: "16px" }}
-                fontFamily={{ md: "Eudoxus Sans", xs: "Eudoxus Sans" }}
+                fontFamily={{ md: "Raleway", xs: "Raleway" }}
               >
                 *Your Rating
               </Typography>
@@ -140,7 +140,7 @@ function ReviewFrom() {
               <Typography
                 variant="h6"
                 fontSize={{ md: "14px", xs: "14px", lg: "16px", sm: "16px" }}
-                fontFamily={{ md: "Eudoxus Sans", xs: "Eudoxus Sans" }}
+                fontFamily={{ md: "Raleway", xs: "Raleway" }}
                 mb={{ md: "5px", xs: "5px" }}
               >
                 {" "}
@@ -170,7 +170,7 @@ function ReviewFrom() {
               <Typography
                 variant="h6"
                 fontSize={{ md: "14px", xs: "14px", lg: "16px", sm: "16px" }}
-                fontFamily={{ md: "Eudoxus Sans", xs: "Eudoxus Sans" }}
+                fontFamily={{ md: "Raleway", xs: "Raleway" }}
                 mb={{ md: "5px", xs: "5px" }}
               >
                 *Your Name
@@ -192,7 +192,7 @@ function ReviewFrom() {
               <Typography
                 variant="h6"
                 fontSize={{ md: "14px", xs: "14px", lg: "16px", sm: "16px" }}
-                fontFamily={{ md: "Eudoxus Sans", xs: "Eudoxus Sans" }}
+                fontFamily={{ md: "Raleway", xs: "Raleway" }}
                 mb={{ md: "5px", xs: "5px" }}
               >
                 *Your Email
@@ -232,7 +232,7 @@ function ReviewFrom() {
                   color: "#fff",
                   height: "40px",
                   width: "130px",
-                  fontFamily: "Eudoxus Sans",
+                  fontFamily: "Raleway",
                   textTransform: "uppercase",
                   cursor: "pointer",
                 }}

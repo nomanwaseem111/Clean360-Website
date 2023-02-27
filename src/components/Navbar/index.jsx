@@ -84,7 +84,7 @@ export default function ButtonAppBar() {
                 <Box
                   component={Link}
                   onClick={() => scrollToSection(homeRef)}
-                  fontFamily={{ md: "Eudoxus Sans" }}
+                  fontFamily={{ md: "Raleway" }}
                   color={{ md: "#694324" }}
                   fontSize={{ md: "17px" }}
                   spy={true}
@@ -106,7 +106,7 @@ export default function ButtonAppBar() {
                 <Box
                   component={Link}
                   onClick={() => scrollToSection(whyUsRef)}
-                  fontFamily={{ md: "Eudoxus Sans" }}
+                  fontFamily={{ md: "Raleway" }}
                   color={{ md: "#694324" }}
                   fontSize={{ md: "17px" }}
                   spy={true}
@@ -130,7 +130,7 @@ export default function ButtonAppBar() {
                   component={Link}
                   onClick={() => scrollToSection(servicesRef)}
                   to="/services"
-                  fontFamily={{ md: "Eudoxus Sans" }}
+                  fontFamily={{ md: "Raleway" }}
                   color={{ md: "#694324" }}
                   fontSize={{ md: "17px" }}
                   spy={true}
@@ -152,7 +152,7 @@ export default function ButtonAppBar() {
                 <Box
                   component={Link}
                   onClick={() => scrollToSection(reviewRef)}
-                  fontFamily={{ md: "Eudoxus Sans" }}
+                  fontFamily={{ md: "Raleway" }}
                   color={{ md: "#694324" }}
                   fontSize={{ md: "17px" }}
                   spy={true}
@@ -175,7 +175,7 @@ export default function ButtonAppBar() {
                   component={Link}
                   onClick={() => scrollToSection(aboutRef)}
                   to="about"
-                  fontFamily={{ md: "Eudoxus Sans" }}
+                  fontFamily={{ md: "Raleway" }}
                   color={{ md: "#694324" }}
                   fontSize={{ md: "17px" }}
                   spy={true}
@@ -197,7 +197,7 @@ export default function ButtonAppBar() {
                 <Box
                   component={Link}
                   onClick={() => scrollToSection(contactRef)}
-                  fontFamily={{ md: "Eudoxus Sans" }}
+                  fontFamily={{ md: "Raleway" }}
                   color={{ md: "#694324" }}
                   fontSize={{ md: "17px" }}
                   spy={true}

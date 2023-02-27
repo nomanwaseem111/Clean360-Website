@@ -46,7 +46,7 @@ const Review = (props, ref) => {
           textAlign={{ md: "center", xs: "center" }}
           mb={{ md: "40px", xs: "40px" }}
           fontSize={{ md: "50px", xs: "30px" }}
-          fontFamily={{ md: "Eudoxus Sans", xs: "Eudoxus Sans" }}
+          fontFamily={{ md: "Raleway", xs: "Raleway" }}
         >
           Review
         </Typography>

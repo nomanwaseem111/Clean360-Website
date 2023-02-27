@@ -28,7 +28,7 @@ const index = (props,ref) => {
           >
             <Typography
               variant="h3"
-              fontFamily={{ md: "Eudoxus Sans", xs: "Eudoxus Sans" }}
+              fontFamily={{ md: "Raleway", xs: "Raleway" }}
               fontWeight={{ md: "700", xs: "700" }}
               sx={{
                 color: { md: "#000", xs: "#000" },
@@ -54,7 +54,7 @@ const index = (props,ref) => {
                 color: { md: "#000", xs: "#000" },
                 mt: { md: "20px", xs: "20px" },
                 fontSize: { md: "26px", xs: "18px" },
-                fontFamily: { md: "Eudoxus Sans", xs: "Eudoxus Sans" },
+                fontFamily: { md: "Raleway", xs: "Raleway" },
               }}
             >
               {" "}
@@ -79,7 +79,7 @@ const index = (props,ref) => {
             >
               <Typography
                 variant="h4"
-                fontFamily={{ md: "Eudoxus Sans", xs: "Eudoxus Sans" }}
+                fontFamily={{ md: "Raleway", xs: "Raleway" }}
                 fontWeight={{ md: "700", xs: "700" }}
                 sx={{ md: "30px", xs: "20px" }}
               >
@@ -91,7 +91,7 @@ const index = (props,ref) => {
                 sx={{
                   fontSize: { md: "26px", xs: "18px" },
                   pt: { md: "20px", xs: "10px" },
-                  fontFamily: { md: "Eudoxus Sans", xs: "Eudoxus Sans" },
+                  fontFamily: { md: "Raleway", xs: "Raleway" },
                   lineHeight:{ md: "40px", xs: "25px" }
 
                 }}
@@ -110,7 +110,7 @@ const index = (props,ref) => {
             >
               <Typography
                 variant="h4"
-                fontFamily={{ md: "Eudoxus Sans", xs: "Eudoxus Sans" }}
+                fontFamily={{ md: "Raleway", xs: "Raleway" }}
                 fontWeight={{ md: "700", xs: "700" }}
                 sx={{ md: "30px", xs: "20px" }}
               >
@@ -122,7 +122,7 @@ const index = (props,ref) => {
                 sx={{
                   fontSize: { md: "26px", xs: "18px" },
                   pt: { md: "20px", xs: "10px" },
-                  fontFamily: { md: "Eudoxus Sans", xs: "Eudoxus Sans" },
+                  fontFamily: { md: "Raleway", xs: "Raleway" },
                   lineHeight:{ md: "40px", xs: "25px" }
 
                 }}

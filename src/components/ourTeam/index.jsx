@@ -52,7 +52,7 @@ const index = () => {
             mt={{md:"40px",xs:"30px"}}
             mb={{md:'40px',xs:"20px"}}
             fontSize={{ md: "50px", xs: "30px" }}
-            fontFamily={{md:"Eudoxus Sans",xs:"Eudoxus Sans"}}
+            fontFamily={{md:"Raleway",xs:"Raleway"}}
             >Our Team</Typography>
       
       
