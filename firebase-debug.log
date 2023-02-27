@@ -1,0 +1,14 @@
+[debug] [2023-02-27T14:41:34.395Z] ----------------------------------------------------------------------
+[debug] [2023-02-27T14:41:34.397Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-02-27T14:41:34.397Z] CLI Version:   11.24.0
+[debug] [2023-02-27T14:41:34.397Z] Platform:      win32
+[debug] [2023-02-27T14:41:34.398Z] Node Version:  v16.19.0
+[debug] [2023-02-27T14:41:34.398Z] Time:          Mon Feb 27 2023 19:41:34 GMT+0500 (Pakistan Standard Time)
+[debug] [2023-02-27T14:41:34.399Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-27T14:41:34.476Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-27T14:41:34.477Z] > authorizing via signed-in user (hussainenterprises771@gmail.com)
+[debug] [2023-02-27T14:41:34.477Z] [iam] checking project hussain-enterprises-74bf0 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-02-27T14:41:34.479Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/hussain-enterprises-74bf0:testIamPermissions [none]
+[debug] [2023-02-27T14:41:34.480Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/hussain-enterprises-74bf0:testIamPermissions x-goog-quota-user=projects/hussain-enterprises-74bf0
+[debug] [2023-02-27T14:41:34.480Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hussain-enterprises-74bf0:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
