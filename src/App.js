@@ -43,7 +43,7 @@ const App = () => {
           <Navbar />
           <Home ref={homeRef} />
           {/* <BottomBtn/> */}
-          <Footer ref={contactRef}/>
+          {/* <Footer ref={contactRef}/> */}
         </div>
       </Router>
     </data.Provider>

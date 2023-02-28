@@ -4,16 +4,11 @@ import Fade from "react-reveal/Fade";
 
 const index = (props, ref) => {
   return (
-    <Grid
-      sx={{
-        height: { md: "700px", xs: "1400px", sm: "1400px", lg: "700px" },
-        width: { md: "100%" },
-      }}
-      id="banner"
-      mt={{ md: "0px", xs: "65px", sm: "65px" }}
-    >
-      <Container ref={ref} maxWidth="xl" width={{ xs: "100%" }}>
-        <Fade right duration={1500}>
+    <>
+ 
+      <Stack width={{md:"100%",xs:"100%"}}  display={{md:"flex"}} flexWrap={{md:"wrap"}} justifyContent={{md:"center"}} alignItems={{md:"center"}} >
+        
+        <Stack width={{md:"100%",xs:"100%"}}  >
           <Stack>
             <Typography
               variant="h3"
@@ -40,7 +35,7 @@ const index = (props, ref) => {
           </Stack>
           <Stack
             direction={{ md: "row", xs: "column" }}
-            width={{ md: "1300px" }}
+            width={{ md: "90%" }}
             margin={{ md: "auto", xs: "auto" }}
             display={{ md: "flex", xs: "flex" }}
             flexWrap="wrap"
@@ -279,9 +274,11 @@ const index = (props, ref) => {
               </Stack>
             </Stack>
           </Stack>
-        </Fade>
-      </Container>
-    </Grid>
+          </Stack>
+      
+      </Stack>
+
+    </>
   );
 };
 

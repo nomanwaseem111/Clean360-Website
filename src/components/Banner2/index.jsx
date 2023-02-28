@@ -4,7 +4,7 @@ import { Typography, Box, Stack } from "@mui/material";
 const index = (props,ref) => {
   return (
     
-    <Stack ref={ref} marginTop={{md:'79px',lg:"79px",xs:"63px",sm:"63px"}}  sx={{width:{md:"100%",xs:"100%",lg:"100%",sm:"100%"},height:{md:"100vh",xs:"50vh",sm:"50vh",lg:"100vh"},position:{md:"relative",xs:"relative",lg:"relative",sm:"relative"}}}>
+    <Stack ref={ref} marginTop={{md:'80px',xs:"65px",sm:"63px"}}  sx={{width:{md:"100%",xs:"100%",lg:"100%",sm:"100%"},height:{md:"100vh",xs:"50vh",sm:"50vh",lg:"100vh"},position:{md:"relative",xs:"relative",lg:"relative",sm:"relative"}}}>
     <Box   sx={{width:{md:"100%",xs:"100%"},height:{md:"100vh",xs:"50vh",sm:"50vh",lg:"100vh"}}} component="img" src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/home-improvement/wp-content/uploads/2022/03/featured-image-housekeeper.jpeg.jpg"/>
     
     <Stack sx={{position:{md:"absolute",xs:"absolute",sm:"absolute",lg:"absolute"},top:{md:"50%",xs:"50%",sm:"50%",lg:"50%"},width:{md:"100%",xs:"100%",sm:"100%",lg:"100%"},textAlign:{md:"center",xs:"center",sm:"center",lg:"center"},transform:{md:"translateY(-50%)",xs:"translateY(-50%)",sm:"translateY(-50%)",lg:"translateY(-50%)"}}}>

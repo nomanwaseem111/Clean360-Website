@@ -9,14 +9,13 @@ const index = (props,ref) => {
         <Stack ref={ref}
           direction={{ md: "row", xs: "row" }}
           backgroundColor={{ md: "#fff", xs: "#fff" }}
-          mb={{ md: "0px", xs: "200px" }}
+          mb={{ md: "60px", xs: "230px" }}
           display={{ md: "flex", xs: "flex" }}
-          mt={{ md: "80px", xs: "80px" }}
           justifyContent={{ md: "space-around", xs: "center" }}
           flexWrap={{ md: "wrap", xs: "wrap" }}
           width={{ md: "100%", xs: "100%",sm:"100%",lg:"100%" }}
-          height={{ md: "650px", xs: "800px",sm:"600px" }}
-          // border={{md:"1px solid red",sm:"1px solid black",xs:"1px solid blue"}}
+          height={{ md: "auto", xs: "800px",sm:"600px" }}
+          pt={{md:"50px",xs:"40px"}}
         >
           <Stack
             backgroundColor={{ md: "#fff", xs: "#fff" }}
@@ -24,7 +23,7 @@ const index = (props,ref) => {
             width={{ md: "40%", xs: "95%" }}
             height={{ md: "auto", xs: "auto",sm:"auto" }}
             // border={{md:"1px solid red",sm:"1px solid black",xs:"1px solid blue"}}
-
+            // pt={{md:'100px'}}
           >
             <Typography
               variant="h3"
@@ -34,6 +33,7 @@ const index = (props,ref) => {
                 color: { md: "#000", xs: "#000" },
                 fontSize: { md: "50px", xs: "30px" },
               }}
+              
             >
               About Us
             </Typography>
@@ -66,7 +66,7 @@ const index = (props,ref) => {
             mt={{ md: "0px", xs: "30px",sm:"0px" }}
             backgroundColor={{ md: "#fff", xs: "#fff" }}
             width={{ md: "40%", xs: "100%" }}
-            height={{ md: "400px", xs: "500px" }}
+            height={{ md: "auto", xs: "500px" }}
             
           >
             <Stack

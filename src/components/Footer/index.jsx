@@ -25,15 +25,15 @@ const index = (props,ref) => {
     >
       <Stack 
         direction={{ md: "row", xs: "column" }}
-        height={{ md: "400px", xs: "1620px" }}
-        width={{ md: "85%", xs: "90%",lg:"85%" }}
+        height={{ md: "420px", xs: "1620px" }}
+        width={{ md: "90%", xs: "90%",lg:"92%" }}
         // border={{md:"1px solid #ffff",xs:'1px solid white'}}
-        marginBottom={{md:'50px'}}
+        marginBottom={{md:'50px',xs:"0px",sm:"0px"}}
       >
         <Stack
-          height={{ md: "400px", xs: "1250px",sm:"800px" }}
+          height={{ md: "400px", xs: "800px" }}
           width={{ md: "25%", xs: "100%" }}
-          //  border={{sm:"1px solid white"}}
+          // border={{xs:"1px solid #fff"}}
         >
           <Typography
             variant="h6"
@@ -49,12 +49,9 @@ const index = (props,ref) => {
             variant="p"
             mt={{ md: "18px", xs: "18px" }}
             fontFamily={{md:"Raleway",xs:"Raleway"}}
-            fontSize={{ md: "16px", xs: "14px" }}
+            fontSize={{ md: "16px", xs: "16px" }}
             color={{ md: "#fff", xs: "#fff" }}
             lineHeight={{ md: "24px", xs: "24px" }}
-            // border={{md:"1px solid white"}}
-            textAlign={{md:"justify",xs:"justify"}}
-            width={{md:"370px"}}
 
           >
             HE Cleaning Company Service is a fully integrated janitorial
@@ -204,9 +201,8 @@ const index = (props,ref) => {
 
         <Stack
           height={{ md: "400px", xs: "1200px" }}
-          width={{ md: "20%", xs: "100%",sm:"45%" }}
-          // border={{md:"1px solid #ffff",xs:'1px solid white'}}
-
+          width={{ md: "25%", xs: "100%",sm:"45%" }}
+          
         >
           <Typography
             variant="h6"
@@ -214,7 +210,6 @@ const index = (props,ref) => {
             mb={{ md: "15px", xs: "15px" }}
             mt={{ md: "40px", xs: "50px" }}
             fontFamily={{md:"Raleway",xs:"Raleway"}}
-
           >
             RECENT POST
           </Typography>
@@ -234,10 +229,11 @@ const index = (props,ref) => {
         </Stack>
 
         <Stack
-          height={{ md: "400px", xs: "1200px" }}
+          height={{ md: "400px", xs: "1280px" }}
           width={{ md: "25%", xs: "100%" }}
           paddingLeft={{md:"10px",xs:'0px'}}
-
+          // border={{xs:"1px solid #fff"}}
+          mt={{xs:"60px",md:"0px"}}
         >
            <Typography
             variant="h6"
@@ -245,33 +241,32 @@ const index = (props,ref) => {
             mb={{ md: "15px", xs: "15px" }}
             mt={{ md: "40px", xs: "50px" }}
             fontFamily={{md:"Raleway",xs:"Raleway"}}
-            paddingLeft={{md:"20px",xs:'0px'}}
-
           >
             CONTACT US
           </Typography>
           <hr width="25%" id="hrline2" />
-          <Stack  mt={{md:"23px",xs:"25px"}} height={{md:"100%",xs:"100%"}} width={{md:"100%",xs:"100%"}}>
+          <Stack mt={{md:"23px",xs:"25px"}} height={{md:"100%",xs:"100%"}} width={{md:"100%",xs:"100%"}}>
            <Stack   direction={{md:"row",xs:'row'}}  height={{md:"30%",xs:"40%"}} width={{md:"100%",xs:"100%"}}>
             <Stack   width={{md:"180px",xs:"180px",sm:"80px"}}>
             <a href="https://www.google.com/maps?q=24.8322781,67.0682456&z=17&hl=en" rel="noreferrer" target="_blank">
             <EditLocationIcon   sx={{color:{md:"#fff",xs:"#fff"},marginLeft:{md:"20px",xs:"20px"},fontSize:{md:"30px",xs:"30px"}}} />
             </a>
             </Stack>
-             <Stack >
+             <Stack>
              <Typography variant="h6" color={{md:"#fff",xs:'#fff'}} fontSize={{md:"18px",xs:'18px'}} fontFamily={{md:"Raleway",xs:"Raleway"}}>ADDRESS</Typography>
               <Typography variant="p" color={{md:"#fff",xs:'#fff'}} fontSize={{md:"15px",xs:'15px'}} fontFamily={{md:"Raleway",xs:"Raleway"}}>D.H.A Phase II Extension Phase 2 Commercial Area Defence Housing Authority,Karachi</Typography>
              </Stack>
            </Stack>   
-           <Stack  mt={{md:"30px",xs:"25px"}} direction={{md:"row",xs:'row'}}  height={{md:"30%",xs:"40%"}} width={{md:"100%",xs:"100%"}}>
+           <Stack  mt={{md:"32px",xs:"25px"}} direction={{md:"row",xs:'row'}}  height={{md:"70%",xs:"40%"}} width={{md:"100%",xs:"100%"}}>
            <Stack  width={{md:"80px",xs:"80px"}}>
             <LocalPhoneIcon sx={{color:{md:"#fff",xs:"#fff"},marginLeft:{md:"20px",xs:"20px"},fontSize:{md:"30px",xs:"30px"}}} />
             </Stack>
-             <Stack>
-             <Typography variant="h6" marginLeft={{md:"10px",xs:"0px"}} color={{md:"#fff",xs:'#fff'}} fontSize={{md:"18px",xs:'18px'}} fontFamily={{md:"Raleway",xs:"Raleway"}}>PHONE</Typography>
-              <Typography variant="p" marginLeft={{md:"10px",xs:"0px"}} color={{md:"#fff",xs:'#fff'}} fontSize={{md:"15px",xs:'15px'}} mt={{md:'15px',xs:'15px'}} fontFamily={{md:"Raleway",xs:"Raleway"}}>+922135311335 (24/7 Support Line)</Typography>
-              <Typography variant="p" marginLeft={{md:"10px",xs:"0px"}} color={{md:"#fff",xs:'#fff'}} fontSize={{md:"15px",xs:'15px'}} mt={{md:'15px',xs:'15px'}} fontFamily={{md:"Raleway",xs:"Raleway"}}>+922135311334 (24/7 Support Line)</Typography>
-              <Typography variant="p" marginLeft={{md:"10px",xs:"0px"}} color={{md:"#fff",xs:'#fff'}} fontSize={{md:"15px",xs:'15px'}} mt={{md:'15px',xs:'15px'}} fontFamily={{md:"Raleway",xs:"Raleway"}}>+923003306998 (24/7 Support Line)</Typography>
+             <Stack >
+             
+             <Typography variant="h6" color={{md:"#fff",xs:'#fff'}} fontSize={{md:"18px",xs:'18px'}} fontFamily={{md:"Raleway",xs:"Raleway"}}>PHONE</Typography>
+              <Typography variant="p" color={{md:"#fff",xs:'#fff'}} fontSize={{md:"15px",xs:'15px'}} mt={{md:'15px',xs:'15px'}} fontFamily={{md:"Raleway",xs:"Raleway"}}>+922135311335 (24/7 Support Line)</Typography>
+              <Typography variant="p" color={{md:"#fff",xs:'#fff'}} fontSize={{md:"15px",xs:'15px'}} mt={{md:'15px',xs:'15px'}} fontFamily={{md:"Raleway",xs:"Raleway"}}>+922135311334 (24/7 Support Line)</Typography>
+              <Typography variant="p" color={{md:"#fff",xs:'#fff'}} fontSize={{md:"15px",xs:'15px'}} mt={{md:'15px',xs:'15px'}} fontFamily={{md:"Raleway",xs:"Raleway"}}>+923003306998 (24/7 Support Line)</Typography>
 
              </Stack>
            </Stack>   

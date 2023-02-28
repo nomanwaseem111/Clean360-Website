@@ -75,7 +75,9 @@ function ReviewFrom() {
         mb={{ md: "50px",sm:"50px",xs:"0px" }}
         height={{ md: "430px", xs: "700px", lg: "660px", sm: "720px" }}
         // backgroundColor={{md:"red",xs:"yellow",sm:"blue"}}
-        mt={{ md: "80px", xs: "60px", sm: "60px" }}
+        mt={{ md: "120px", xs: "60px", sm: "60px" }}
+        // backgroundColor={{md:"red"}}
+
       >
         <Stack
           width={{ md: "800px", xs: "100%" }}

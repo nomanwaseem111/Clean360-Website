@@ -23,14 +23,14 @@ const Home = () => {
       <About ref={aboutRef} />
       <Service ref={servicesRef} />
       <WhyUs ref={whyUsRef} />
-
-      <ReviewForm />
+{/* 
+       <ReviewForm />
       <Review ref={reviewRef} />
 
 
       <Section2 />
       <Team />
-      <Slides />
+      <Slides />  */}
     </div>
   )
 }

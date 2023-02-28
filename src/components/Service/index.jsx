@@ -8,7 +8,7 @@ import { Typography,  Stack } from "@mui/material";
 
 const Slideshow = (props,ref) => {
     return (
-      <Stack ref={ref} width={{md:"100%",xs:"100%"}} display={{md:"flex",xs:"flex"}} justifyContent={{md:"center",xs:"center"}} alignItems={{md:"center",xs:"center"}} height={{md:"700px",xs:"500px"}} opacity={{md:"0.5"}} backgroundColor={{md:"#694324",xs:"#694324"}}>
+      <Stack ref={ref} mt={{md:"50px"}} width={{md:"100%",xs:"100%"}} display={{md:"flex",xs:"flex"}} justifyContent={{md:"center",xs:"center"}} alignItems={{md:"center",xs:"center"}} height={{md:"700px",xs:"500px"}} opacity={{md:"0.5"}} backgroundColor={{md:"#694324",xs:"#694324"}}>
       <Stack >
        <Typography variant='h3'   color={{ md: "#f7941d", xs: "#f7941d" }}
             fontWeight={{ md: "800", xs: "800" }}
