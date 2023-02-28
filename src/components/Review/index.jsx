@@ -4,19 +4,23 @@ import ReactStars from "react-stars";
 import { useEffect } from "react";
 import { useState } from "react";
 import { db } from "../ReviewForm";
-import { collection, query, where, onSnapshot } from "firebase/firestore";
+import { collection, query, onSnapshot } from "firebase/firestore";
 import Carousel from "react-bootstrap/Carousel";
 import "react-slideshow-image/dist/styles.css";
 
 const Review = (props, ref) => {
   const [data, setData] = useState([]);
 
-  const [loading, setLoading] = useState("No Review");
 
   useEffect(() => {
+    
+
+     let unsubscribe = null;
+
     const getRealTimeData = async () => {
+
       const q = query(collection(db, "Review"));
-      const unsubscribe = onSnapshot(q, (querySnapshot) => {
+      unsubscribe = onSnapshot(q, (querySnapshot) => {
         const Review = [];
         querySnapshot.forEach((doc) => {
           Review.push(doc.data());
@@ -25,6 +29,11 @@ const Review = (props, ref) => {
       });
     };
     getRealTimeData();
+
+     return () => {
+      unsubscribe()
+     }
+
   }, []);
 
   return (
@@ -34,9 +43,8 @@ const Review = (props, ref) => {
       display={{ md: "flex", xs: "flex" }}
       justifyContent={{ md: "center", xs: "center" }}
       alignItems={{ md: "center", xs: "center" }}
-      height={{ md: "700px", xs: "350px", sm: "600px" }}
+      height={{ md: "600px", xs: "350px", sm: "600px" }}
       opacity={{ md: "0.5" }}
-      backgroundColor={{ md: "#fff", xs: "#fff", sm: "#fff" }}
     >
       <Stack>
         <Typography
@@ -44,7 +52,7 @@ const Review = (props, ref) => {
           color={{ md: "#f7941d", xs: "#f7941d" }}
           fontWeight={{ md: "800", xs: "800" }}
           textAlign={{ md: "center", xs: "center" }}
-          mb={{ md: "40px", xs: "40px" }}
+          mb={{ md: "40px", xs: "20px" }}
           fontSize={{ md: "50px", xs: "30px" }}
           fontFamily={{ md: "Raleway", xs: "Raleway" }}
         >
@@ -61,7 +69,11 @@ const Review = (props, ref) => {
       >
         <Stack width={{ md: "60%", xs: "100%", sm: "100%" }}>
           <Carousel>
-          {
+           {
+            
+           
+           
+          
               data.map((e, i) => {
                 return (
                   <Carousel.Item key={i}>
@@ -72,7 +84,7 @@ const Review = (props, ref) => {
                     />
 
                     <Carousel.Caption key={i}>
-                      <Stack mb={{ md: "80px", xs: "1px", sm: "110px" }}>
+                      <Stack mb={{ md: "100px", xs: "1px", sm: "110px" }} >
                         <Typography
                           variant="h5"
                           fontSize={{ md: "26px", xs: "12px", sm: "16px" }}

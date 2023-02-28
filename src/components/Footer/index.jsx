@@ -25,15 +25,13 @@ const index = (props,ref) => {
     >
       <Stack 
         direction={{ md: "row", xs: "column" }}
-        height={{ md: "420px", xs: "1620px" }}
-        width={{ md: "90%", xs: "90%",lg:"92%" }}
+        height={{ md: "420px", xs: "1800px",sm:"1760px" }}
+        width={{ md: "90%", xs: "90%" }}
         // border={{md:"1px solid #ffff",xs:'1px solid white'}}
-        marginBottom={{md:'50px',xs:"0px",sm:"0px"}}
       >
         <Stack
-          height={{ md: "400px", xs: "800px" }}
+          height={{ md: "auto", xs: "auto" }}
           width={{ md: "25%", xs: "100%" }}
-          // border={{xs:"1px solid #fff"}}
         >
           <Typography
             variant="h6"
@@ -77,7 +75,7 @@ const index = (props,ref) => {
         </Stack>
 
         <Stack
-          height={{ md: "400px", xs: "1100px" }}
+          height={{ md: "auto", xs: "auto" }}
           width={{ md: "25%", xs: "100%" }}
           paddingLeft={{md:"20px",xs:'0px'}}
 
@@ -200,9 +198,9 @@ const index = (props,ref) => {
         </Stack>
 
         <Stack
-          height={{ md: "400px", xs: "1200px" }}
+          height={{ md: "auto", xs: "auto" }}
           width={{ md: "25%", xs: "100%",sm:"45%" }}
-          
+
         >
           <Typography
             variant="h6"
@@ -214,7 +212,7 @@ const index = (props,ref) => {
             RECENT POST
           </Typography>
           <hr width="25%" id="hrline2" />
-          <Stack mt={{md:"25px",xs:"25px"}} w direction={{md:"row",xs:"row"}} display={{md:"flex",xs:"flex"}} justifyContent={{md:"space-around",xs:"space-around"}} alignItems={{md:'center',xs:'center'}} flexWrap={{md:"wrap",xs:"wrap"}} height={{md:"300px",xs:"300px"}} >
+          <Stack mt={{md:"25px",xs:"25px"}} w direction={{md:"row",xs:"row"}} display={{md:"flex",xs:"flex"}} justifyContent={{md:"space-around",xs:"space-around"}} alignItems={{md:'center',xs:'center'}} flexWrap={{md:"wrap",xs:"wrap"}} height={{md:"400px",xs:"350px"}} >
           <Box component="img" width={{md:"100px",xs:"100px"}} height={{md:"80px",xs:"100px"}} src={img1}/>
           <Box component="img" width={{md:"100px",xs:"100px"}} height={{md:"80px",xs:"100px"}} src={img2}/>
           <Box component="img" width={{md:"100px",xs:"100px"}} height={{md:"80px",xs:"100px"}} src={img3}/>
@@ -229,10 +227,9 @@ const index = (props,ref) => {
         </Stack>
 
         <Stack
-          height={{ md: "400px", xs: "1280px" }}
+          height={{ md: "auto", xs: "470px" }}
           width={{ md: "25%", xs: "100%" }}
           paddingLeft={{md:"10px",xs:'0px'}}
-          // border={{xs:"1px solid #fff"}}
           mt={{xs:"60px",md:"0px"}}
         >
            <Typography

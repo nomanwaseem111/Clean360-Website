@@ -73,18 +73,18 @@ function ReviewFrom() {
         justifyContent={{ md: "center", xs: "center" }}
         flexDirection={{ md: "row", xs: "column", sm: "column" }}
         mb={{ md: "50px",sm:"50px",xs:"0px" }}
-        height={{ md: "430px", xs: "700px", lg: "660px", sm: "720px" }}
-        // backgroundColor={{md:"red",xs:"yellow",sm:"blue"}}
+        height={{ md: "700px", xs: "720px"}}
         mt={{ md: "120px", xs: "60px", sm: "60px" }}
-        // backgroundColor={{md:"red"}}
+      
 
       >
         <Stack
           width={{ md: "800px", xs: "100%" }}
-          backgroundColor={{ md: "#fff" }}
           boxShadow={{ md: "2px 2px 10px gray" }}
           borderRadius={{ md: "10px", xs: "10px" }}
-          height={{ md: "auto", xs: "auto", sm: "auto", lg: "auto" }}
+          height={{ md: "650px", xs: "680px" }}
+        
+
         >
           <Stack
             display={{ md: "flex", xs: "flex", sm: "flex" }}

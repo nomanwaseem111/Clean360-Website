@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-import { Stack, Grid, Container, Typography } from "@mui/material";
+import { Stack,  Typography } from "@mui/material";
 import Fade from "react-reveal/Fade";
 
 const index = (props, ref) => {
@@ -7,8 +7,9 @@ const index = (props, ref) => {
     <>
  
       <Stack width={{md:"100%",xs:"100%"}}  display={{md:"flex"}} flexWrap={{md:"wrap"}} justifyContent={{md:"center"}} alignItems={{md:"center"}} >
-        
+ 
         <Stack width={{md:"100%",xs:"100%"}}  >
+         <Fade left>
           <Stack>
             <Typography
               variant="h3"
@@ -50,7 +51,6 @@ const index = (props, ref) => {
                 height: "350px",
                 xs: "300px",
                 background: { md: "#fff", xs: "#fff" },
-                // background:{md:"green",xs:"green"}
                 boxShadow: {
                   md: "1px 1px 10px 2px grey",
                   xs: "1px 1px 10px 2px grey",
@@ -60,6 +60,7 @@ const index = (props, ref) => {
               <Stack
                 width={{ md: "100%", xs: "100%" }}
                 mt={{ md: "30px", xs: "30px" }}
+
               >
                 {/* <Box
                 component="img"
@@ -78,7 +79,7 @@ const index = (props, ref) => {
                 }}
               /> */}
               </Stack>
-              <Stack>
+              <Stack >
                 <Typography
                   variant="h5"
                   sx={{
@@ -274,8 +275,10 @@ const index = (props, ref) => {
               </Stack>
             </Stack>
           </Stack>
+</Fade>
+
           </Stack>
-      
+       
       </Stack>
 
     </>
