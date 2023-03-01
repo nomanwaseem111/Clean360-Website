@@ -20,13 +20,14 @@ const index = (props,ref) => {
       justifyContent={{ md: "center", xs: "center" }}
       alignItems={{ md: "center", xs: "center" }}
       backgroundColor={{ md: "#553216", xs: "#553216" }}
-      height={{ md: "500px", xs: "1800px" }}
+      height={{ md: "500px", xs: "auto" }}
       width={{ md: "100%", xs: "100%" }}
+      mt={{md:"80px",xs:"60px"}}
     >
       <Stack 
         direction={{ md: "row", xs: "column" }}
-        height={{ md: "420px", xs: "1800px",sm:"1760px" }}
-        width={{ md: "90%", xs: "90%" }}
+        height={{ md: "420px", xs: "auto",sm:"1760px" }}
+        width={{ md: "80%", xs: "90%" }}
         // border={{md:"1px solid #ffff",xs:'1px solid white'}}
       >
         <Stack
@@ -199,7 +200,7 @@ const index = (props,ref) => {
 
         <Stack
           height={{ md: "auto", xs: "auto" }}
-          width={{ md: "25%", xs: "100%",sm:"45%" }}
+          width={{ md: "320px", xs: "100%",sm:"45%" }}
 
         >
           <Typography
@@ -212,7 +213,7 @@ const index = (props,ref) => {
             RECENT POST
           </Typography>
           <hr width="25%" id="hrline2" />
-          <Stack mt={{md:"25px",xs:"25px"}} w direction={{md:"row",xs:"row"}} display={{md:"flex",xs:"flex"}} justifyContent={{md:"space-around",xs:"space-around"}} alignItems={{md:'center',xs:'center'}} flexWrap={{md:"wrap",xs:"wrap"}} height={{md:"400px",xs:"350px"}} >
+          <Stack mt={{md:"25px",xs:"25px"}} w direction={{md:"row",xs:"row"}} display={{md:"flex",xs:"flex"}} justifyContent={{md:"space-around",xs:"space-around"}} alignItems={{md:'center',xs:'center'}} flexWrap={{md:"wrap",xs:"wrap"}} height={{md:"400px",xs:"320px"}} >
           <Box component="img" width={{md:"100px",xs:"100px"}} height={{md:"80px",xs:"100px"}} src={img1}/>
           <Box component="img" width={{md:"100px",xs:"100px"}} height={{md:"80px",xs:"100px"}} src={img2}/>
           <Box component="img" width={{md:"100px",xs:"100px"}} height={{md:"80px",xs:"100px"}} src={img3}/>

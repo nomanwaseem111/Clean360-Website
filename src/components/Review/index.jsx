@@ -45,6 +45,7 @@ const Review = (props, ref) => {
       alignItems={{ md: "center", xs: "center" }}
       height={{ md: "600px", xs: "350px", sm: "600px" }}
       opacity={{ md: "0.5" }}
+      mb={{md:"50px"}}
     >
       <Stack>
         <Typography

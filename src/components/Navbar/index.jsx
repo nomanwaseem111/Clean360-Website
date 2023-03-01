@@ -46,17 +46,19 @@ export default function ButtonAppBar() {
           justifyContent: { md: "center" },
           alignItems: { md: "center" },
           height: { md: "80px", xs: "65px" },
+          width:{md:"100%"}
         }}
         // border={{md:"1px solid white"}}
       >
         <Toolbar
           className="nav"
           sx={{
-            //  border:{md:"1px solid black"},
-            width: { md: "1400px" },
+            //  border:{md:"1px solid #fff"},
+            width: { md: "80%" },
             display: { md: "flex" },
             justifyContent: { md: "space-between" },
             alignItems: { md: "center" },
+            flexWrap:{md:"wrap"}
           }}
         >
           <Box
@@ -79,7 +81,7 @@ export default function ButtonAppBar() {
                 justifyContent={{ md: "space-around", xs: "space-around" }}
                 alignItems={{ md: "center", xs: "center" }}
                 width={{ md: "550px" }}
-                marginLeft={{ md: "100px" }}
+                flexWrap={{ md: "wrap" }}
               >
                 <Box
                   component={Link}

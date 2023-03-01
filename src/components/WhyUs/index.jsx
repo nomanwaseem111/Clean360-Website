@@ -6,7 +6,7 @@ const index = (props, ref) => {
   return (
     <>
  
-      <Stack width={{md:"100%",xs:"100%"}}  display={{md:"flex"}} flexWrap={{md:"wrap"}} justifyContent={{md:"center"}} alignItems={{md:"center"}} >
+      <Stack ref={ref} width={{md:"100%",xs:"100%"}}  display={{md:"flex"}} flexWrap={{md:"wrap"}} justifyContent={{md:"center"}} alignItems={{md:"center"}} >
  
         <Stack width={{md:"100%",xs:"100%"}}  >
          <Fade left>
@@ -36,7 +36,7 @@ const index = (props, ref) => {
           </Stack>
           <Stack
             direction={{ md: "row", xs: "column" }}
-            width={{ md: "90%" }}
+            width={{ md: "90%",xs:"90%" }}
             margin={{ md: "auto", xs: "auto" }}
             display={{ md: "flex", xs: "flex" }}
             flexWrap="wrap"
@@ -274,6 +274,9 @@ const index = (props, ref) => {
                 </Typography>
               </Stack>
             </Stack>
+
+
+            
           </Stack>
 </Fade>
 
