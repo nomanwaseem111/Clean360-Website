@@ -22,7 +22,7 @@ const index = (props,ref) => {
       backgroundColor={{ md: "#553216", xs: "#553216" }}
       height={{ md: "500px", xs: "auto" }}
       width={{ md: "100%", xs: "100%" }}
-      mt={{md:"80px",xs:"60px"}}
+      pt={{sm:"30px",md:"0px",xs:"20px"}}
     >
       <Stack 
         direction={{ md: "row", xs: "column" }}
