@@ -48,18 +48,18 @@ export default function ButtonAppBar() {
           height: { md: "80px", xs: "65px" },
           width:{md:"100%"}
         }}
-        // border={{md:"1px solid white"}}
+        // border={{md:"1px solid black"}}
       >
         <Toolbar
           className="nav"
           sx={{
-            //  border:{md:"1px solid #fff"},
-            width: { md: "80%" },
+            width: { md: "95%" },
             display: { md: "flex" },
             justifyContent: { md: "space-between" },
             alignItems: { md: "center" },
-            flexWrap:{md:"wrap"}
+            flexWrap:{md:"wrap"},
           }}
+
         >
           <Box
             component="img"

@@ -27,7 +27,7 @@ const index = (props,ref) => {
       <Stack 
         direction={{ md: "row", xs: "column" }}
         height={{ md: "420px", xs: "auto",sm:"1760px" }}
-        width={{ md: "80%", xs: "90%" }}
+        width={{ md: "90%", xs: "90%" }}
         // border={{md:"1px solid #ffff",xs:'1px solid white'}}
       >
         <Stack
@@ -232,6 +232,7 @@ const index = (props,ref) => {
           width={{ md: "25%", xs: "100%" }}
           paddingLeft={{md:"10px",xs:'0px'}}
           mt={{xs:"60px",md:"0px"}}
+          mb={{md:"0px",xs:"50px",sm:"0px"}}
         >
            <Typography
             variant="h6"
