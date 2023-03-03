@@ -7,6 +7,7 @@ const index = () => {
       display={{ md: "flex", xs: "flex" }}
       justifyContent={{ md: "center", xs: "center" }}
       alignItems={{ md: "center", xs: "center" }}
+      mt={{md:"100px",xs:"50px"}}
       sx={{
         background: { md: "#553216", xs: "#553216" },
         opacity: { md: "0.9", xs: "0.9" },

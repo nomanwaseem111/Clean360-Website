@@ -29,8 +29,8 @@ const Home = () => {
 
 
       <Section2 />
-      <Team />
-      <Slides /> 
+       <Team />
+      <Slides />  
     </div>
   )
 }

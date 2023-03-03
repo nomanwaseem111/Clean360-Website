@@ -48,7 +48,7 @@ export default function ButtonAppBar() {
           height: { md: "80px", xs: "65px" },
           width:{md:"100%"}
         }}
-        // border={{md:"1px solid black"}}
+        border={{md:"1px solid black"}}
       >
         <Toolbar
           className="nav"
@@ -97,8 +97,10 @@ export default function ButtonAppBar() {
                     cursor: "pointer",
                     textDecoration: "none",
                     textTransform: "uppercase",
+                    scrollBehavior:"smooth",
                     "&:hover": {
                       color: "#694324",
+
                      
                     },
                   }}

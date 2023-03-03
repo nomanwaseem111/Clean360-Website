@@ -11,14 +11,10 @@ import "react-slideshow-image/dist/styles.css";
 const Review = (props, ref) => {
   const [data, setData] = useState([]);
 
-
   useEffect(() => {
-    
-
-     let unsubscribe = null;
+    let unsubscribe = null;
 
     const getRealTimeData = async () => {
-
       const q = query(collection(db, "Review"));
       unsubscribe = onSnapshot(q, (querySnapshot) => {
         const Review = [];
@@ -30,10 +26,9 @@ const Review = (props, ref) => {
     };
     getRealTimeData();
 
-     return () => {
-      unsubscribe()
-     }
-
+    return () => {
+      unsubscribe();
+    };
   }, []);
 
   return (
@@ -43,9 +38,9 @@ const Review = (props, ref) => {
       display={{ md: "flex", xs: "flex" }}
       justifyContent={{ md: "center", xs: "center" }}
       alignItems={{ md: "center", xs: "center" }}
-      height={{ md: "600px", xs: "350px", sm: "600px" }}
+      height={{ md: "auto", xs: "auto", sm: "auto" }}
       opacity={{ md: "0.5" }}
-      mb={{md:"50px"}}
+      mb={{ md: "50px" }}
     >
       <Stack>
         <Typography
@@ -64,57 +59,65 @@ const Review = (props, ref) => {
         display={{ md: "flex", xs: "flex" }}
         justifyContent={{ md: "center", xs: "center" }}
         alignItems={{ md: "center", xs: "center" }}
-        width={{ md: "80%", xs: "100%" }}
+        width={{ md: "60%", xs: "100%" }}
         backgroundColor={{ md: "#fff" }}
         className="slide-container"
       >
-        <Stack width={{ md: "60%", xs: "100%", sm: "100%" }}>
-          <Carousel>
-           {
-            
-           
-           
-          
-              data.map((e, i) => {
-                return (
-                  <Carousel.Item key={i}>
-                    <img
-                      className="d-block w-100"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5plKRlrCipFcm4Aq0sZYe7q4z-tjuANTBxw&usqp=CAU"
-                      alt="First slide"
-                    />
+        <Carousel>
+         
 
-                    <Carousel.Caption key={i}>
-                      <Stack mb={{ md: "100px", xs: "1px", sm: "110px" }} >
-                        <Typography
-                          variant="h5"
-                          fontSize={{ md: "26px", xs: "12px", sm: "16px" }}
-                        >
-                          {e.name}
-                        </Typography>
-                        <Typography
-                          variant="p"
-                          fontSize={{ md: "26px", xs: "8px", sm: "12px" }}
-                          mt={{ md: "20px", xs: "10px", sm: "20px" }}
-                        >
-                          {e.comment}
-                        </Typography>
-                        <Stack
-                          mt={{ md: "10px", xs: "10px", sm: "10px" }}
+          {
+            data.map((e,i) => {
+              return(
+                <Carousel.Item>
+            <Stack key={i} mb={{md:"0px",xs:"0px"}} height={{md:"400px",xs:"300px"}} 
+              className="d-flex flex-column justify-content-center align-items-center w-100"
+              style={{
+                backgroundImage:
+                  'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5plKRlrCipFcm4Aq0sZYe7q4z-tjuANTBxw&usqp=CAU")',
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                
+              }}
+            >
+              <Stack width={{ md: "600px", xs: "70%" }}   >
+                <Typography
+                  variant="h4"
+                  fontFamily={{ md: "Raleway", xs: "Raleway" }}
+                  textAlign={{ md: "center", xs: "center" }}
+                  color={{ md: "#fff", xs: "#fff" }}
+                  mb={{ md: "10px", xs: "10px" }}
+                  fontSize={{md:"26px",xs:"20px"}}
+                >
+                  {e.name}
+                </Typography>
+                <Typography
+                  variant="p"
+                  fontFamily={{ md: "Raleway", xs: "Raleway" }}
+                  textAlign={{ md: "center", xs: "center" }}
+                  color={{ md: "#fff", xs: "#fff" }}
+                  fontSize={{md:"20px",xs:"12px"}}
+
+                >
+                 {e.comment}
+                </Typography>
+                <Stack
+                          mt={{ md: "10px", xs: "5px", sm: "5px" }}
                           display={{ md: "flex", xs: "flex" }}
                           justifyContent={{ md: "center", xs: "center" }}
                           alignItems={{ md: "center", xs: "center" }}
                         >
                           <ReactStars value={e.rating} edit={false} size={20} />
                         </Stack>
-                      </Stack>
-                    </Carousel.Caption>
-                  </Carousel.Item>
-                );
-              })
-            }
-          </Carousel>
-        </Stack>
+              </Stack>
+            </Stack>
+         
+          </Carousel.Item>
+              )
+            })
+          }
+        </Carousel>
       </Stack>
     </Stack>
   );
