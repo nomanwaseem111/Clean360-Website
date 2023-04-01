@@ -40,10 +40,11 @@ const App = () => {
     
       <Router>
         <div>
-          <Navbar />
-          <Home ref={homeRef} />
+          <h1>Comming soon</h1>
+          {/* <Navbar /> */}
+          {/* <Home ref={homeRef} /> */}
           {/* <BottomBtn/> */}
-          <Footer ref={contactRef}/>
+          {/* <Footer ref={contactRef}/> */}
         </div>
       </Router>
     </data.Provider>
